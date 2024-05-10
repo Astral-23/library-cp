@@ -37,6 +37,15 @@
   "C_Cpp_Runner.showCompilationTime": false,
   "files.associations": {
     "ostream": "cpp",
-    "__locale": "cpp"
+    "__locale": "cpp",
+    "limits": "cpp",
+    "ratio": "cpp",
+    "algorithm": "cpp",
+    "ios": "cpp",
+    "__split_buffer": "cpp",
+    "array": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "vector": "cpp"
   }
 }
