@@ -29,8 +29,8 @@ data:
     - icon: ':warning:'
       path: DataStructures/D2BIT.cpp
       title: 2DBIT
-    - icon: ':warning:'
-      path: DataStructures/DynamicSegTree.cpp
+    - icon: ':heavy_check_mark:'
+      path: DataStructures/DynamicSegTree.hpp
       title: "\u52D5\u7684\u30BB\u30B0\u6728"
     - icon: ':heavy_check_mark:'
       path: DataStructures/LazySegTree.hpp
@@ -153,7 +153,7 @@ data:
     pages:
     - icon: ':warning:'
       path: String/MP.hpp
-      title: "MP\u65B9\u6CD5"
+      title: "MP\u65B9"
     - icon: ':warning:'
       path: String/Manacher.cpp
       title: Manacher
@@ -198,6 +198,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: verify/SegTree.test.cpp
       title: verify/SegTree.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: verify/dynamicsegtree.test.cpp
+      title: verify/dynamicsegtree.test.cpp
     - icon: ':heavy_check_mark:'
       path: verify/fastset.test.cpp
       title: verify/fastset.test.cpp

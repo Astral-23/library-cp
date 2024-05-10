@@ -10,6 +10,9 @@ data:
     path: verify/SegTree.test.cpp
     title: verify/SegTree.test.cpp
   - icon: ':heavy_check_mark:'
+    path: verify/dynamicsegtree.test.cpp
+    title: verify/dynamicsegtree.test.cpp
+  - icon: ':heavy_check_mark:'
     path: verify/lazyseg.test.cpp
     title: verify/lazyseg.test.cpp
   _isVerificationFailed: false
@@ -73,6 +76,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - verify/Matrix.test.cpp
+  - verify/dynamicsegtree.test.cpp
   - verify/SegTree.test.cpp
   - verify/lazyseg.test.cpp
 documentation_of: Utilities/modint998.hpp

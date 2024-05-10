@@ -2,14 +2,17 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: verify/dynamicsegtree.test.cpp
+    title: verify/dynamicsegtree.test.cpp
   _isVerificationFailed: false
-  _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _pathExtension: hpp
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u52D5\u7684\u30BB\u30B0\u6728"
     links: []
-  bundledCode: "#line 1 \"DataStructures/DynamicSegTree.cpp\"\ntemplate<typename X,\
+  bundledCode: "#line 1 \"DataStructures/DynamicSegTree.hpp\"\ntemplate<typename X,\
     \ typename W>\nstruct DynamicSegTree {// max_pos < LLONG_MAX(\u958B\u533A\u9593\
     \u306E\u5F0A\u5BB3)\n    \n\n    W  min_pos;\n    W  max_pos;//\u6E21\u3059\u6642\
     \u306F\u9589\u533A\u9593\u3060\u304C\u3001\u958B\u533A\u9593\u3067\u6271\u3046\
@@ -62,13 +65,7 @@ data:
     \        X  get(W l, W r) {\n            return get__(root, min_pos, max_pos,\
     \ l, r+1);\n        }\n\n\t\t/*\n\t\t    DynamicSegTree<X, W> seg(minpos, maxpos)\
     \  X...\u30C7\u30FC\u30BF W...\u6DFB\u5B57\u306E\u578B  O(1)\n\t\t\t@brief \u52D5\
-    \u7684\u30BB\u30B0\u6728\n\t\t\n\t\t*/\n\n};\n\nstruct Monoid {\n    mint a, b;\n\
-    \    \n    Monoid(){}\n    Monoid(mint _a, mint _b) : a(_a), b(_b){};\n\n    friend\
-    \ Monoid op(const Monoid& l, const Monoid& r) {\n        Monoid res;\n       \
-    \ res.a = l.a * r.a;\n        res.b = r.a * l.b + r.b;\n        return res;\n\
-    \    } \n    friend Monoid update(const Monoid& l, const Monoid& x) {\n      \
-    \  return x;\n    }\n\n\n\tstatic Monoid ide() {\n\t\treturn Monoid(1, 0);\n\t\
-    }\n};\n"
+    \u7684\u30BB\u30B0\u6728\n\t\t\n\t\t*/\n\n};\n\n"
   code: "template<typename X, typename W>\nstruct DynamicSegTree {// max_pos < LLONG_MAX(\u958B\
     \u533A\u9593\u306E\u5F0A\u5BB3)\n    \n\n    W  min_pos;\n    W  max_pos;//\u6E21\
     \u3059\u6642\u306F\u9589\u533A\u9593\u3060\u304C\u3001\u958B\u533A\u9593\u3067\
@@ -121,24 +118,19 @@ data:
     \ pos, x);\n        }\n\n        X  get(W l, W r) {\n            return get__(root,\
     \ min_pos, max_pos, l, r+1);\n        }\n\n\t\t/*\n\t\t    DynamicSegTree<X, W>\
     \ seg(minpos, maxpos)  X...\u30C7\u30FC\u30BF W...\u6DFB\u5B57\u306E\u578B  O(1)\n\
-    \t\t\t@brief \u52D5\u7684\u30BB\u30B0\u6728\n\t\t\n\t\t*/\n\n};\n\nstruct Monoid\
-    \ {\n    mint a, b;\n    \n    Monoid(){}\n    Monoid(mint _a, mint _b) : a(_a),\
-    \ b(_b){};\n\n    friend Monoid op(const Monoid& l, const Monoid& r) {\n     \
-    \   Monoid res;\n        res.a = l.a * r.a;\n        res.b = r.a * l.b + r.b;\n\
-    \        return res;\n    } \n    friend Monoid update(const Monoid& l, const\
-    \ Monoid& x) {\n        return x;\n    }\n\n\n\tstatic Monoid ide() {\n\t\treturn\
-    \ Monoid(1, 0);\n\t}\n};\n"
+    \t\t\t@brief \u52D5\u7684\u30BB\u30B0\u6728\n\t\t\n\t\t*/\n\n};\n\n"
   dependsOn: []
   isVerificationFile: false
-  path: DataStructures/DynamicSegTree.cpp
+  path: DataStructures/DynamicSegTree.hpp
   requiredBy: []
-  timestamp: '2024-05-11 03:22:03+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
-documentation_of: DataStructures/DynamicSegTree.cpp
+  timestamp: '2024-05-11 03:28:18+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - verify/dynamicsegtree.test.cpp
+documentation_of: DataStructures/DynamicSegTree.hpp
 layout: document
 redirect_from:
-- /library/DataStructures/DynamicSegTree.cpp
-- /library/DataStructures/DynamicSegTree.cpp.html
+- /library/DataStructures/DynamicSegTree.hpp
+- /library/DataStructures/DynamicSegTree.hpp.html
 title: "\u52D5\u7684\u30BB\u30B0\u6728"
 ---
