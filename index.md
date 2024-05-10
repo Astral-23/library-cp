@@ -117,6 +117,32 @@ data:
     - icon: ':warning:'
       path: Graph/treefuncs.cpp
       title: "\u6728\u306B\u95A2\u3059\u308Butility"
+  - name: Math
+    pages:
+    - icon: ':warning:'
+      path: Math/basechange.cpp
+      title: "10\u9032\u21D4n\u9032"
+    - icon: ':warning:'
+      path: Math/combination.cpp
+      title: "\u30B3\u30F3\u30D3\u30CD\u30FC\u30B7\u30E7\u30F3"
+    - icon: ':warning:'
+      path: Math/factorize.cpp
+      title: "\u7D20\u56E0\u6570\u5206\u89E3\uFF08Pollard_rho) N^(1/4)logN"
+    - icon: ':warning:'
+      path: Math/matrix.cpp
+      title: "\u884C\u5217\u306E\u578B"
+    - icon: ':warning:'
+      path: Math/millerrobin.cpp
+      title: "\u7D20\u6570\u5224\u5B9A(Miller Robin)"
+    - icon: ':warning:'
+      path: Math/sieve.cpp
+      title: "\u7D20\u6570\u7BE9"
+    - icon: ':warning:'
+      path: Math/sieve2.cpp
+      title: "\u7D20\u6570\u7BE9(\u5DE6\u7AEF\u4EFB\u610F)"
+    - icon: ':warning:'
+      path: Math/xor.cpp
+      title: "xor\u57FA\u5E95"
   - name: String
     pages:
     - icon: ':warning:'
