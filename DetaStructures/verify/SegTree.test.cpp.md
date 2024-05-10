@@ -11,24 +11,24 @@ data:
     PROBLEM: https://judge.yosupo.jp/problem/point_set_range_composite
     links:
     - https://judge.yosupo.jp/problem/point_set_range_composite
-  bundledCode: "#line 1 \"DetaStructures/SegTree.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/point_set_range_composite\"\
-    \n#include<bits/stdc++.h>\nusing namespace std;\n \nstruct mint{//998244353\n\
-    \   long long x;\n   static const long long mod = 998244353;\n   mint(long long\
-    \ _x=0) noexcept : x((_x%mod+mod)%mod){}\n   long long val() const noexcept {return\
-    \ x;}\n   mint& operator+=(const mint& a) noexcept {if((x += a.x) >= mod) x -=\
-    \ mod;return *this;}\n   mint& operator-=(const mint& a) noexcept {if((x += mod\
-    \ - a.x) >= mod) x -= mod;return *this;}\n   mint& operator*=(const mint& a) noexcept\
-    \ {(x *= a.x) %= mod;return *this;}\n   mint& operator/=(const mint& a) {return\
-    \ (*this) *= a.inv();}\n   mint& operator++() noexcept {return *this += 1;}\n\
-    \   mint& operator--() noexcept {return *this -= 1;}\n   mint operator++(int)\
-    \ {mint tmp = *this; ++*this; return tmp;}\n   mint operator--(int) {mint tmp\
-    \ = *this; --*this; return tmp;}\n   mint inv() const {return pow(mod-2);}\n \
-    \  friend mint operator+(const mint&  t, const mint& a)  {mint tmp = t; return\
-    \ tmp += a;}\n   friend mint operator-(const mint&  t, const mint& a)  {mint tmp\
-    \ = t; return tmp += (a * -1);}\n   friend mint operator*(const mint&  t, const\
-    \ mint& a)  {mint tmp = t; return tmp *= a;}\n   friend mint operator/(const mint&\
-    \  t, const mint& a)  {return a.inv() *=  t;}\n   mint pow(const long long& y)\
-    \ const {\n    if(!y) return 1;\n    mint res = pow(y >> 1);\n    res *= res;\n\
+  bundledCode: "#line 1 \"DetaStructures/verify/SegTree.test.cpp\"\n#define PROBLEM\
+    \ \"https://judge.yosupo.jp/problem/point_set_range_composite\"\n#include<bits/stdc++.h>\n\
+    using namespace std;\n \nstruct mint{//998244353\n   long long x;\n   static const\
+    \ long long mod = 998244353;\n   mint(long long _x=0) noexcept : x((_x%mod+mod)%mod){}\n\
+    \   long long val() const noexcept {return x;}\n   mint& operator+=(const mint&\
+    \ a) noexcept {if((x += a.x) >= mod) x -= mod;return *this;}\n   mint& operator-=(const\
+    \ mint& a) noexcept {if((x += mod - a.x) >= mod) x -= mod;return *this;}\n   mint&\
+    \ operator*=(const mint& a) noexcept {(x *= a.x) %= mod;return *this;}\n   mint&\
+    \ operator/=(const mint& a) {return (*this) *= a.inv();}\n   mint& operator++()\
+    \ noexcept {return *this += 1;}\n   mint& operator--() noexcept {return *this\
+    \ -= 1;}\n   mint operator++(int) {mint tmp = *this; ++*this; return tmp;}\n \
+    \  mint operator--(int) {mint tmp = *this; --*this; return tmp;}\n   mint inv()\
+    \ const {return pow(mod-2);}\n   friend mint operator+(const mint&  t, const mint&\
+    \ a)  {mint tmp = t; return tmp += a;}\n   friend mint operator-(const mint& \
+    \ t, const mint& a)  {mint tmp = t; return tmp += (a * -1);}\n   friend mint operator*(const\
+    \ mint&  t, const mint& a)  {mint tmp = t; return tmp *= a;}\n   friend mint operator/(const\
+    \ mint&  t, const mint& a)  {return a.inv() *=  t;}\n   mint pow(const long long&\
+    \ y) const {\n    if(!y) return 1;\n    mint res = pow(y >> 1);\n    res *= res;\n\
     \    if(y & 1) res *= *this;\n    return res;\n  }\n   friend istream& operator>>(istream&\
     \ is, mint& a) { return is >> a.x;}\n   friend ostream& operator<<(ostream& os,\
     \ const mint& a) { return os << a.x;}\n   bool operator==(const mint& a) const\
@@ -119,15 +119,15 @@ data:
     \ * z + b << '\\n';\n        }\n    }\n    \n}"
   dependsOn: []
   isVerificationFile: true
-  path: DetaStructures/SegTree.test.cpp
+  path: DetaStructures/verify/SegTree.test.cpp
   requiredBy: []
-  timestamp: '2024-05-10 21:57:07+09:00'
+  timestamp: '2024-05-10 22:07:49+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: DetaStructures/SegTree.test.cpp
+documentation_of: DetaStructures/verify/SegTree.test.cpp
 layout: document
 redirect_from:
-- /verify/DetaStructures/SegTree.test.cpp
-- /verify/DetaStructures/SegTree.test.cpp.html
-title: DetaStructures/SegTree.test.cpp
+- /verify/DetaStructures/verify/SegTree.test.cpp
+- /verify/DetaStructures/verify/SegTree.test.cpp.html
+title: DetaStructures/verify/SegTree.test.cpp
 ---
