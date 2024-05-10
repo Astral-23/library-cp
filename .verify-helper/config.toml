@@ -1,4 +1,11 @@
-[[languages.cpp.environments]]
-CXX = "g++"
-
-CXXFLAGS = ["-std=c++20", "-Wall", "-g"]
+CXX = "g++-12"
+CXXFLAGS = [
+    "-std=gnu++20",
+    "-Wno-misleading-indentation",
+    "-Wall",
+    "-Wextra",
+    "-fconcepts-diagnostics-depth=5",
+    "-Wno-char-subscripts",
+    "-fsplit-stack",
+    "-O2"
+]
