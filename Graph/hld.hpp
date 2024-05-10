@@ -197,26 +197,3 @@ struct HLD {
         */
 };  
 
-
-struct Monoid {
-    long long a;
-   
-    Monoid(){}
-      
-    Monoid(long long _a) : a(_a) {
-      
-    }
-
-    friend Monoid op(const Monoid& l, const Monoid& r) {
-      return l.a + r.a;
-    }
-
-    friend Monoid update(const Monoid& l, const Monoid& r) {
-        return l.a + r.a;
-    }
-
-    static Monoid ide() {
-       return 0LL;
-    }
-    
-};

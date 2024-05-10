@@ -10,6 +10,6 @@ vector<int> MP(string S) {
   return res;//結果は1-indexed つまり res[i] := [1, i]について。
 }
 /*
-@brief MP方
+@brief MP法
 res[i] := Sの[1, i]について、prefixとsuffixの共通文字列長を返す(但し、長さi未満とする)
 */
