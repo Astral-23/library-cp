@@ -38,7 +38,7 @@ data:
     - icon: ':warning:'
       path: DetaStructures/SWAG.cpp
       title: SWAG
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: DetaStructures/SegTree.hpp
       title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     - icon: ':warning:'
@@ -180,7 +180,7 @@ data:
     - icon: ':warning:'
       path: Utilities/modint107.hpp
       title: modint1000000007
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Utilities/modint998.hpp
       title: modint998244353
     - icon: ':warning:'
@@ -192,7 +192,7 @@ data:
   verificationCategories:
   - name: verify
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: verify/SegTree.test.cpp
       title: verify/SegTree.test.cpp
 layout: toppage
