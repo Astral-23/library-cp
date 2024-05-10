@@ -29,3 +29,7 @@ struct CHT { //最大値ver//最小値なら-1かけるとかして
     return res;
   }
 };
+
+/*
+@brief : 入力が単調なCHT
+*/
