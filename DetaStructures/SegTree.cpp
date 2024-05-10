@@ -80,5 +80,5 @@ struct Monoid {
 };
 
 /*
-@brief : セグ木
+@brief セグメント木
 */

@@ -154,5 +154,5 @@ int get_order(const Monoid& now, SegTree<Monoid>& seg) {
 }
 
 /*
-@brief : セグ木 + 二分探索
+@brief セグ木 + 二分探索
 */

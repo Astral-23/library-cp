@@ -191,7 +191,7 @@ struct rangeset {//区間を管理する。ついでで、mexを取得できる�
 
 		/*
 		    rangeset<T>   T...区間の恥を表す整数の型 O(1)  通常: int or long long
-			@brief : 区間を管理するset
+			@brief 区間を管理するset
 			count(x) ... xが含まれるか   O(logN)
 			insert(x) ... xを挿入。存在するなら何もしない  O(logN)
 			erase(x) ... xを削除。存在するなら何もしない O(logN)

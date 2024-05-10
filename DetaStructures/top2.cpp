@@ -38,7 +38,7 @@ struct top2 {
 
     /*
         top2<K, X>() O(1)
-        @brief : top2
+        @brief top2(削除不可)
         add(key, val) KEYとしてkeyが付加された値を追加する.  O(1)
         get(key) 登録された値の中で、付加されたKEYがkeyでないものの最大を取得。 O(1)
 

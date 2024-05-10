@@ -175,7 +175,7 @@ struct Binary_Trie {
 
 		/*
 		    Binary_Trie<X, S>(W)   X...登録する値・xorする値の型  S...値の個数の型  W...最大bit長   O(1)
-			@brief : Binary_Trie
+			@brief Binary_Trie
 			insert(x, cnt = 1) ... O(W)
 			erase(x, cnt = 1) ... O(W)
 			count(x) ... O(W)

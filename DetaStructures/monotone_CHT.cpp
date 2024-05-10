@@ -31,5 +31,5 @@ struct CHT { //最大値ver//最小値なら-1かけるとかして
 };
 
 /*
-@brief : 入力が単調なCHT
+@brief 入力が単調なCHT
 */

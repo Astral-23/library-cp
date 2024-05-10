@@ -166,5 +166,5 @@ struct static2Drectunglesum {
 };//init忘れずに
 
 /*
-@brief : 静的で巨大なグリッドの矩形和
+@brief 静的で巨大なグリッドの矩形和
 */

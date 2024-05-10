@@ -111,6 +111,6 @@ struct Monoid {
 };
 
 /*
-@brief : SWAG
+@brief SWAG
 
 */

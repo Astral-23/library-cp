@@ -131,5 +131,5 @@ Monoid fx(const Monoid& l, const E& r, long long len) {
 }
 
 /*
-@brief : 遅延セグ木
+@brief 遅延セグメント木
 */

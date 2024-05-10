@@ -171,5 +171,5 @@ struct Monoid {
 };
 
 /*
-@brief : 動的2次元セグ木
+@brief 動的2次元セグメント木
 */

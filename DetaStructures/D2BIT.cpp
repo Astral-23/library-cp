@@ -58,6 +58,6 @@ struct D2BIT {
 };
 
 /*
-@brief : 2DBIT
+@brief 2DBIT
 
 */
