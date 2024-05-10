@@ -9,22 +9,22 @@ data:
   attributes:
     document_title: "splaytree(multiset) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay"
     links: []
-  bundledCode: "#line 1 \"splaymultiset.cpp\"\ntemplate<typename X>\nstruct splay_multiset\
-    \ {\n    struct node_t {\n            X val;\n            X acc;\n           \
-    \ int sum = 0;\n            node_t* lch;\n            node_t* rch;\n         \
-    \   node_t(X v):  val(v), acc(v) {\n                sum = 1;\n               \
-    \ lch = nullptr;\n                rch = nullptr;\n            }\n    };\n    using\
-    \ NODE = node_t;\n    NODE* root = nullptr;//Splay\u6728\u306E\u6839\u3092\u8868\
-    \u3059\u30CE\u30FC\u30C9\u3002\n    long long size_of_tree = 0;//\u6728\u306B\u767B\
-    \u9332\u3055\u308C\u3066\u3044\u308B\u8981\u7D20\u6570\u3092\u8FD4\u3059\u3002\
-    \n    int pre = 0;\n    splay_multiset(){}\n\n    private:\n\n        long long\
-    \ count(NODE* now) {return now == nullptr ? 0 : now -> sum;}\n        X acc(NODE*\
-    \ now) {return !now ? X() : now -> acc;}\n\n        NODE* pushup(NODE* now) {\n\
-    \            if(now != nullptr) {\n                now -> sum = count(now -> lch)\
-    \ + count(now -> rch) + 1;\n                now -> acc = acc(now -> lch) + now\
-    \ -> val + acc(now -> rch);\n            }\n            return now;\n        }\n\
-    \n\n        NODE* rotate(NODE* now, int b) {//\u30CE\u30FC\u30C9now\u3092\u56DE\
-    \u8EE2\u3055\u305B\u308B\u51E6\u7406\u3002b = 1\u3067\u53F3\u56DE\u8EE2\u3001\
+  bundledCode: "#line 1 \"DetaStructures/splaymultiset.cpp\"\ntemplate<typename X>\n\
+    struct splay_multiset {\n    struct node_t {\n            X val;\n           \
+    \ X acc;\n            int sum = 0;\n            node_t* lch;\n            node_t*\
+    \ rch;\n            node_t(X v):  val(v), acc(v) {\n                sum = 1;\n\
+    \                lch = nullptr;\n                rch = nullptr;\n            }\n\
+    \    };\n    using NODE = node_t;\n    NODE* root = nullptr;//Splay\u6728\u306E\
+    \u6839\u3092\u8868\u3059\u30CE\u30FC\u30C9\u3002\n    long long size_of_tree =\
+    \ 0;//\u6728\u306B\u767B\u9332\u3055\u308C\u3066\u3044\u308B\u8981\u7D20\u6570\
+    \u3092\u8FD4\u3059\u3002\n    int pre = 0;\n    splay_multiset(){}\n\n    private:\n\
+    \n        long long count(NODE* now) {return now == nullptr ? 0 : now -> sum;}\n\
+    \        X acc(NODE* now) {return !now ? X() : now -> acc;}\n\n        NODE* pushup(NODE*\
+    \ now) {\n            if(now != nullptr) {\n                now -> sum = count(now\
+    \ -> lch) + count(now -> rch) + 1;\n                now -> acc = acc(now -> lch)\
+    \ + now -> val + acc(now -> rch);\n            }\n            return now;\n  \
+    \      }\n\n\n        NODE* rotate(NODE* now, int b) {//\u30CE\u30FC\u30C9now\u3092\
+    \u56DE\u8EE2\u3055\u305B\u308B\u51E6\u7406\u3002b = 1\u3067\u53F3\u56DE\u8EE2\u3001\
     \ b = 0\u3067\u5DE6\u56DE\u8EE2\u3002\u300D\n            if(b==1) {\n        \
     \        NODE* s = now -> lch;\n                now -> lch = s -> rch;\n     \
     \           s -> rch = now;\n                pushup(now), pushup(s);\n       \
@@ -602,15 +602,15 @@ data:
     /*\n@brief splaytree(multiset) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: splaymultiset.cpp
+  path: DetaStructures/splaymultiset.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:51:35+09:00'
+  timestamp: '2024-05-10 23:04:54+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: splaymultiset.cpp
+documentation_of: DetaStructures/splaymultiset.cpp
 layout: document
 redirect_from:
-- /library/splaymultiset.cpp
-- /library/splaymultiset.cpp.html
+- /library/DetaStructures/splaymultiset.cpp
+- /library/DetaStructures/splaymultiset.cpp.html
 title: "splaytree(multiset) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay"
 ---

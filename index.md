@@ -1,6 +1,20 @@
 ---
 data:
   libraryCategories:
+  - name: Algorithms
+    pages:
+    - icon: ':warning:'
+      path: Algorithms/Mo.cpp
+      title: Mo
+    - icon: ':warning:'
+      path: Algorithms/maxflow.cpp
+      title: Maxflow
+    - icon: ':warning:'
+      path: Algorithms/mincostflow.cpp
+      title: Mincostflow
+    - icon: ':warning:'
+      path: Algorithms/twosat.cpp
+      title: 2sat
   - name: DetaStructures
     pages:
     - icon: ':warning:'
@@ -59,6 +73,9 @@ data:
       path: DetaStructures/splaymap.cpp
       title: "splaytree(map) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay"
     - icon: ':warning:'
+      path: DetaStructures/splaymultiset.cpp
+      title: "splaytree(multiset) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay"
+    - icon: ':warning:'
       path: DetaStructures/splayset.cpp
       title: "splay_tree(set) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3\u306Bsplay"
     - icon: ':warning:'
@@ -77,11 +94,29 @@ data:
     - icon: ':warning:'
       path: DetaStructures/union-find.cpp
       title: Union-find
-  - name: .
+  - name: Graph
     pages:
     - icon: ':warning:'
-      path: splaymultiset.cpp
-      title: "splaytree(multiset) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay"
+      path: Graph/aux_tree.cpp
+      title: "\u5727\u7E2E\u6728"
+    - icon: ':warning:'
+      path: Graph/hld.cpp
+      title: "HLD(\u975E\u53EF\u63DB)"
+    - icon: ':warning:'
+      path: Graph/hld2.cpp
+      title: "HLD(\u53EF\u63DB)"
+    - icon: ':warning:'
+      path: Graph/hld_utiliry.cpp
+      title: tree_utility(lca,jump,ances)
+    - icon: ':warning:'
+      path: Graph/rerootdp.cpp
+      title: "\u5168\u65B9\u4F4D\u6728DP"
+    - icon: ':warning:'
+      path: Graph/scc.cpp
+      title: "\u5F37\u9023\u7D50\u6210\u5206\u5206\u89E3"
+    - icon: ':warning:'
+      path: Graph/treefuncs.cpp
+      title: "\u6728\u306B\u95A2\u3059\u308Butility"
   verificationCategories:
   - name: DetaStructures/verify
     pages:
