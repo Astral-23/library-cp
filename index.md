@@ -18,87 +18,87 @@ data:
     - icon: ':warning:'
       path: Algorithms/twosat.cpp
       title: 2sat
-  - name: DetaStructures
+  - name: DataStructures
     pages:
     - icon: ':warning:'
-      path: DetaStructures/BIT.cpp
+      path: DataStructures/BIT.cpp
       title: BIT
     - icon: ':warning:'
-      path: DetaStructures/Binary_Trie.cpp
+      path: DataStructures/Binary_Trie.cpp
       title: Binary_Trie
     - icon: ':warning:'
-      path: DetaStructures/D2BIT.cpp
+      path: DataStructures/D2BIT.cpp
       title: 2DBIT
     - icon: ':warning:'
-      path: DetaStructures/DynamicSegTree.cpp
+      path: DataStructures/DynamicSegTree.cpp
       title: "\u52D5\u7684\u30BB\u30B0\u6728"
     - icon: ':heavy_check_mark:'
-      path: DetaStructures/LazySegTree.hpp
+      path: DataStructures/LazySegTree.hpp
       title: "\u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     - icon: ':warning:'
-      path: DetaStructures/SWAG.cpp
+      path: DataStructures/SWAG.cpp
       title: SWAG
     - icon: ':heavy_check_mark:'
-      path: DetaStructures/SegTree.hpp
+      path: DataStructures/SegTree.hpp
       title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     - icon: ':heavy_check_mark:'
-      path: DetaStructures/SegTree_with_binary-search.hpp
+      path: DataStructures/SegTree_with_binary-search.hpp
       title: "\u30BB\u30B0\u6728 + \u4E8C\u5206\u63A2\u7D22"
     - icon: ':warning:'
-      path: DetaStructures/Treap.cpp
+      path: DataStructures/Treap.cpp
       title: Treap
     - icon: ':warning:'
-      path: DetaStructures/Treap2.cpp
+      path: DataStructures/Treap2.cpp
       title: "Treap(\u5024\u96C6\u7D04\u306A\u3057)"
     - icon: ':warning:'
-      path: DetaStructures/btrietree.cpp
+      path: DataStructures/btrietree.cpp
       title: range xor range min
     - icon: ':warning:'
-      path: DetaStructures/dynamic_connectivity.cpp
+      path: DataStructures/dynamic_connectivity.cpp
       title: dynamic_connectivity
+    - icon: ':heavy_check_mark:'
+      path: DataStructures/fastset.hpp
+      title: DataStructures/fastset.hpp
     - icon: ':warning:'
-      path: DetaStructures/fastset.cpp
-      title: "\u975E\u8CA0\u6574\u6570\u3092\u7BA1\u7406\u3059\u308B64\u5206\u6728"
-    - icon: ':warning:'
-      path: DetaStructures/li_chao_tree.cpp
+      path: DataStructures/li_chao_tree.cpp
       title: Li chao tree
     - icon: ':warning:'
-      path: DetaStructures/monotone_CHT.cpp
+      path: DataStructures/monotone_CHT.cpp
       title: "\u5165\u529B\u304C\u5358\u8ABF\u306ACHT"
     - icon: ':warning:'
-      path: DetaStructures/online2Dseg.cpp
+      path: DataStructures/online2Dseg.cpp
       title: "\u52D5\u76842\u6B21\u5143\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     - icon: ':warning:'
-      path: DetaStructures/rangeset.cpp
+      path: DataStructures/rangeset.cpp
       title: "\u533A\u9593\u3092\u7BA1\u7406\u3059\u308Bset"
     - icon: ':warning:'
-      path: DetaStructures/rangeset2.cpp
+      path: DataStructures/rangeset2.cpp
       title: "\u533A\u9593\u3092\u7BA1\u7406\u3059\u308Bset( i], [i+1 \u3092\u7D71\
         \u5408\u3057\u306A\u3044ver)"
     - icon: ':warning:'
-      path: DetaStructures/splaymap.cpp
+      path: DataStructures/splaymap.cpp
       title: "splaytree(map) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay"
     - icon: ':warning:'
-      path: DetaStructures/splaymultiset.cpp
+      path: DataStructures/splaymultiset.cpp
       title: "splaytree(multiset) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay"
     - icon: ':warning:'
-      path: DetaStructures/splayset.cpp
+      path: DataStructures/splayset.cpp
       title: "splay_tree(set) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3\u306Bsplay"
     - icon: ':warning:'
-      path: DetaStructures/static2Drectanglesum.cpp
+      path: DataStructures/static2Drectanglesum.cpp
       title: "\u9759\u7684\u3067\u5DE8\u5927\u306A\u30B0\u30EA\u30C3\u30C9\u306E\u77E9\
         \u5F62\u548C"
     - icon: ':warning:'
-      path: DetaStructures/sum2D.cpp
+      path: DataStructures/sum2D.cpp
       title: "2\u6B21\u5143\u7D2F\u7A4D\u548C"
     - icon: ':warning:'
-      path: DetaStructures/top2.cpp
+      path: DataStructures/top2.cpp
       title: "top2(\u524A\u9664\u4E0D\u53EF)"
     - icon: ':warning:'
-      path: DetaStructures/undable_union-find.cpp
+      path: DataStructures/undable_union-find.cpp
       title: "undo\u53EF\u80FDunion_find"
     - icon: ':warning:'
-      path: DetaStructures/union-find.cpp
+      path: DataStructures/union-find.cpp
       title: Union-find
   - name: Graph
     pages:
@@ -198,6 +198,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: verify/SegTree.test.cpp
       title: verify/SegTree.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: verify/fastset.test.cpp
+      title: verify/fastset.test.cpp
     - icon: ':heavy_check_mark:'
       path: verify/lazyseg.test.cpp
       title: verify/lazyseg.test.cpp

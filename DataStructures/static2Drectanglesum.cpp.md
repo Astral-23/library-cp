@@ -11,7 +11,7 @@ data:
       \u77E9\u5F62\u548C"
     links:
     - https://onedrive.live.com/view.aspx?resid=CD510BE428DBA1E7%21106&authkey=!AFD6EO1-AReoPBk
-  bundledCode: "#line 1 \"DetaStructures/static2Drectanglesum.cpp\"\ntemplate<typename\
+  bundledCode: "#line 1 \"DataStructures/static2Drectanglesum.cpp\"\ntemplate<typename\
     \ T>\nstruct CC {\n  bool initialized;\n  vector<T> xs;\n  CC () : initialized(false)\
     \ {}\n  void add(T x) {xs.push_back(x);}\n  void init() {\n    sort(xs.begin(),\
     \ xs.end());\n    xs.erase(unique(xs.begin(), xs.end()), xs.end());\n    initialized\
@@ -277,16 +277,16 @@ data:
     \u77E9\u5F62\u548C\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/static2Drectanglesum.cpp
+  path: DataStructures/static2Drectanglesum.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:41:34+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/static2Drectanglesum.cpp
+documentation_of: DataStructures/static2Drectanglesum.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/static2Drectanglesum.cpp
-- /library/DetaStructures/static2Drectanglesum.cpp.html
+- /library/DataStructures/static2Drectanglesum.cpp
+- /library/DataStructures/static2Drectanglesum.cpp.html
 title: "\u9759\u7684\u3067\u5DE8\u5927\u306A\u30B0\u30EA\u30C3\u30C9\u306E\u77E9\u5F62\
   \u548C"
 ---

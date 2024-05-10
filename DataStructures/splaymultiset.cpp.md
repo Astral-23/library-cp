@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: "splaytree(multiset) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/splaymultiset.cpp\"\ntemplate<typename X>\n\
+  bundledCode: "#line 1 \"DataStructures/splaymultiset.cpp\"\ntemplate<typename X>\n\
     struct splay_multiset {\n    struct node_t {\n            X val;\n           \
     \ X acc;\n            int sum = 0;\n            node_t* lch;\n            node_t*\
     \ rch;\n            node_t(X v):  val(v), acc(v) {\n                sum = 1;\n\
@@ -602,15 +602,15 @@ data:
     /*\n@brief splaytree(multiset) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/splaymultiset.cpp
+  path: DataStructures/splaymultiset.cpp
   requiredBy: []
-  timestamp: '2024-05-10 23:04:54+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/splaymultiset.cpp
+documentation_of: DataStructures/splaymultiset.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/splaymultiset.cpp
-- /library/DetaStructures/splaymultiset.cpp.html
+- /library/DataStructures/splaymultiset.cpp
+- /library/DataStructures/splaymultiset.cpp.html
 title: "splaytree(multiset) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay"
 ---

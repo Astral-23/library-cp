@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: SWAG
     links: []
-  bundledCode: "#line 1 \"DetaStructures/SWAG.cpp\"\ntemplate<typename T>\nstruct\
+  bundledCode: "#line 1 \"DataStructures/SWAG.cpp\"\ntemplate<typename T>\nstruct\
     \ SWAG {\n    struct foldable_stack {\n        stack<T> data;\n        stack<T>\
     \ res;\n        foldable_stack(){}\n\n        void push(T a, int type) {//type\
     \ == 1 : \u914D\u5217\u306E\u53F3\u306B\u8FFD\u52A0\u3001\u3064\u307E\u308AR \
@@ -98,15 +98,15 @@ data:
     \n/*\n@brief SWAG\n\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/SWAG.cpp
+  path: DataStructures/SWAG.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:41:34+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/SWAG.cpp
+documentation_of: DataStructures/SWAG.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/SWAG.cpp
-- /library/DetaStructures/SWAG.cpp.html
+- /library/DataStructures/SWAG.cpp
+- /library/DataStructures/SWAG.cpp.html
 title: SWAG
 ---

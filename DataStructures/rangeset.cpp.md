@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: "\u533A\u9593\u3092\u7BA1\u7406\u3059\u308Bset"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/rangeset.cpp\"\ntemplate<typename T>\nstruct\
+  bundledCode: "#line 1 \"DataStructures/rangeset.cpp\"\ntemplate<typename T>\nstruct\
     \ rangeset {//\u533A\u9593\u3092\u7BA1\u7406\u3059\u308B\u3002\u3064\u3044\u3067\
     \u3067\u3001mex\u3092\u53D6\u5F97\u3067\u304D\u308B\u3002\n    set<pair<T, T>>\
     \ s;\n    long long sum; //\u533A\u9593\u9577\u306E\u5408\u8A08\u3002\n\n    rangeset()\
@@ -220,15 +220,15 @@ data:
     \n\t\t*/\n         \n};"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/rangeset.cpp
+  path: DataStructures/rangeset.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:41:34+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/rangeset.cpp
+documentation_of: DataStructures/rangeset.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/rangeset.cpp
-- /library/DetaStructures/rangeset.cpp.html
+- /library/DataStructures/rangeset.cpp
+- /library/DataStructures/rangeset.cpp.html
 title: "\u533A\u9593\u3092\u7BA1\u7406\u3059\u308Bset"
 ---

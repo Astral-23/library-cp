@@ -13,7 +13,7 @@ data:
     _deprecated_at_docs: docs/segtree.md
     document_title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/SegTree.hpp\"\ntemplate<typename T>\nstruct\
+  bundledCode: "#line 1 \"DataStructures/SegTree.hpp\"\ntemplate<typename T>\nstruct\
     \ SegTree {\n    int n;\n    vector<T> dat;\n\n         \n    SegTree(int siz)\
     \ {\n        n = 1;\n        while(n < siz) n <<= 1;\n        dat.resize(n * 2,\
     \ T::ide());\n    }\n\n    private:\n         \n        T query(int l, int r)\
@@ -52,17 +52,17 @@ data:
     /*\n@brief \u30BB\u30B0\u30E1\u30F3\u30C8\u6728\n@docs docs/segtree.md\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/SegTree.hpp
+  path: DataStructures/SegTree.hpp
   requiredBy: []
-  timestamp: '2024-05-10 23:50:54+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - verify/SegTree.test.cpp
-documentation_of: DetaStructures/SegTree.hpp
+documentation_of: DataStructures/SegTree.hpp
 layout: document
 redirect_from:
-- /library/DetaStructures/SegTree.hpp
-- /library/DetaStructures/SegTree.hpp.html
+- /library/DataStructures/SegTree.hpp
+- /library/DataStructures/SegTree.hpp.html
 title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
 ---
 ## テスト

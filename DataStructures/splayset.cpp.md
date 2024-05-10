@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: "splay_tree(set) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3\u306Bsplay"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/splayset.cpp\"\n\ntemplate<typename X>\n\
+  bundledCode: "#line 1 \"DataStructures/splayset.cpp\"\n\ntemplate<typename X>\n\
     struct splay_set {\n    struct node_t {\n            X val;\n            X acc;\n\
     \            int sum = 0;\n            node_t* lch;\n            node_t* rch;\n\
     \            node_t(X v):  val(v), acc(v) {\n                sum = 1;\n      \
@@ -580,15 +580,15 @@ data:
     \u30A6\u30F3\u306Bsplay\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/splayset.cpp
+  path: DataStructures/splayset.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:51:35+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/splayset.cpp
+documentation_of: DataStructures/splayset.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/splayset.cpp
-- /library/DetaStructures/splayset.cpp.html
+- /library/DataStructures/splayset.cpp
+- /library/DataStructures/splayset.cpp.html
 title: "splay_tree(set) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3\u306Bsplay"
 ---

@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: Li chao tree
     links: []
-  bundledCode: "#line 1 \"DetaStructures/li_chao_tree.cpp\"\ntemplate<typename T>\n\
+  bundledCode: "#line 1 \"DataStructures/li_chao_tree.cpp\"\ntemplate<typename T>\n\
     struct li_chao_tree {\n    struct line {\n        T a, b; // y = ax + b\n    \
     \    line (T _a, T _b) : a(_a), b(_b) {}\n        bool operator==(const line &c)\
     \ {return a == c.a && b == c.b;}\n        bool operator!=(const line& c) {return\
@@ -64,15 +64,15 @@ data:
     \ chao tree\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/li_chao_tree.cpp
+  path: DataStructures/li_chao_tree.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:41:34+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/li_chao_tree.cpp
+documentation_of: DataStructures/li_chao_tree.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/li_chao_tree.cpp
-- /library/DetaStructures/li_chao_tree.cpp.html
+- /library/DataStructures/li_chao_tree.cpp
+- /library/DataStructures/li_chao_tree.cpp.html
 title: Li chao tree
 ---

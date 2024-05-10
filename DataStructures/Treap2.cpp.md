@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: "Treap(\u5024\u96C6\u7D04\u306A\u3057)"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/Treap2.cpp\"\nclass xorshift {\n    uint64_t\
+  bundledCode: "#line 1 \"DataStructures/Treap2.cpp\"\nclass xorshift {\n    uint64_t\
     \ x;\n    public:\n        xorshift() {\n            mt19937 rnd(chrono::steady_clock::now().time_since_epoch().count());\n\
     \            x = rnd();\n            for (int i = 0; i < 100; i++) {\n       \
     \         random();\n            }\n        }\n        uint64_t random() {\n \
@@ -117,15 +117,15 @@ data:
     \u306A\u3057)\n*/\n\n"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/Treap2.cpp
+  path: DataStructures/Treap2.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:51:35+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/Treap2.cpp
+documentation_of: DataStructures/Treap2.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/Treap2.cpp
-- /library/DetaStructures/Treap2.cpp.html
+- /library/DataStructures/Treap2.cpp
+- /library/DataStructures/Treap2.cpp.html
 title: "Treap(\u5024\u96C6\u7D04\u306A\u3057)"
 ---

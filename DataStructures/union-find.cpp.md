@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: Union-find
     links: []
-  bundledCode: "#line 1 \"DetaStructures/union-find.cpp\"\nstruct Union {   \n   \
+  bundledCode: "#line 1 \"DataStructures/union-find.cpp\"\nstruct Union {   \n   \
     \ vector<int> Par;\n    vector<int> size;\n \n\n    Union(int N) {\n        Par.resize(N+1);\n\
     \        size.resize(N+1, 1);\n        for (int i = 1; i <= N; i++) {\n      \
     \      Par[i] = i;\n            \n        }\n    }\n  \n    int root(int u) {\n\
@@ -80,15 +80,15 @@ data:
     \ = false;\n        return res;\n    }  \n};\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/union-find.cpp
+  path: DataStructures/union-find.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:44:19+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/union-find.cpp
+documentation_of: DataStructures/union-find.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/union-find.cpp
-- /library/DetaStructures/union-find.cpp.html
+- /library/DataStructures/union-find.cpp
+- /library/DataStructures/union-find.cpp.html
 title: Union-find
 ---

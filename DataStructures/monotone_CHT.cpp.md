@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: "\u5165\u529B\u304C\u5358\u8ABF\u306ACHT"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/monotone_CHT.cpp\"\nstruct CHT { //\u6700\
+  bundledCode: "#line 1 \"DataStructures/monotone_CHT.cpp\"\nstruct CHT { //\u6700\
     \u5927\u5024ver//\u6700\u5C0F\u5024\u306A\u3089-1\u304B\u3051\u308B\u3068\u304B\
     \u3057\u3066\n  struct linear {\n    ll a, b;\n    linear(ll a = 0, ll b = 0)\
     \ : a(a), b(b){}\n    ll operator()(ll x) const {return a * x + b;}\n  };\n\n\
@@ -42,15 +42,15 @@ data:
     \u304C\u5358\u8ABF\u306ACHT\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/monotone_CHT.cpp
+  path: DataStructures/monotone_CHT.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:41:34+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/monotone_CHT.cpp
+documentation_of: DataStructures/monotone_CHT.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/monotone_CHT.cpp
-- /library/DetaStructures/monotone_CHT.cpp.html
+- /library/DataStructures/monotone_CHT.cpp
+- /library/DataStructures/monotone_CHT.cpp.html
 title: "\u5165\u529B\u304C\u5358\u8ABF\u306ACHT"
 ---

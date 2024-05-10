@@ -12,7 +12,7 @@ data:
   attributes:
     document_title: "\u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/LazySegTree.hpp\"\n\ntemplate<typename X,\
+  bundledCode: "#line 1 \"DataStructures/LazySegTree.hpp\"\n\ntemplate<typename X,\
     \ typename E>\nstruct LazySegTree {\n    using FX = function<X(X, E, long long)>;//X\u306B\
     \u4F5C\u7528\u7D20M\u3092\u4F5C\u7528\u3055\u305B\u308B\n    \n    int n;\n  \
     \  int siz;\n    FX fx; \n    vector<X> dat;\n    vector<E> lazy;\n    LazySegTree(int\
@@ -78,16 +78,16 @@ data:
     \u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u6728\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/LazySegTree.hpp
+  path: DataStructures/LazySegTree.hpp
   requiredBy: []
-  timestamp: '2024-05-11 01:56:04+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - verify/lazyseg.test.cpp
-documentation_of: DetaStructures/LazySegTree.hpp
+documentation_of: DataStructures/LazySegTree.hpp
 layout: document
 redirect_from:
-- /library/DetaStructures/LazySegTree.hpp
-- /library/DetaStructures/LazySegTree.hpp.html
+- /library/DataStructures/LazySegTree.hpp
+- /library/DataStructures/LazySegTree.hpp.html
 title: "\u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
 ---

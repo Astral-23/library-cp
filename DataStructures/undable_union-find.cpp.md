@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: "undo\u53EF\u80FDunion_find"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/undable_union-find.cpp\"\nstruct Union {\
+  bundledCode: "#line 1 \"DataStructures/undable_union-find.cpp\"\nstruct Union {\
     \   \n\tprivate:\n\t    struct data {\n            int a, b;\n\t\t\tint par_b;\n\
     \t\t\tint siz_a;\n\t\t\tint edge_a;\n\n\t\t\tdata(){}\n\t\t\tdata(int _a, int\
     \ _b, int _par_b, int _siz_a, int _edge_a) : a(_a), b(_b), par_b(_par_b), siz_a(_siz_a),\
@@ -76,15 +76,15 @@ data:
     \u304C\u306A\u3044\u3002\n\t\t*/\n      \n};"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/undable_union-find.cpp
+  path: DataStructures/undable_union-find.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:41:34+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/undable_union-find.cpp
+documentation_of: DataStructures/undable_union-find.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/undable_union-find.cpp
-- /library/DetaStructures/undable_union-find.cpp.html
+- /library/DataStructures/undable_union-find.cpp
+- /library/DataStructures/undable_union-find.cpp.html
 title: "undo\u53EF\u80FDunion_find"
 ---

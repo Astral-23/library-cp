@@ -2,7 +2,7 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: DetaStructures/LazySegTree.hpp
+    path: DataStructures/LazySegTree.hpp
     title: "\u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
   - icon: ':heavy_check_mark:'
     path: Utilities/modint998.hpp
@@ -41,7 +41,7 @@ data:
     \ os, const modint& a) { return os << a.x;}\n    bool operator==(const modint&\
     \ a) const {return x == a.x;}\n    bool operator!=(const modint& a) const {return\
     \ x != a.x;}\n    bool operator<(const modint& a) const {return x < a.x;}\n};\n\
-    using mint = modint<998244353>;\n/*\n@brief modint998244353\n*/\n#line 1 \"DetaStructures/LazySegTree.hpp\"\
+    using mint = modint<998244353>;\n/*\n@brief modint998244353\n*/\n#line 1 \"DataStructures/LazySegTree.hpp\"\
     \n\ntemplate<typename X, typename E>\nstruct LazySegTree {\n    using FX = function<X(X,\
     \ E, long long)>;//X\u306B\u4F5C\u7528\u7D20M\u3092\u4F5C\u7528\u3055\u305B\u308B\
     \n    \n    int n;\n    int siz;\n    FX fx; \n    vector<X> dat;\n    vector<E>\
@@ -99,7 +99,7 @@ data:
     }\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/range_affine_range_sum\"\
     \n#include<bits/stdc++.h>\nusing namespace std;\n#include \"../Utilities/modint998.hpp\"\
-    \n#include \"../DetaStructures/LazySegTree.hpp\"\nusing ll = long long;\nusing\
+    \n#include \"../DataStructures/LazySegTree.hpp\"\nusing ll = long long;\nusing\
     \ vvl = vector<vector<ll>>;\nusing vl = vector<ll>;\n#define rep(i, s, f) for(long\
     \ long i = s; i <= f; i++)\n#define ENDL '\\n'\n\n\nstruct Monoid {\n    mint\
     \ a;\n   \n    Monoid(){}\n      \n    Monoid(mint _a) : a(_a) {\n      \n   \
@@ -124,11 +124,11 @@ data:
     \   l++;\n            cout << seg.get(l,r).a << endl;\n\n        }\n    }\n\n}"
   dependsOn:
   - Utilities/modint998.hpp
-  - DetaStructures/LazySegTree.hpp
+  - DataStructures/LazySegTree.hpp
   isVerificationFile: true
   path: verify/lazyseg.test.cpp
   requiredBy: []
-  timestamp: '2024-05-11 02:53:27+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: verify/lazyseg.test.cpp

@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: Binary_Trie
     links: []
-  bundledCode: "#line 1 \"DetaStructures/Binary_Trie.cpp\"\ntemplate<typename X, typename\
+  bundledCode: "#line 1 \"DataStructures/Binary_Trie.cpp\"\ntemplate<typename X, typename\
     \ S>\nstruct Binary_Trie {\n    struct Node {\n          Node* l = nullptr;\n\
     \          Node* r = nullptr;\n          S s = 0; \n          X lazy = 0;\n  \
     \        Node (){}\n    };\n\n    int W = 0;\n\tBinary_Trie(){}\n    Binary_Trie(int\
@@ -192,15 +192,15 @@ data:
     \u3068\u306BO(W)\n\n\t\t\n\t\t*/\n};    \n"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/Binary_Trie.cpp
+  path: DataStructures/Binary_Trie.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:41:34+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/Binary_Trie.cpp
+documentation_of: DataStructures/Binary_Trie.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/Binary_Trie.cpp
-- /library/DetaStructures/Binary_Trie.cpp.html
+- /library/DataStructures/Binary_Trie.cpp
+- /library/DataStructures/Binary_Trie.cpp.html
 title: Binary_Trie
 ---

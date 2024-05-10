@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: "top2(\u524A\u9664\u4E0D\u53EF)"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/top2.cpp\"\ntemplate<typename K, typename\
+  bundledCode: "#line 1 \"DataStructures/top2.cpp\"\ntemplate<typename K, typename\
     \ X>\nstruct top2 {\n    struct D {\n        K key;\n        X val;\n    \n  \
     \      D(){}\n        D(K _key, X _val) : key(_key), val(_val){}\n    \n     \
     \   static D ide() {\n            //Edit here   return D(-1, -BIG);\n        }\n\
@@ -44,15 +44,15 @@ data:
     \u610F\uFF1A\u524A\u9664\u4E0D\u53EF        \n    */\n};"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/top2.cpp
+  path: DataStructures/top2.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:41:34+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/top2.cpp
+documentation_of: DataStructures/top2.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/top2.cpp
-- /library/DetaStructures/top2.cpp.html
+- /library/DataStructures/top2.cpp
+- /library/DataStructures/top2.cpp.html
 title: "top2(\u524A\u9664\u4E0D\u53EF)"
 ---

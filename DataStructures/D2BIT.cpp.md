@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: 2DBIT
     links: []
-  bundledCode: "#line 1 \"DetaStructures/D2BIT.cpp\"\ntemplate<typename T>\nstruct\
+  bundledCode: "#line 1 \"DataStructures/D2BIT.cpp\"\ntemplate<typename T>\nstruct\
     \ D2BIT {\n    int H, W;\n    vector<vector<T>> dat;\n\n    D2BIT(int _H, int\
     \ _W) : H(_H), W(_W){\n        dat.resize(H+1);\n        for(int i = 1; i <= H;\
     \ i++)dat[i].resize(W+1, 0);\n    }\n    \n\n    private:\n\n        void change__(int\
@@ -49,15 +49,15 @@ data:
     @brief 2DBIT\n\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/D2BIT.cpp
+  path: DataStructures/D2BIT.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:41:34+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/D2BIT.cpp
+documentation_of: DataStructures/D2BIT.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/D2BIT.cpp
-- /library/DetaStructures/D2BIT.cpp.html
+- /library/DataStructures/D2BIT.cpp
+- /library/DataStructures/D2BIT.cpp.html
 title: 2DBIT
 ---

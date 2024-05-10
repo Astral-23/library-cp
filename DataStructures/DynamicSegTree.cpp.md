@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: "\u52D5\u7684\u30BB\u30B0\u6728"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/DynamicSegTree.cpp\"\ntemplate<typename X,\
+  bundledCode: "#line 1 \"DataStructures/DynamicSegTree.cpp\"\ntemplate<typename X,\
     \ typename W>\nstruct DynamicSegTree {// max_pos < LLONG_MAX(\u958B\u533A\u9593\
     \u306E\u5F0A\u5BB3)\n    \n\n    W  min_pos;\n    W  max_pos;//\u6E21\u3059\u6642\
     \u306F\u9589\u533A\u9593\u3060\u304C\u3001\u958B\u533A\u9593\u3067\u6271\u3046\
@@ -130,15 +130,15 @@ data:
     \ Monoid(1, 0);\n\t}\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/DynamicSegTree.cpp
+  path: DataStructures/DynamicSegTree.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:41:34+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/DynamicSegTree.cpp
+documentation_of: DataStructures/DynamicSegTree.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/DynamicSegTree.cpp
-- /library/DetaStructures/DynamicSegTree.cpp.html
+- /library/DataStructures/DynamicSegTree.cpp
+- /library/DataStructures/DynamicSegTree.cpp.html
 title: "\u52D5\u7684\u30BB\u30B0\u6728"
 ---

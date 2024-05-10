@@ -2,7 +2,7 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: DetaStructures/SegTree.hpp
+    path: DataStructures/SegTree.hpp
     title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
   - icon: ':heavy_check_mark:'
     path: Utilities/modint998.hpp
@@ -41,7 +41,7 @@ data:
     \ os, const modint& a) { return os << a.x;}\n    bool operator==(const modint&\
     \ a) const {return x == a.x;}\n    bool operator!=(const modint& a) const {return\
     \ x != a.x;}\n    bool operator<(const modint& a) const {return x < a.x;}\n};\n\
-    using mint = modint<998244353>;\n/*\n@brief modint998244353\n*/\n#line 1 \"DetaStructures/SegTree.hpp\"\
+    using mint = modint<998244353>;\n/*\n@brief modint998244353\n*/\n#line 1 \"DataStructures/SegTree.hpp\"\
     \ntemplate<typename T>\nstruct SegTree {\n    int n;\n    vector<T> dat;\n\n \
     \        \n    SegTree(int siz) {\n        n = 1;\n        while(n < siz) n <<=\
     \ 1;\n        dat.resize(n * 2, T::ide());\n    }\n\n    private:\n         \n\
@@ -77,7 +77,7 @@ data:
     n';\n        }\n    }\n    \n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/point_set_range_composite\"\
     \n#include<bits/stdc++.h>\nusing namespace std;\n#include \"../Utilities/modint998.hpp\"\
-    \n#include \"../DetaStructures/SegTree.hpp\"\n\nstruct Monoid {\n    mint a, b;\n\
+    \n#include \"../DataStructures/SegTree.hpp\"\n\nstruct Monoid {\n    mint a, b;\n\
     \    \n    Monoid(){}\n    Monoid(mint _a, mint _b) : a(_a), b(_b){};\n\n    friend\
     \ Monoid op(const Monoid& l, const Monoid& r) {\n        Monoid res;\n       \
     \ res.a = l.a * r.a;\n        res.b = r.a * l.b + r.b;\n        return res;\n\
@@ -94,11 +94,11 @@ data:
     n';\n        }\n    }\n    \n}"
   dependsOn:
   - Utilities/modint998.hpp
-  - DetaStructures/SegTree.hpp
+  - DataStructures/SegTree.hpp
   isVerificationFile: true
   path: verify/SegTree.test.cpp
   requiredBy: []
-  timestamp: '2024-05-11 01:28:41+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: verify/SegTree.test.cpp

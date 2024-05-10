@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: range xor range min
     links: []
-  bundledCode: "#line 1 \"DetaStructures/btrietree.cpp\"\ntemplate<typename X, typename\
+  bundledCode: "#line 1 \"DataStructures/btrietree.cpp\"\ntemplate<typename X, typename\
     \ S>\nstruct Binary_Trie {\n    struct Node {\n          Node* l = nullptr;\n\
     \          Node* r = nullptr;\n          S s = 0; \n          X lazy = 0;\n  \
     \        Node (){}\n    };\n\n    int W = 0;\n\tBinary_Trie(){}\n    Binary_Trie(int\
@@ -237,15 +237,15 @@ data:
     \   }\n         \n};\n\n/*\n@brief range xor range min\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/btrietree.cpp
+  path: DataStructures/btrietree.cpp
   requiredBy: []
-  timestamp: '2024-05-10 23:25:33+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/btrietree.cpp
+documentation_of: DataStructures/btrietree.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/btrietree.cpp
-- /library/DetaStructures/btrietree.cpp.html
+- /library/DataStructures/btrietree.cpp
+- /library/DataStructures/btrietree.cpp.html
 title: range xor range min
 ---

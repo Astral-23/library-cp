@@ -2,7 +2,7 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: DetaStructures/SegTree_with_binary-search.hpp
+    path: DataStructures/SegTree_with_binary-search.hpp
     title: "\u30BB\u30B0\u6728 + \u4E8C\u5206\u63A2\u7D22"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
@@ -15,7 +15,7 @@ data:
     links:
     - https://judge.yosupo.jp/problem/predecessor_problem
   bundledCode: "#line 1 \"verify/segwithbsearch.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/predecessor_problem\"\
-    \n#include<bits/stdc++.h>\nusing namespace std;\n#line 1 \"DetaStructures/SegTree_with_binary-search.hpp\"\
+    \n#include<bits/stdc++.h>\nusing namespace std;\n#line 1 \"DataStructures/SegTree_with_binary-search.hpp\"\
     \ntemplate<typename T>\nstruct SegTree {\n    int n;\n    vector<T> dat;\n\n \
     \        \n    SegTree(int siz) {\n        n = 1;\n        while(n < siz) n <<=\
     \ 1;\n        dat.resize(n * 2, T::ide());\n    }\n\n    private:\n         \n\
@@ -77,7 +77,7 @@ data:
     \  else {\n           int res = seg.max_left(k+1, nex);\n\t\t   if(res==-1) cout\
     \ << -1 << '\\n';\n\t\t   else cout << res-1 << '\\n';\n\t\t}\n    }\n}\n\n\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/predecessor_problem\"\n\
-    #include<bits/stdc++.h>\nusing namespace std;\n#include \"../DetaStructures/SegTree_with_binary-search.hpp\"\
+    #include<bits/stdc++.h>\nusing namespace std;\n#include \"../DataStructures/SegTree_with_binary-search.hpp\"\
     \nusing ll = long long;\nusing vvl = vector<vector<ll>>;\nusing vl = vector<ll>;\n\
     #define rep(i, s, f) for(long long i = s; i <= f; i++)\n#define ENDL '\\n'\n\n\
     \n\nstruct Monoid {\n    int a;\n   \n    Monoid(){}\n      \n    Monoid(int _a)\
@@ -97,11 +97,11 @@ data:
     \  else {\n           int res = seg.max_left(k+1, nex);\n\t\t   if(res==-1) cout\
     \ << -1 << '\\n';\n\t\t   else cout << res-1 << '\\n';\n\t\t}\n    }\n}\n\n\n"
   dependsOn:
-  - DetaStructures/SegTree_with_binary-search.hpp
+  - DataStructures/SegTree_with_binary-search.hpp
   isVerificationFile: true
   path: verify/segwithbsearch.test.cpp
   requiredBy: []
-  timestamp: '2024-05-11 02:53:27+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: verify/segwithbsearch.test.cpp

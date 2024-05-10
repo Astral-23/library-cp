@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: "2\u6B21\u5143\u7D2F\u7A4D\u548C"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/sum2D.cpp\"\ntemplate<typename T>\nstruct\
+  bundledCode: "#line 1 \"DataStructures/sum2D.cpp\"\ntemplate<typename T>\nstruct\
     \ sum2D {\n    int H; int W;\n    vector<vector<T>> table;\n\tbool inited;\n\n\
     \    sum2D(int _H, int _W) : H(_H), W(_W) {\n        table = vector<vector<T>>(H+1,\
     \ vector<T>(W+1, T(0)));\n\t\tinited = false;\n    }\n\n\tsum2D(vector<vector<T>>&\
@@ -64,15 +64,15 @@ data:
     \u3002 O(1)\n        \n        */\n\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/sum2D.cpp
+  path: DataStructures/sum2D.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:41:34+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/sum2D.cpp
+documentation_of: DataStructures/sum2D.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/sum2D.cpp
-- /library/DetaStructures/sum2D.cpp.html
+- /library/DataStructures/sum2D.cpp
+- /library/DataStructures/sum2D.cpp.html
 title: "2\u6B21\u5143\u7D2F\u7A4D\u548C"
 ---

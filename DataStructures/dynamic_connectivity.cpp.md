@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: dynamic_connectivity
     links: []
-  bundledCode: "#line 1 \"DetaStructures/dynamic_connectivity.cpp\"\nstruct dynamic_connectivity\
+  bundledCode: "#line 1 \"DataStructures/dynamic_connectivity.cpp\"\nstruct dynamic_connectivity\
     \ {\n    struct euler_tour_tree {\n    \tstruct node_t;\n    \tusing np = node_t*;\n\
     \    \tstruct node_t {\n    \t\tnode_t *lch, *rch, *par;\n\t\t\tint s, t;\n  \
     \  \t\tint sz;\n\t\t\tbool exact;//\u3053\u306E\u30CE\u30FC\u30C9(\u8FBA) \u306E\
@@ -312,15 +312,15 @@ data:
     \u5206\u306E\u9802\u70B9 O(logN + |SIZE|)  \u672Averify\n\t\t*/\n\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/dynamic_connectivity.cpp
+  path: DataStructures/dynamic_connectivity.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:51:35+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/dynamic_connectivity.cpp
+documentation_of: DataStructures/dynamic_connectivity.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/dynamic_connectivity.cpp
-- /library/DetaStructures/dynamic_connectivity.cpp.html
+- /library/DataStructures/dynamic_connectivity.cpp
+- /library/DataStructures/dynamic_connectivity.cpp.html
 title: dynamic_connectivity
 ---

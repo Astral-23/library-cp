@@ -12,7 +12,7 @@ data:
   attributes:
     document_title: "\u30BB\u30B0\u6728 + \u4E8C\u5206\u63A2\u7D22"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/SegTree_with_binary-search.hpp\"\ntemplate<typename\
+  bundledCode: "#line 1 \"DataStructures/SegTree_with_binary-search.hpp\"\ntemplate<typename\
     \ T>\nstruct SegTree {\n    int n;\n    vector<T> dat;\n\n         \n    SegTree(int\
     \ siz) {\n        n = 1;\n        while(n < siz) n <<= 1;\n        dat.resize(n\
     \ * 2, T::ide());\n    }\n\n    private:\n         \n        T query(int l, int\
@@ -98,16 +98,16 @@ data:
     \u30B0\u6728 + \u4E8C\u5206\u63A2\u7D22\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/SegTree_with_binary-search.hpp
+  path: DataStructures/SegTree_with_binary-search.hpp
   requiredBy: []
-  timestamp: '2024-05-11 02:53:27+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - verify/segwithbsearch.test.cpp
-documentation_of: DetaStructures/SegTree_with_binary-search.hpp
+documentation_of: DataStructures/SegTree_with_binary-search.hpp
 layout: document
 redirect_from:
-- /library/DetaStructures/SegTree_with_binary-search.hpp
-- /library/DetaStructures/SegTree_with_binary-search.hpp.html
+- /library/DataStructures/SegTree_with_binary-search.hpp
+- /library/DataStructures/SegTree_with_binary-search.hpp.html
 title: "\u30BB\u30B0\u6728 + \u4E8C\u5206\u63A2\u7D22"
 ---

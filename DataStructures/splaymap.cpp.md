@@ -9,7 +9,7 @@ data:
   attributes:
     document_title: "splaytree(map) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/splaymap.cpp\"\ntemplate<typename K, typename\
+  bundledCode: "#line 1 \"DataStructures/splaymap.cpp\"\ntemplate<typename K, typename\
     \ X>\nstruct node_t {\n        K key;\n        X val;\n        int sum = 0;\n\
     \        node_t* lch;\n        node_t* rch;\n        node_t(K k, X v): key(k),\
     \ val(v) {\n            sum = 1;\n            lch = nullptr;\n            rch\
@@ -507,15 +507,15 @@ data:
     \u30C0\u30A6\u30F3splay\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/splaymap.cpp
+  path: DataStructures/splaymap.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:51:35+09:00'
+  timestamp: '2024-05-11 03:22:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DetaStructures/splaymap.cpp
+documentation_of: DataStructures/splaymap.cpp
 layout: document
 redirect_from:
-- /library/DetaStructures/splaymap.cpp
-- /library/DetaStructures/splaymap.cpp.html
+- /library/DataStructures/splaymap.cpp
+- /library/DataStructures/splaymap.cpp.html
 title: "splaytree(map) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay"
 ---
