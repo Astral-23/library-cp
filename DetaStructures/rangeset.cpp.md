@@ -7,7 +7,7 @@ data:
   _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
-    document_title: ": \u533A\u9593\u3092\u7BA1\u7406\u3059\u308Bset"
+    document_title: "\u533A\u9593\u3092\u7BA1\u7406\u3059\u308Bset"
     links: []
   bundledCode: "#line 1 \"DetaStructures/rangeset.cpp\"\ntemplate<typename T>\nstruct\
     \ rangeset {//\u533A\u9593\u3092\u7BA1\u7406\u3059\u308B\u3002\u3064\u3044\u3067\
@@ -101,19 +101,19 @@ data:
     \   int size() {\n            return int(s.size()) - 2;\n        }\n\n       \
     \ long long getsum() {\n            return sum;\n        }\n\n\t\t/*\n\t\t   \
     \ rangeset<T>   T...\u533A\u9593\u306E\u6065\u3092\u8868\u3059\u6574\u6570\u306E\
-    \u578B O(1)  \u901A\u5E38: int or long long\n\t\t\t@brief : \u533A\u9593\u3092\
-    \u7BA1\u7406\u3059\u308Bset\n\t\t\tcount(x) ... x\u304C\u542B\u307E\u308C\u308B\
-    \u304B   O(logN)\n\t\t\tinsert(x) ... x\u3092\u633F\u5165\u3002\u5B58\u5728\u3059\
-    \u308B\u306A\u3089\u4F55\u3082\u3057\u306A\u3044  O(logN)\n\t\t\terase(x) ...\
-    \ x\u3092\u524A\u9664\u3002\u5B58\u5728\u3059\u308B\u306A\u3089\u4F55\u3082\u3057\
-    \u306A\u3044 O(logN)\n\t\t\tinsert(l, r) ... [l, r]\u3092\u633F\u5165\u3002[l,\
-    \ r]\u3092\u5185\u5305\u3059\u308B\u533A\u9593\u304C\u3042\u3063\u305F\u3089\u4F55\
-    \u3082\u3057\u306A\u3044 O(logN)\n\t\t\terase(l, r) ... [l, r]\u3092\u524A\u9664\
-    \u3002[l, r]\u304C\u5B8C\u5168\u306B\u306A\u304B\u3063\u305F\u3089\u4F55\u3057\
-    \u306A\u3044  O(logN)\n\t\t\tmex(x) ... [x, LLONG_MAX]\u3067\u5B58\u5728\u3057\
-    \u306A\u3044\u6700\u5C0F\u306E\u8981\u7D20  O(logN)\n\t\t\tsize() ... \u533A\u9593\
-    \u306E\u7DCF\u6570 O(1)\n\t\t\tgetsum()... \u8981\u7D20\u306E\u7DCF\u6570 O(1)\n\
-    \t\t\n\t\t*/\n         \n};\n"
+    \u578B O(1)  \u901A\u5E38: int or long long\n\t\t\t@brief \u533A\u9593\u3092\u7BA1\
+    \u7406\u3059\u308Bset\n\t\t\tcount(x) ... x\u304C\u542B\u307E\u308C\u308B\u304B\
+    \   O(logN)\n\t\t\tinsert(x) ... x\u3092\u633F\u5165\u3002\u5B58\u5728\u3059\u308B\
+    \u306A\u3089\u4F55\u3082\u3057\u306A\u3044  O(logN)\n\t\t\terase(x) ... x\u3092\
+    \u524A\u9664\u3002\u5B58\u5728\u3059\u308B\u306A\u3089\u4F55\u3082\u3057\u306A\
+    \u3044 O(logN)\n\t\t\tinsert(l, r) ... [l, r]\u3092\u633F\u5165\u3002[l, r]\u3092\
+    \u5185\u5305\u3059\u308B\u533A\u9593\u304C\u3042\u3063\u305F\u3089\u4F55\u3082\
+    \u3057\u306A\u3044 O(logN)\n\t\t\terase(l, r) ... [l, r]\u3092\u524A\u9664\u3002\
+    [l, r]\u304C\u5B8C\u5168\u306B\u306A\u304B\u3063\u305F\u3089\u4F55\u3057\u306A\
+    \u3044  O(logN)\n\t\t\tmex(x) ... [x, LLONG_MAX]\u3067\u5B58\u5728\u3057\u306A\
+    \u3044\u6700\u5C0F\u306E\u8981\u7D20  O(logN)\n\t\t\tsize() ... \u533A\u9593\u306E\
+    \u7DCF\u6570 O(1)\n\t\t\tgetsum()... \u8981\u7D20\u306E\u7DCF\u6570 O(1)\n\t\t\
+    \n\t\t*/\n         \n};\n"
   code: "template<typename T>\nstruct rangeset {//\u533A\u9593\u3092\u7BA1\u7406\u3059\
     \u308B\u3002\u3064\u3044\u3067\u3067\u3001mex\u3092\u53D6\u5F97\u3067\u304D\u308B\
     \u3002\n    set<pair<T, T>> s;\n    long long sum; //\u533A\u9593\u9577\u306E\u5408\
@@ -205,24 +205,24 @@ data:
     \   int size() {\n            return int(s.size()) - 2;\n        }\n\n       \
     \ long long getsum() {\n            return sum;\n        }\n\n\t\t/*\n\t\t   \
     \ rangeset<T>   T...\u533A\u9593\u306E\u6065\u3092\u8868\u3059\u6574\u6570\u306E\
-    \u578B O(1)  \u901A\u5E38: int or long long\n\t\t\t@brief : \u533A\u9593\u3092\
-    \u7BA1\u7406\u3059\u308Bset\n\t\t\tcount(x) ... x\u304C\u542B\u307E\u308C\u308B\
-    \u304B   O(logN)\n\t\t\tinsert(x) ... x\u3092\u633F\u5165\u3002\u5B58\u5728\u3059\
-    \u308B\u306A\u3089\u4F55\u3082\u3057\u306A\u3044  O(logN)\n\t\t\terase(x) ...\
-    \ x\u3092\u524A\u9664\u3002\u5B58\u5728\u3059\u308B\u306A\u3089\u4F55\u3082\u3057\
-    \u306A\u3044 O(logN)\n\t\t\tinsert(l, r) ... [l, r]\u3092\u633F\u5165\u3002[l,\
-    \ r]\u3092\u5185\u5305\u3059\u308B\u533A\u9593\u304C\u3042\u3063\u305F\u3089\u4F55\
-    \u3082\u3057\u306A\u3044 O(logN)\n\t\t\terase(l, r) ... [l, r]\u3092\u524A\u9664\
-    \u3002[l, r]\u304C\u5B8C\u5168\u306B\u306A\u304B\u3063\u305F\u3089\u4F55\u3057\
-    \u306A\u3044  O(logN)\n\t\t\tmex(x) ... [x, LLONG_MAX]\u3067\u5B58\u5728\u3057\
-    \u306A\u3044\u6700\u5C0F\u306E\u8981\u7D20  O(logN)\n\t\t\tsize() ... \u533A\u9593\
-    \u306E\u7DCF\u6570 O(1)\n\t\t\tgetsum()... \u8981\u7D20\u306E\u7DCF\u6570 O(1)\n\
-    \t\t\n\t\t*/\n         \n};"
+    \u578B O(1)  \u901A\u5E38: int or long long\n\t\t\t@brief \u533A\u9593\u3092\u7BA1\
+    \u7406\u3059\u308Bset\n\t\t\tcount(x) ... x\u304C\u542B\u307E\u308C\u308B\u304B\
+    \   O(logN)\n\t\t\tinsert(x) ... x\u3092\u633F\u5165\u3002\u5B58\u5728\u3059\u308B\
+    \u306A\u3089\u4F55\u3082\u3057\u306A\u3044  O(logN)\n\t\t\terase(x) ... x\u3092\
+    \u524A\u9664\u3002\u5B58\u5728\u3059\u308B\u306A\u3089\u4F55\u3082\u3057\u306A\
+    \u3044 O(logN)\n\t\t\tinsert(l, r) ... [l, r]\u3092\u633F\u5165\u3002[l, r]\u3092\
+    \u5185\u5305\u3059\u308B\u533A\u9593\u304C\u3042\u3063\u305F\u3089\u4F55\u3082\
+    \u3057\u306A\u3044 O(logN)\n\t\t\terase(l, r) ... [l, r]\u3092\u524A\u9664\u3002\
+    [l, r]\u304C\u5B8C\u5168\u306B\u306A\u304B\u3063\u305F\u3089\u4F55\u3057\u306A\
+    \u3044  O(logN)\n\t\t\tmex(x) ... [x, LLONG_MAX]\u3067\u5B58\u5728\u3057\u306A\
+    \u3044\u6700\u5C0F\u306E\u8981\u7D20  O(logN)\n\t\t\tsize() ... \u533A\u9593\u306E\
+    \u7DCF\u6570 O(1)\n\t\t\tgetsum()... \u8981\u7D20\u306E\u7DCF\u6570 O(1)\n\t\t\
+    \n\t\t*/\n         \n};"
   dependsOn: []
   isVerificationFile: false
   path: DetaStructures/rangeset.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:30:14+09:00'
+  timestamp: '2024-05-10 22:41:34+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/rangeset.cpp
@@ -230,5 +230,5 @@ layout: document
 redirect_from:
 - /library/DetaStructures/rangeset.cpp
 - /library/DetaStructures/rangeset.cpp.html
-title: ": \u533A\u9593\u3092\u7BA1\u7406\u3059\u308Bset"
+title: "\u533A\u9593\u3092\u7BA1\u7406\u3059\u308Bset"
 ---

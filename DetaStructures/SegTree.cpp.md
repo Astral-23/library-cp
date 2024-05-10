@@ -7,7 +7,7 @@ data:
   _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
-    document_title: ": \u30BB\u30B0\u6728"
+    document_title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     links: []
   bundledCode: "#line 1 \"DetaStructures/SegTree.cpp\"\ntemplate<typename T>\nstruct\
     \ SegTree {\n    int n;\n    vector<T> dat;\n\n         \n    SegTree(int siz)\
@@ -30,8 +30,8 @@ data:
     \      \n    Monoid(long long _a) : a(_a) {\n      \n    }\n\n    friend Monoid\
     \ op(const Monoid& l, const Monoid& r) {\n      return l.a + r.a;\n    }\n\n \
     \   friend Monoid update(const Monoid& l, const Monoid& r) {\n   \n    }\n\n \
-    \   static Monoid ide() {\n       return 0LL;\n    }\n    \n};\n\n/*\n@brief :\
-    \ \u30BB\u30B0\u6728\n*/\n"
+    \   static Monoid ide() {\n       return 0LL;\n    }\n    \n};\n\n/*\n@brief \u30BB\
+    \u30B0\u30E1\u30F3\u30C8\u6728\n*/\n"
   code: "template<typename T>\nstruct SegTree {\n    int n;\n    vector<T> dat;\n\n\
     \         \n    SegTree(int siz) {\n        n = 1;\n        while(n < siz) n <<=\
     \ 1;\n        dat.resize(n * 2, T::ide());\n    }\n\n    private:\n         \n\
@@ -53,12 +53,13 @@ data:
     \ long _a) : a(_a) {\n      \n    }\n\n    friend Monoid op(const Monoid& l, const\
     \ Monoid& r) {\n      return l.a + r.a;\n    }\n\n    friend Monoid update(const\
     \ Monoid& l, const Monoid& r) {\n   \n    }\n\n    static Monoid ide() {\n   \
-    \    return 0LL;\n    }\n    \n};\n\n/*\n@brief : \u30BB\u30B0\u6728\n*/"
+    \    return 0LL;\n    }\n    \n};\n\n/*\n@brief \u30BB\u30B0\u30E1\u30F3\u30C8\
+    \u6728\n*/"
   dependsOn: []
   isVerificationFile: false
   path: DetaStructures/SegTree.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:30:14+09:00'
+  timestamp: '2024-05-10 22:41:34+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/SegTree.cpp
@@ -66,5 +67,5 @@ layout: document
 redirect_from:
 - /library/DetaStructures/SegTree.cpp
 - /library/DetaStructures/SegTree.cpp.html
-title: ": \u30BB\u30B0\u6728"
+title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
 ---

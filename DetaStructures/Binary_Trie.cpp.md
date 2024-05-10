@@ -7,7 +7,7 @@ data:
   _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
-    document_title: ': Binary_Trie'
+    document_title: Binary_Trie
     links: []
   bundledCode: "#line 1 \"DetaStructures/Binary_Trie.cpp\"\ntemplate<typename X, typename\
     \ S>\nstruct Binary_Trie {\n    struct Node {\n          Node* l = nullptr;\n\
@@ -91,7 +91,7 @@ data:
     \ << kth_element(i).first << \" \";\n\t\t\t}\n\t\t\tcout << endl;\n\t\t}\n\n\t\
     \t/*\n\t\t    Binary_Trie<X, S>(W)   X...\u767B\u9332\u3059\u308B\u5024\u30FB\
     xor\u3059\u308B\u5024\u306E\u578B  S...\u5024\u306E\u500B\u6570\u306E\u578B  W...\u6700\
-    \u5927bit\u9577   O(1)\n\t\t\t@brief : Binary_Trie\n\t\t\tinsert(x, cnt = 1) ...\
+    \u5927bit\u9577   O(1)\n\t\t\t@brief Binary_Trie\n\t\t\tinsert(x, cnt = 1) ...\
     \ O(W)\n\t\t\terase(x, cnt = 1) ... O(W)\n\t\t\tcount(x) ... O(W)\n\t\t\tmex_element()/min_element()\
     \ ... O(W)\n\t\t\tpair<X, S> kth_element(k)  ... O(W) {\u5024\u3001\u500B\u6570\
     }\u3092\u8FD4\u3059\n\t\t\tope_xor(x) ... \u96C6\u5408\u5168\u4F53\u306Bx\u3092\
@@ -181,7 +181,7 @@ data:
     \ << kth_element(i).first << \" \";\n\t\t\t}\n\t\t\tcout << endl;\n\t\t}\n\n\t\
     \t/*\n\t\t    Binary_Trie<X, S>(W)   X...\u767B\u9332\u3059\u308B\u5024\u30FB\
     xor\u3059\u308B\u5024\u306E\u578B  S...\u5024\u306E\u500B\u6570\u306E\u578B  W...\u6700\
-    \u5927bit\u9577   O(1)\n\t\t\t@brief : Binary_Trie\n\t\t\tinsert(x, cnt = 1) ...\
+    \u5927bit\u9577   O(1)\n\t\t\t@brief Binary_Trie\n\t\t\tinsert(x, cnt = 1) ...\
     \ O(W)\n\t\t\terase(x, cnt = 1) ... O(W)\n\t\t\tcount(x) ... O(W)\n\t\t\tmex_element()/min_element()\
     \ ... O(W)\n\t\t\tpair<X, S> kth_element(k)  ... O(W) {\u5024\u3001\u500B\u6570\
     }\u3092\u8FD4\u3059\n\t\t\tope_xor(x) ... \u96C6\u5408\u5168\u4F53\u306Bx\u3092\
@@ -194,7 +194,7 @@ data:
   isVerificationFile: false
   path: DetaStructures/Binary_Trie.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:34:07+09:00'
+  timestamp: '2024-05-10 22:41:34+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/Binary_Trie.cpp
@@ -202,5 +202,5 @@ layout: document
 redirect_from:
 - /library/DetaStructures/Binary_Trie.cpp
 - /library/DetaStructures/Binary_Trie.cpp.html
-title: ': Binary_Trie'
+title: Binary_Trie
 ---

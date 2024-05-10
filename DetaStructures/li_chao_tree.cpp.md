@@ -7,7 +7,7 @@ data:
   _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
-    document_title: ': Li chao tree'
+    document_title: Li chao tree
     links: []
   bundledCode: "#line 1 \"DetaStructures/li_chao_tree.cpp\"\ntemplate<typename T>\n\
     struct li_chao_tree {\n    struct line {\n        T a, b; // y = ax + b\n    \
@@ -34,8 +34,8 @@ data:
     \   id >>= 1;\n        }\n        return res;\n    }\n  \n    void add_line(T\
     \ a, T b) {\n        line nw(a, b);\n        add_line_query(nw, 1, siz + 1, 1);\n\
     \     }\n\n    T get(T x) {\n        int id = lower_bound(X.begin(), X.end(),\
-    \ x) - X.begin();\n        return get_query(id);\n    }\n\n};\n\n/*\n@brief :\
-    \ Li chao tree\n*/\n"
+    \ x) - X.begin();\n        return get_query(id);\n    }\n\n};\n\n/*\n@brief Li\
+    \ chao tree\n*/\n"
   code: "template<typename T>\nstruct li_chao_tree {\n    struct line {\n        T\
     \ a, b; // y = ax + b\n        line (T _a, T _b) : a(_a), b(_b) {}\n        bool\
     \ operator==(const line &c) {return a == c.a && b == c.b;}\n        bool operator!=(const\
@@ -60,13 +60,13 @@ data:
     \   id >>= 1;\n        }\n        return res;\n    }\n  \n    void add_line(T\
     \ a, T b) {\n        line nw(a, b);\n        add_line_query(nw, 1, siz + 1, 1);\n\
     \     }\n\n    T get(T x) {\n        int id = lower_bound(X.begin(), X.end(),\
-    \ x) - X.begin();\n        return get_query(id);\n    }\n\n};\n\n/*\n@brief :\
-    \ Li chao tree\n*/"
+    \ x) - X.begin();\n        return get_query(id);\n    }\n\n};\n\n/*\n@brief Li\
+    \ chao tree\n*/"
   dependsOn: []
   isVerificationFile: false
   path: DetaStructures/li_chao_tree.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:37:48+09:00'
+  timestamp: '2024-05-10 22:41:34+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/li_chao_tree.cpp
@@ -74,5 +74,5 @@ layout: document
 redirect_from:
 - /library/DetaStructures/li_chao_tree.cpp
 - /library/DetaStructures/li_chao_tree.cpp.html
-title: ': Li chao tree'
+title: Li chao tree
 ---

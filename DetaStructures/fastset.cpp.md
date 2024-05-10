@@ -7,7 +7,7 @@ data:
   _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
-    document_title: ": \u975E\u8CA0\u6574\u6570\u3092\u7BA1\u7406\u3059\u308B64\u5206\
+    document_title: "\u975E\u8CA0\u6574\u6570\u3092\u7BA1\u7406\u3059\u308B64\u5206\
       \u6728\u3002 W\u306F\u6728\u306E\u9AD8\u3055"
     links: []
   bundledCode: "#line 1 \"DetaStructures/fastset.cpp\"\nstruct fastset {\n\tusing\
@@ -63,7 +63,7 @@ data:
     \ {\n\t    \treturn siz==0;\n\t    }\n    \n\t    void dump() {\n\t    \tll M\
     \ = 1LL << B[W];\n\t    \tM--;\n\t    \tfor(int i = 0; i <= M; i++) {\n\t    \t\
     \tif(count(i)) cout << i << \" \";\n\t    \t}\n\t    \tcout << endl;\n\t    }\n\
-    \    \n\t/*\n\t    fastset(W) \n\t\t@brief : \u975E\u8CA0\u6574\u6570\u3092\u7BA1\
+    \    \n\t/*\n\t    fastset(W) \n\t\t@brief \u975E\u8CA0\u6574\u6570\u3092\u7BA1\
     \u7406\u3059\u308B64\u5206\u6728\u3002 W\u306F\u6728\u306E\u9AD8\u3055\n\t\tW\
     \ = 3  [0, 262'143]        3MB 1ms  \n\t\tW = 4  [0, 16'777'215]     5MB 2ms\n\
     \t\tW = 5  [0, 1'073'741'823]  136MB 60ms\n\n\t\tinsert(x) x\u3092\u633F\u5165\
@@ -129,7 +129,7 @@ data:
     \ {\n\t    \treturn siz==0;\n\t    }\n    \n\t    void dump() {\n\t    \tll M\
     \ = 1LL << B[W];\n\t    \tM--;\n\t    \tfor(int i = 0; i <= M; i++) {\n\t    \t\
     \tif(count(i)) cout << i << \" \";\n\t    \t}\n\t    \tcout << endl;\n\t    }\n\
-    \    \n\t/*\n\t    fastset(W) \n\t\t@brief : \u975E\u8CA0\u6574\u6570\u3092\u7BA1\
+    \    \n\t/*\n\t    fastset(W) \n\t\t@brief \u975E\u8CA0\u6574\u6570\u3092\u7BA1\
     \u7406\u3059\u308B64\u5206\u6728\u3002 W\u306F\u6728\u306E\u9AD8\u3055\n\t\tW\
     \ = 3  [0, 262'143]        3MB 1ms  \n\t\tW = 4  [0, 16'777'215]     5MB 2ms\n\
     \t\tW = 5  [0, 1'073'741'823]  136MB 60ms\n\n\t\tinsert(x) x\u3092\u633F\u5165\
@@ -146,7 +146,7 @@ data:
   isVerificationFile: false
   path: DetaStructures/fastset.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:30:21+09:00'
+  timestamp: '2024-05-10 22:41:34+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/fastset.cpp
@@ -154,6 +154,6 @@ layout: document
 redirect_from:
 - /library/DetaStructures/fastset.cpp
 - /library/DetaStructures/fastset.cpp.html
-title: ": \u975E\u8CA0\u6574\u6570\u3092\u7BA1\u7406\u3059\u308B64\u5206\u6728\u3002\
+title: "\u975E\u8CA0\u6574\u6570\u3092\u7BA1\u7406\u3059\u308B64\u5206\u6728\u3002\
   \ W\u306F\u6728\u306E\u9AD8\u3055"
 ---

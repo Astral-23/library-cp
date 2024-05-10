@@ -7,7 +7,7 @@ data:
   _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
-    document_title: ': BIT'
+    document_title: BIT
     links: []
   bundledCode: "#line 1 \"DetaStructures/BIT.cpp\"\n\ntemplate<typename T>\nstruct\
     \ BIT {\n    int N;\n    vector<T> dat;\n\tBIT(){}\n    BIT(int _N) : N(_N) {\n\
@@ -18,7 +18,7 @@ data:
     \ r) {\n        T res = 0;\n        for(int x = r; x > 0; x -= x & -x) res +=\
     \ dat[x];\n        return res;\n    }\n    \n    T get(int l, int r) {\n\t\tT\
     \ res = get(r);\n\t\tif(l!=1) res -= get(l-1);\n\t\treturn res;\n\t}\n\n};\n\n\
-    /*\n@brief : BIT\n*/\n"
+    /*\n@brief BIT\n*/\n"
   code: "\ntemplate<typename T>\nstruct BIT {\n    int N;\n    vector<T> dat;\n\t\
     BIT(){}\n    BIT(int _N) : N(_N) {\n        dat.resize(N+1, 0);\n    }\n\n\tvoid\
     \ set(int pos, T val) {dat[pos] = val;}\n\n\tvoid init() {\n\t\tfor(int x = 1;\
@@ -27,12 +27,12 @@ data:
     \ += val;\n    }\n\n    T get(int r) {\n        T res = 0;\n        for(int x\
     \ = r; x > 0; x -= x & -x) res += dat[x];\n        return res;\n    }\n    \n\
     \    T get(int l, int r) {\n\t\tT res = get(r);\n\t\tif(l!=1) res -= get(l-1);\n\
-    \t\treturn res;\n\t}\n\n};\n\n/*\n@brief : BIT\n*/"
+    \t\treturn res;\n\t}\n\n};\n\n/*\n@brief BIT\n*/"
   dependsOn: []
   isVerificationFile: false
   path: DetaStructures/BIT.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:37:48+09:00'
+  timestamp: '2024-05-10 22:41:34+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/BIT.cpp
@@ -40,5 +40,5 @@ layout: document
 redirect_from:
 - /library/DetaStructures/BIT.cpp
 - /library/DetaStructures/BIT.cpp.html
-title: ': BIT'
+title: BIT
 ---

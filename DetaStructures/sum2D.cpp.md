@@ -7,7 +7,7 @@ data:
   _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
-    document_title: ": 2\u6B21\u5143\u7D2F\u7A4D\u548C"
+    document_title: "2\u6B21\u5143\u7D2F\u7A4D\u548C"
     links: []
   bundledCode: "#line 1 \"DetaStructures/sum2D.cpp\"\ntemplate<typename T>\nstruct\
     \ sum2D {\n    int H; int W;\n    vector<vector<T>> table;\n\tbool inited;\n\n\
@@ -28,9 +28,9 @@ data:
     \            if(sx >= 1) res -= table[ty][sx-1];\n            return res;\n  \
     \      }\n\n        /*\n            sum2D<T> (H, W)   O(HW)\n\t\t\tsum2D<T> (vector<vector<T>>\
     \ A)   O(HW)    \u7A7A\u914D\u5217\u3092\u6E21\u3057\u3066\u306F\u3044\u3051\u306A\
-    \u3044\u3002\n            @brief : 2\u6B21\u5143\u7D2F\u7A4D\u548C\n\n       \
-    \     add(y, x, val) ... (y, x) \u306B val\u3092\u8DB3\u3059\u3002 O(1)\n    \
-    \        init() ... \u7D2F\u7A4D\u548C\u3092\u8A08\u7B97\u3059\u308B\u3002  O(HW)\t\
+    \u3044\u3002\n            @brief 2\u6B21\u5143\u7D2F\u7A4D\u548C\n\n         \
+    \   add(y, x, val) ... (y, x) \u306B val\u3092\u8DB3\u3059\u3002 O(1)\n      \
+    \      init() ... \u7D2F\u7A4D\u548C\u3092\u8A08\u7B97\u3059\u308B\u3002  O(HW)\t\
     \t\n\t\t\t--\u30B3\u30F3\u30B9\u30C8\u30E9\u30AF\u30BF\u306B\u914D\u5217\u3092\
     \u6E21\u3057\u305F\u5834\u5408\u3001\u4E0A\u4E8C\u3064\u3092\u4F7F\u3063\u3066\
     \u306F\u3044\u3051\u306A\u3044--\n            get(sy, ty, sx, tx) ... [sy, ty]\
@@ -54,7 +54,7 @@ data:
     \ 1) res -= table[sy-1][tx];\n            if(sx >= 1) res -= table[ty][sx-1];\n\
     \            return res;\n        }\n\n        /*\n            sum2D<T> (H, W)\
     \   O(HW)\n\t\t\tsum2D<T> (vector<vector<T>> A)   O(HW)    \u7A7A\u914D\u5217\u3092\
-    \u6E21\u3057\u3066\u306F\u3044\u3051\u306A\u3044\u3002\n            @brief : 2\u6B21\
+    \u6E21\u3057\u3066\u306F\u3044\u3051\u306A\u3044\u3002\n            @brief 2\u6B21\
     \u5143\u7D2F\u7A4D\u548C\n\n            add(y, x, val) ... (y, x) \u306B val\u3092\
     \u8DB3\u3059\u3002 O(1)\n            init() ... \u7D2F\u7A4D\u548C\u3092\u8A08\
     \u7B97\u3059\u308B\u3002  O(HW)\t\t\n\t\t\t--\u30B3\u30F3\u30B9\u30C8\u30E9\u30AF\
@@ -66,7 +66,7 @@ data:
   isVerificationFile: false
   path: DetaStructures/sum2D.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:34:07+09:00'
+  timestamp: '2024-05-10 22:41:34+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/sum2D.cpp
@@ -74,5 +74,5 @@ layout: document
 redirect_from:
 - /library/DetaStructures/sum2D.cpp
 - /library/DetaStructures/sum2D.cpp.html
-title: ": 2\u6B21\u5143\u7D2F\u7A4D\u548C"
+title: "2\u6B21\u5143\u7D2F\u7A4D\u548C"
 ---

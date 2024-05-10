@@ -7,7 +7,7 @@ data:
   _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
-    document_title: ': SWAG'
+    document_title: SWAG
     links: []
   bundledCode: "#line 1 \"DetaStructures/SWAG.cpp\"\ntemplate<typename T>\nstruct\
     \ SWAG {\n    struct foldable_stack {\n        stack<T> data;\n        stack<T>\
@@ -52,7 +52,7 @@ data:
     \u30B9\u306B\u4E2D\u8EAB\u3092\u66F8\u304F\n    ll a;\n    \n\t\n\tMonoid(ll _a)\
     \ : a(_a) {}\n\n    friend Monoid op(const Monoid& l, const  Monoid& r) {\n  \
     \      return l;\n    } \n\n\tstatic Monoid ide() {\n\t\treturn 0LL;\n\t}\n};\n\
-    \n/*\n@brief : SWAG\n\n*/\n"
+    \n/*\n@brief SWAG\n\n*/\n"
   code: "template<typename T>\nstruct SWAG {\n    struct foldable_stack {\n      \
     \  stack<T> data;\n        stack<T> res;\n        foldable_stack(){}\n\n     \
     \   void push(T a, int type) {//type == 1 : \u914D\u5217\u306E\u53F3\u306B\u8FFD\
@@ -95,12 +95,12 @@ data:
     \u30B9\u306B\u4E2D\u8EAB\u3092\u66F8\u304F\n    ll a;\n    \n\t\n\tMonoid(ll _a)\
     \ : a(_a) {}\n\n    friend Monoid op(const Monoid& l, const  Monoid& r) {\n  \
     \      return l;\n    } \n\n\tstatic Monoid ide() {\n\t\treturn 0LL;\n\t}\n};\n\
-    \n/*\n@brief : SWAG\n\n*/"
+    \n/*\n@brief SWAG\n\n*/"
   dependsOn: []
   isVerificationFile: false
   path: DetaStructures/SWAG.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:34:07+09:00'
+  timestamp: '2024-05-10 22:41:34+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/SWAG.cpp
@@ -108,5 +108,5 @@ layout: document
 redirect_from:
 - /library/DetaStructures/SWAG.cpp
 - /library/DetaStructures/SWAG.cpp.html
-title: ': SWAG'
+title: SWAG
 ---

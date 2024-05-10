@@ -7,7 +7,7 @@ data:
   _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
-    document_title: ": \u9045\u5EF6\u30BB\u30B0\u6728"
+    document_title: "\u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     links: []
   bundledCode: "#line 1 \"DetaStructures/LazySegTree.cpp\"\n\ntemplate<typename X,\
     \ typename E>\nstruct LazySegTree {\n    using FX = function<X(X, E, long long)>;//X\u306B\
@@ -51,7 +51,8 @@ data:
     \ 0);\n    }\n   \n    bool operator==(const E& x) const {return (a == x.a &&\
     \ b == x.b);}\n    bool operator!=(const E& x) const {return !(*this == x);}\n\
     \n};\n\n\n\nMonoid fx(const Monoid& l, const E& r, long long len) {\n     return\
-    \ l.a * r.a + r.b * len;\n}\n\n/*\n@brief : \u9045\u5EF6\u30BB\u30B0\u6728\n*/\n"
+    \ l.a * r.a + r.b * len;\n}\n\n/*\n@brief \u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\
+    \u30C8\u6728\n*/\n"
   code: "\ntemplate<typename X, typename E>\nstruct LazySegTree {\n    using FX =\
     \ function<X(X, E, long long)>;//X\u306B\u4F5C\u7528\u7D20M\u3092\u4F5C\u7528\u3055\
     \u305B\u308B\n    \n    int n;\n    int siz;\n    FX fx; \n    vector<X> dat;\n\
@@ -94,12 +95,13 @@ data:
     \ 0);\n    }\n   \n    bool operator==(const E& x) const {return (a == x.a &&\
     \ b == x.b);}\n    bool operator!=(const E& x) const {return !(*this == x);}\n\
     \n};\n\n\n\nMonoid fx(const Monoid& l, const E& r, long long len) {\n     return\
-    \ l.a * r.a + r.b * len;\n}\n\n/*\n@brief : \u9045\u5EF6\u30BB\u30B0\u6728\n*/"
+    \ l.a * r.a + r.b * len;\n}\n\n/*\n@brief \u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\
+    \u30C8\u6728\n*/"
   dependsOn: []
   isVerificationFile: false
   path: DetaStructures/LazySegTree.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:30:14+09:00'
+  timestamp: '2024-05-10 22:41:34+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/LazySegTree.cpp
@@ -107,5 +109,5 @@ layout: document
 redirect_from:
 - /library/DetaStructures/LazySegTree.cpp
 - /library/DetaStructures/LazySegTree.cpp.html
-title: ": \u9045\u5EF6\u30BB\u30B0\u6728"
+title: "\u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
 ---

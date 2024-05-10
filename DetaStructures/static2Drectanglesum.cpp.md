@@ -7,8 +7,8 @@ data:
   _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
-    document_title: ": \u9759\u7684\u3067\u5DE8\u5927\u306A\u30B0\u30EA\u30C3\u30C9\
-      \u306E\u77E9\u5F62\u548C"
+    document_title: "\u9759\u7684\u3067\u5DE8\u5927\u306A\u30B0\u30EA\u30C3\u30C9\u306E\
+      \u77E9\u5F62\u548C"
     links:
     - https://onedrive.live.com/view.aspx?resid=CD510BE428DBA1E7%21106&authkey=!AFD6EO1-AReoPBk
   bundledCode: "#line 1 \"DetaStructures/static2Drectanglesum.cpp\"\ntemplate<typename\
@@ -141,7 +141,7 @@ data:
     \   sx = nxs(sx);//x\u5EA7\u6A19\u3092\u5EA7\u6A19\u5727\u7E2E\u5F8C\u306B\u5909\
     \u63DB\n            tx = nxs(tx);//\u540C\u69D8\u3002\n            return query(sx,\
     \ tx, sy, ty, 1, 1, N+1);\n        }\n        \n};//init\u5FD8\u308C\u305A\u306B\
-    \n\n/*\n@brief : \u9759\u7684\u3067\u5DE8\u5927\u306A\u30B0\u30EA\u30C3\u30C9\u306E\
+    \n\n/*\n@brief \u9759\u7684\u3067\u5DE8\u5927\u306A\u30B0\u30EA\u30C3\u30C9\u306E\
     \u77E9\u5F62\u548C\n*/\n"
   code: "template<typename T>\nstruct CC {\n  bool initialized;\n  vector<T> xs;\n\
     \  CC () : initialized(false) {}\n  void add(T x) {xs.push_back(x);}\n  void init()\
@@ -273,13 +273,13 @@ data:
     \   sx = nxs(sx);//x\u5EA7\u6A19\u3092\u5EA7\u6A19\u5727\u7E2E\u5F8C\u306B\u5909\
     \u63DB\n            tx = nxs(tx);//\u540C\u69D8\u3002\n            return query(sx,\
     \ tx, sy, ty, 1, 1, N+1);\n        }\n        \n};//init\u5FD8\u308C\u305A\u306B\
-    \n\n/*\n@brief : \u9759\u7684\u3067\u5DE8\u5927\u306A\u30B0\u30EA\u30C3\u30C9\u306E\
+    \n\n/*\n@brief \u9759\u7684\u3067\u5DE8\u5927\u306A\u30B0\u30EA\u30C3\u30C9\u306E\
     \u77E9\u5F62\u548C\n*/"
   dependsOn: []
   isVerificationFile: false
   path: DetaStructures/static2Drectanglesum.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:30:21+09:00'
+  timestamp: '2024-05-10 22:41:34+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/static2Drectanglesum.cpp
@@ -287,6 +287,6 @@ layout: document
 redirect_from:
 - /library/DetaStructures/static2Drectanglesum.cpp
 - /library/DetaStructures/static2Drectanglesum.cpp.html
-title: ": \u9759\u7684\u3067\u5DE8\u5927\u306A\u30B0\u30EA\u30C3\u30C9\u306E\u77E9\
-  \u5F62\u548C"
+title: "\u9759\u7684\u3067\u5DE8\u5927\u306A\u30B0\u30EA\u30C3\u30C9\u306E\u77E9\u5F62\
+  \u548C"
 ---
