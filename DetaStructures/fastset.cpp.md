@@ -8,7 +8,7 @@ data:
   _verificationStatusIcon: ':warning:'
   attributes:
     document_title: "\u975E\u8CA0\u6574\u6570\u3092\u7BA1\u7406\u3059\u308B64\u5206\
-      \u6728\u3002 W\u306F\u6728\u306E\u9AD8\u3055"
+      \u6728"
     links: []
   bundledCode: "#line 1 \"DetaStructures/fastset.cpp\"\nstruct fastset {\n\tusing\
     \ ll = long long;\n\tusing ull = unsigned long long;\n\tint W;\n\tll siz;\n\t\
@@ -64,18 +64,17 @@ data:
     \ = 1LL << B[W];\n\t    \tM--;\n\t    \tfor(int i = 0; i <= M; i++) {\n\t    \t\
     \tif(count(i)) cout << i << \" \";\n\t    \t}\n\t    \tcout << endl;\n\t    }\n\
     \    \n\t/*\n\t    fastset(W) \n\t\t@brief \u975E\u8CA0\u6574\u6570\u3092\u7BA1\
-    \u7406\u3059\u308B64\u5206\u6728\u3002 W\u306F\u6728\u306E\u9AD8\u3055\n\t\tW\
-    \ = 3  [0, 262'143]        3MB 1ms  \n\t\tW = 4  [0, 16'777'215]     5MB 2ms\n\
-    \t\tW = 5  [0, 1'073'741'823]  136MB 60ms\n\n\t\tinsert(x) x\u3092\u633F\u5165\
-    \u3059\u308B\u3002\u5B58\u5728\u3059\u308B\u306A\u3089\u306A\u306B\u3082\u3057\
-    \u306A\u3044\u3002 O(W)\n\t\terase(x) x\u3092\u524A\u9664\u3002\u5B58\u5728\u3057\
-    \u306A\u3044\u6642\u306A\u306B\u3082\u3057\u306A\u3044\u3002 O(W)\n\t\tcount(x)\
-    \ x\u304C\u5B58\u5728\u3059\u308B\u304B\u3002O(W)\n\t\tmin_element()/max_element()\
-    \ \u6700\u5C0F\u30FB\u6700\u5927\u8981\u7D20\u3002\u8981\u7D20\u65700\u306A\u3089\
-    assert\u3002 O(W)\n\t\tlower_bound(x) x\u4EE5\u4E0A\u6700\u5C0F\u3002\u5B58\u5728\
-    \u3057\u306A\u3044\u306A\u3089-1 O(W)\n\t\tlower_left_bound(x) x\u4EE5\u4E0B\u6700\
-    \u5927\u3002\u5B58\u5728\u3057\u306A\u3044\u306A\u3089-1. O(W)\n\t\tsize(), empty()\
-    \ ... O(1)\n\t\n\t*/\n};\n"
+    \u7406\u3059\u308B64\u5206\u6728\n\t\tW = 3  [0, 262'143]        3MB 1ms  \n\t\
+    \tW = 4  [0, 16'777'215]     5MB 2ms\n\t\tW = 5  [0, 1'073'741'823]  136MB 60ms\n\
+    \n\t\tinsert(x) x\u3092\u633F\u5165\u3059\u308B\u3002\u5B58\u5728\u3059\u308B\u306A\
+    \u3089\u306A\u306B\u3082\u3057\u306A\u3044\u3002 O(W)\n\t\terase(x) x\u3092\u524A\
+    \u9664\u3002\u5B58\u5728\u3057\u306A\u3044\u6642\u306A\u306B\u3082\u3057\u306A\
+    \u3044\u3002 O(W)\n\t\tcount(x) x\u304C\u5B58\u5728\u3059\u308B\u304B\u3002O(W)\n\
+    \t\tmin_element()/max_element() \u6700\u5C0F\u30FB\u6700\u5927\u8981\u7D20\u3002\
+    \u8981\u7D20\u65700\u306A\u3089assert\u3002 O(W)\n\t\tlower_bound(x) x\u4EE5\u4E0A\
+    \u6700\u5C0F\u3002\u5B58\u5728\u3057\u306A\u3044\u306A\u3089-1 O(W)\n\t\tlower_left_bound(x)\
+    \ x\u4EE5\u4E0B\u6700\u5927\u3002\u5B58\u5728\u3057\u306A\u3044\u306A\u3089-1.\
+    \ O(W)\n\t\tsize(), empty() ... O(1)\n\t\n\t*/\n};\n"
   code: "struct fastset {\n\tusing ll = long long;\n\tusing ull = unsigned long long;\n\
     \tint W;\n\tll siz;\n\tvector<int> B = {0, 6, 12, 18, 24, 30, 36, 42};\n\tvector<ull>\
     \ mask;\n\tvector<ull> mask_rev;\n\tvector<vector<ull>> tr;\n\n\tfastset(){}\n\
@@ -130,23 +129,22 @@ data:
     \ = 1LL << B[W];\n\t    \tM--;\n\t    \tfor(int i = 0; i <= M; i++) {\n\t    \t\
     \tif(count(i)) cout << i << \" \";\n\t    \t}\n\t    \tcout << endl;\n\t    }\n\
     \    \n\t/*\n\t    fastset(W) \n\t\t@brief \u975E\u8CA0\u6574\u6570\u3092\u7BA1\
-    \u7406\u3059\u308B64\u5206\u6728\u3002 W\u306F\u6728\u306E\u9AD8\u3055\n\t\tW\
-    \ = 3  [0, 262'143]        3MB 1ms  \n\t\tW = 4  [0, 16'777'215]     5MB 2ms\n\
-    \t\tW = 5  [0, 1'073'741'823]  136MB 60ms\n\n\t\tinsert(x) x\u3092\u633F\u5165\
-    \u3059\u308B\u3002\u5B58\u5728\u3059\u308B\u306A\u3089\u306A\u306B\u3082\u3057\
-    \u306A\u3044\u3002 O(W)\n\t\terase(x) x\u3092\u524A\u9664\u3002\u5B58\u5728\u3057\
-    \u306A\u3044\u6642\u306A\u306B\u3082\u3057\u306A\u3044\u3002 O(W)\n\t\tcount(x)\
-    \ x\u304C\u5B58\u5728\u3059\u308B\u304B\u3002O(W)\n\t\tmin_element()/max_element()\
-    \ \u6700\u5C0F\u30FB\u6700\u5927\u8981\u7D20\u3002\u8981\u7D20\u65700\u306A\u3089\
-    assert\u3002 O(W)\n\t\tlower_bound(x) x\u4EE5\u4E0A\u6700\u5C0F\u3002\u5B58\u5728\
-    \u3057\u306A\u3044\u306A\u3089-1 O(W)\n\t\tlower_left_bound(x) x\u4EE5\u4E0B\u6700\
-    \u5927\u3002\u5B58\u5728\u3057\u306A\u3044\u306A\u3089-1. O(W)\n\t\tsize(), empty()\
-    \ ... O(1)\n\t\n\t*/\n};\n"
+    \u7406\u3059\u308B64\u5206\u6728\n\t\tW = 3  [0, 262'143]        3MB 1ms  \n\t\
+    \tW = 4  [0, 16'777'215]     5MB 2ms\n\t\tW = 5  [0, 1'073'741'823]  136MB 60ms\n\
+    \n\t\tinsert(x) x\u3092\u633F\u5165\u3059\u308B\u3002\u5B58\u5728\u3059\u308B\u306A\
+    \u3089\u306A\u306B\u3082\u3057\u306A\u3044\u3002 O(W)\n\t\terase(x) x\u3092\u524A\
+    \u9664\u3002\u5B58\u5728\u3057\u306A\u3044\u6642\u306A\u306B\u3082\u3057\u306A\
+    \u3044\u3002 O(W)\n\t\tcount(x) x\u304C\u5B58\u5728\u3059\u308B\u304B\u3002O(W)\n\
+    \t\tmin_element()/max_element() \u6700\u5C0F\u30FB\u6700\u5927\u8981\u7D20\u3002\
+    \u8981\u7D20\u65700\u306A\u3089assert\u3002 O(W)\n\t\tlower_bound(x) x\u4EE5\u4E0A\
+    \u6700\u5C0F\u3002\u5B58\u5728\u3057\u306A\u3044\u306A\u3089-1 O(W)\n\t\tlower_left_bound(x)\
+    \ x\u4EE5\u4E0B\u6700\u5927\u3002\u5B58\u5728\u3057\u306A\u3044\u306A\u3089-1.\
+    \ O(W)\n\t\tsize(), empty() ... O(1)\n\t\n\t*/\n};\n"
   dependsOn: []
   isVerificationFile: false
   path: DetaStructures/fastset.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:41:34+09:00'
+  timestamp: '2024-05-10 22:44:19+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/fastset.cpp
@@ -154,6 +152,5 @@ layout: document
 redirect_from:
 - /library/DetaStructures/fastset.cpp
 - /library/DetaStructures/fastset.cpp.html
-title: "\u975E\u8CA0\u6574\u6570\u3092\u7BA1\u7406\u3059\u308B64\u5206\u6728\u3002\
-  \ W\u306F\u6728\u306E\u9AD8\u3055"
+title: "\u975E\u8CA0\u6574\u6570\u3092\u7BA1\u7406\u3059\u308B64\u5206\u6728"
 ---

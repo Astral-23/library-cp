@@ -29,8 +29,7 @@ data:
       title: "\u30BB\u30B0\u6728 + \u4E8C\u5206\u63A2\u7D22"
     - icon: ':warning:'
       path: DetaStructures/fastset.cpp
-      title: "\u975E\u8CA0\u6574\u6570\u3092\u7BA1\u7406\u3059\u308B64\u5206\u6728\
-        \u3002 W\u306F\u6728\u306E\u9AD8\u3055"
+      title: "\u975E\u8CA0\u6574\u6570\u3092\u7BA1\u7406\u3059\u308B64\u5206\u6728"
     - icon: ':warning:'
       path: DetaStructures/li_chao_tree.cpp
       title: Li chao tree
@@ -58,7 +57,7 @@ data:
       title: "undo\u53EF\u80FDunion_find"
     - icon: ':warning:'
       path: DetaStructures/union-find.cpp
-      title: ': Union-find'
+      title: Union-find
   verificationCategories:
   - name: DetaStructures/verify
     pages:
