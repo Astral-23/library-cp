@@ -7,6 +7,9 @@ data:
       path: Algorithms/Mo.cpp
       title: Mo
     - icon: ':warning:'
+      path: Algorithms/lislds.cpp
+      title: LIS/LDS
+    - icon: ':warning:'
       path: Algorithms/maxflow.cpp
       title: Maxflow
     - icon: ':warning:'
@@ -47,6 +50,9 @@ data:
     - icon: ':warning:'
       path: DetaStructures/Treap2.cpp
       title: "Treap(\u5024\u96C6\u7D04\u306A\u3057)"
+    - icon: ':warning:'
+      path: DetaStructures/btrietree.cpp
+      title: range xor range min
     - icon: ':warning:'
       path: DetaStructures/dynamic_connectivity.cpp
       title: dynamic_connectivity
@@ -160,6 +166,14 @@ data:
     - icon: ':warning:'
       path: String/suf_array.cpp
       title: suffix_array
+  - name: Utilities
+    pages:
+    - icon: ':warning:'
+      path: Utilities/timer.cpp
+      title: Timer
+    - icon: ':warning:'
+      path: Utilities/xorshift.cpp
+      title: xorshift
   verificationCategories:
   - name: DetaStructures/verify
     pages:
