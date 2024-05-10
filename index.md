@@ -5,13 +5,13 @@ data:
     pages:
     - icon: ':warning:'
       path: DetaStructures/BIT.cpp
-      title: DetaStructures/BIT.cpp
+      title: ': BIT'
     - icon: ':warning:'
       path: DetaStructures/Binary_Trie.cpp
       title: ': Binary_Trie'
     - icon: ':warning:'
       path: DetaStructures/D2BIT.cpp
-      title: DetaStructures/D2BIT.cpp
+      title: ': 2DBIT'
     - icon: ':warning:'
       path: DetaStructures/DynamicSegTree.cpp
       title: ": \u52D5\u7684\u30BB\u30B0\u6728"
@@ -31,6 +31,9 @@ data:
       path: DetaStructures/fastset.cpp
       title: ": \u975E\u8CA0\u6574\u6570\u3092\u7BA1\u7406\u3059\u308B64\u5206\u6728\
         \u3002 W\u306F\u6728\u306E\u9AD8\u3055"
+    - icon: ':warning:'
+      path: DetaStructures/li_chao_tree.cpp
+      title: ': Li chao tree'
     - icon: ':warning:'
       path: DetaStructures/monotone_CHT.cpp
       title: ": \u5165\u529B\u304C\u5358\u8ABF\u306ACHT"
@@ -56,11 +59,6 @@ data:
     - icon: ':warning:'
       path: DetaStructures/union-find.cpp
       title: ': Union-find'
-  - name: .
-    pages:
-    - icon: ':warning:'
-      path: li_chao_tree.cpp
-      title: li_chao_tree.cpp
   verificationCategories:
   - name: DetaStructures/verify
     pages:
