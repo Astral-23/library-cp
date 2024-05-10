@@ -81,4 +81,5 @@ struct Monoid {
 
 /*
 @brief セグメント木
+@docs docs/segtree.md
 */
