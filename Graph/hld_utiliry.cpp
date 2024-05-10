@@ -112,7 +112,7 @@ struct LCA {
 
 		/*
 		LCA(G, root)  コンストラクタ: O(N)  空間 : O(N)
-		@brief tree_utility(lca,jump,ances)
+		@brief 木に関するutility by HLD(lca,jump,ances)
 		
 		getLCA(u, v) ... lca(u, v)を返す。 O(logN)
 		dist(u, v) ... (u, v)の間の辺の本数を返す。 O(logN)
