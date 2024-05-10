@@ -125,6 +125,7 @@ int main() {
   std::cin.tie(nullptr);
     int N, Q;
     cin >> N >> Q;
+    int test = 100;
      SegTree<Monoid> seg(N);
     for(int i = 1; i <= N; i++) {
         mint a, b;
