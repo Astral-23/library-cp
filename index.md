@@ -28,6 +28,15 @@ data:
       path: DetaStructures/SegTree_with_binary-search.cpp
       title: "\u30BB\u30B0\u6728 + \u4E8C\u5206\u63A2\u7D22"
     - icon: ':warning:'
+      path: DetaStructures/Treap.cpp
+      title: Treap
+    - icon: ':warning:'
+      path: DetaStructures/Treap2.cpp
+      title: "Treap(\u5024\u96C6\u7D04\u306A\u3057)"
+    - icon: ':warning:'
+      path: DetaStructures/dynamic_connectivity.cpp
+      title: dynamic_connectivity
+    - icon: ':warning:'
       path: DetaStructures/fastset.cpp
       title: "\u975E\u8CA0\u6574\u6570\u3092\u7BA1\u7406\u3059\u308B64\u5206\u6728"
     - icon: ':warning:'
@@ -42,6 +51,16 @@ data:
     - icon: ':warning:'
       path: DetaStructures/rangeset.cpp
       title: "\u533A\u9593\u3092\u7BA1\u7406\u3059\u308Bset"
+    - icon: ':warning:'
+      path: DetaStructures/rangeset2.cpp
+      title: "\u533A\u9593\u3092\u7BA1\u7406\u3059\u308Bset( i], [i+1 \u3092\u7D71\
+        \u5408\u3057\u306A\u3044ver)"
+    - icon: ':warning:'
+      path: DetaStructures/splaymap.cpp
+      title: "splaytree(map) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay"
+    - icon: ':warning:'
+      path: DetaStructures/splayset.cpp
+      title: "splay_tree(set) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3\u306Bsplay"
     - icon: ':warning:'
       path: DetaStructures/static2Drectanglesum.cpp
       title: "\u9759\u7684\u3067\u5DE8\u5927\u306A\u30B0\u30EA\u30C3\u30C9\u306E\u77E9\
@@ -58,6 +77,11 @@ data:
     - icon: ':warning:'
       path: DetaStructures/union-find.cpp
       title: Union-find
+  - name: .
+    pages:
+    - icon: ':warning:'
+      path: splaymultiset.cpp
+      title: "splaytree(multiset) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3splay"
   verificationCategories:
   - name: DetaStructures/verify
     pages:
