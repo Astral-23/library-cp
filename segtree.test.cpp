@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/point_set_range_composite"
 #include<bits/stdc++.h>
 using namespace std;
-
+ 
 struct mint{//998244353
    long long x;
    static const long long mod = 998244353;
