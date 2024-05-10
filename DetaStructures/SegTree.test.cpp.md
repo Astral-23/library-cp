@@ -11,7 +11,7 @@ data:
     PROBLEM: https://judge.yosupo.jp/problem/point_set_range_composite
     links:
     - https://judge.yosupo.jp/problem/point_set_range_composite
-  bundledCode: "#line 1 \"segtree.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/point_set_range_composite\"\
+  bundledCode: "#line 1 \"DetaStructures/SegTree.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/point_set_range_composite\"\
     \n#include<bits/stdc++.h>\nusing namespace std;\n \nstruct mint{//998244353\n\
     \   long long x;\n   static const long long mod = 998244353;\n   mint(long long\
     \ _x=0) noexcept : x((_x%mod+mod)%mod){}\n   long long val() const noexcept {return\
@@ -119,15 +119,15 @@ data:
     \ * z + b << '\\n';\n        }\n    }\n    \n}"
   dependsOn: []
   isVerificationFile: true
-  path: segtree.test.cpp
+  path: DetaStructures/SegTree.test.cpp
   requiredBy: []
-  timestamp: '2024-05-10 21:31:07+09:00'
+  timestamp: '2024-05-10 21:57:07+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: segtree.test.cpp
+documentation_of: DetaStructures/SegTree.test.cpp
 layout: document
 redirect_from:
-- /verify/segtree.test.cpp
-- /verify/segtree.test.cpp.html
-title: segtree.test.cpp
+- /verify/DetaStructures/SegTree.test.cpp
+- /verify/DetaStructures/SegTree.test.cpp.html
+title: DetaStructures/SegTree.test.cpp
 ---

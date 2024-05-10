@@ -1,14 +1,19 @@
 ---
 data:
-  libraryCategories: []
+  libraryCategories:
+  - name: DetaStructures
+    pages:
+    - icon: ':warning:'
+      path: DetaStructures/SegTree.cpp
+      title: DetaStructures/SegTree.cpp
+    - icon: ':warning:'
+      path: DetaStructures/SegTree_with_binary-search.cpp
+      title: DetaStructures/SegTree_with_binary-search.cpp
   verificationCategories:
-  - name: .
+  - name: DetaStructures
     pages:
     - icon: ':heavy_check_mark:'
-      path: example.test.cpp
-      title: example.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: segtree.test.cpp
-      title: segtree.test.cpp
+      path: DetaStructures/SegTree.test.cpp
+      title: DetaStructures/SegTree.test.cpp
 layout: toppage
 ---
