@@ -9,6 +9,10 @@ using vl = vector<ll>;
 #define ENDL '\n'
 
 
+
+/*
+@brief Li chao tree
+*/
 struct que {
     ll t, a, b;
     que(int _t, ll _a, ll _b) : t(_t), a(_a), b(_b){}
@@ -46,7 +50,8 @@ int main() {
         }
     }
     sort(xs.begin(), xs.end());
-    unique(xs.begin(), xs.end());
+	xs.erase(unique(xs.begin(), xs.end()), xs.end());
+
     li_chao_tree<ll> tr(xs);
     rep(i,1,N) {
         tr.add_line(A[i], B[i]);
