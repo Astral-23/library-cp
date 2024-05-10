@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: DetaStructures/SegTree.hpp
     title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Utilities/modint998.hpp
     title: modint998244353
   _extendedRequiredBy: []
