@@ -3,12 +3,15 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
+  - icon: ':x:'
+    path: verify/Matrix.test.cpp
+    title: verify/Matrix.test.cpp
   - icon: ':heavy_check_mark:'
     path: verify/SegTree.test.cpp
     title: verify/SegTree.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     document_title: modint998244353
     links: []
@@ -64,8 +67,9 @@ data:
   path: Utilities/modint998.hpp
   requiredBy: []
   timestamp: '2024-05-11 00:52:36+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
+  - verify/Matrix.test.cpp
   - verify/SegTree.test.cpp
 documentation_of: Utilities/modint998.hpp
 layout: document

@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: DetaStructures/SegTree.hpp
     title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Utilities/modint998.hpp
     title: modint998244353
   _extendedRequiredBy: []
@@ -66,7 +66,7 @@ data:
     \ l.a * r.a;\n        res.b = r.a * l.b + r.b;\n        return res;\n    } \n\
     \    friend Monoid update(const Monoid& l, const Monoid& x) {\n        return\
     \ x;\n    }\n\n\n\tstatic Monoid ide() {\n\t\treturn Monoid(1, 0);\n\n\t}\n};\n\
-    \n\n\n\n\nint main() {\n\tios::sync_with_stdio(false);\n  std::cin.tie(nullptr);\n\
+    \n\n\n\n\nint main() {\n\tios::sync_with_stdio(false);\n    std::cin.tie(nullptr);\n\
     \    int N, Q;\n    cin >> N >> Q;\n    int test = 100;\n     SegTree<Monoid>\
     \ seg(N);\n    for(int i = 1; i <= N; i++) {\n        mint a, b;\n        cin\
     \ >> a >> b;\n        seg.set(i, Monoid(a, b));\n    }\n\tseg.init();\n\n\n  \
@@ -83,7 +83,7 @@ data:
     \ res.a = l.a * r.a;\n        res.b = r.a * l.b + r.b;\n        return res;\n\
     \    } \n    friend Monoid update(const Monoid& l, const Monoid& x) {\n      \
     \  return x;\n    }\n\n\n\tstatic Monoid ide() {\n\t\treturn Monoid(1, 0);\n\n\
-    \t}\n};\n\n\n\n\n\nint main() {\n\tios::sync_with_stdio(false);\n  std::cin.tie(nullptr);\n\
+    \t}\n};\n\n\n\n\n\nint main() {\n\tios::sync_with_stdio(false);\n    std::cin.tie(nullptr);\n\
     \    int N, Q;\n    cin >> N >> Q;\n    int test = 100;\n     SegTree<Monoid>\
     \ seg(N);\n    for(int i = 1; i <= N; i++) {\n        mint a, b;\n        cin\
     \ >> a >> b;\n        seg.set(i, Monoid(a, b));\n    }\n\tseg.init();\n\n\n  \
@@ -98,7 +98,7 @@ data:
   isVerificationFile: true
   path: verify/SegTree.test.cpp
   requiredBy: []
-  timestamp: '2024-05-11 00:55:23+09:00'
+  timestamp: '2024-05-11 01:28:41+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: verify/SegTree.test.cpp
