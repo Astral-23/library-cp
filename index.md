@@ -134,7 +134,7 @@ data:
     - icon: ':warning:'
       path: Math/factorize.cpp
       title: "\u7D20\u56E0\u6570\u5206\u89E3\uFF08Pollard_rho) N^(1/4)logN"
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: Math/matrix.hpp
       title: "\u884C\u5217\u306E\u578B"
     - icon: ':warning:'
@@ -180,7 +180,7 @@ data:
     - icon: ':warning:'
       path: Utilities/modint107.hpp
       title: modint1000000007
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: Utilities/modint998.hpp
       title: modint998244353
     - icon: ':warning:'
@@ -192,7 +192,7 @@ data:
   verificationCategories:
   - name: verify
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: verify/Matrix.test.cpp
       title: verify/Matrix.test.cpp
     - icon: ':heavy_check_mark:'

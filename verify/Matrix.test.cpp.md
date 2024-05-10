@@ -1,17 +1,17 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: Math/matrix.hpp
     title: "\u884C\u5217\u306E\u578B"
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Utilities/modint998.hpp
     title: modint998244353
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/pow_of_matrix
@@ -56,7 +56,7 @@ data:
     \   if(t&1) r = r*(*this);\n    return r;\n  }\n};\n/*\n@brief \u884C\u5217\u306E\
     \u578B\n*/\n#line 6 \"verify/Matrix.test.cpp\"\nusing ll = long long;\nusing vvl\
     \ = vector<vector<ll>>;\nusing vl = vector<ll>;\n#define rep(i, s, f) for(long\
-    \ long i = s; i <= f; i++)\n#define ENDL '\\n'\n\nint main() {\n\n\tll N, K;\n\
+    \ long i = s; i <= f; i++)\n#define ENDL '\\n'\n\nint main() {\n\n\tint N, K;\n\
     \tcin >> N >> K;\n\tMatrix<mint> A(N, N, 0);\n\trep(i,0,N-1) rep(j,0,N-1) cin\
     \ >> A[i][j];\n\tA = A.pow(K);\n\trep(i,0,N-1) {\n\t\trep(j,0,N-1) cout << A[i][j]\
     \ << \" \";\n\t\tcout << '\\n';\n\t}\n\n    \n}\n\n\n\n\n\n"
@@ -64,17 +64,18 @@ data:
     using namespace std;\n#include \"../Utilities/modint998.hpp\"\n#include \"../Math/matrix.hpp\"\
     \nusing ll = long long;\nusing vvl = vector<vector<ll>>;\nusing vl = vector<ll>;\n\
     #define rep(i, s, f) for(long long i = s; i <= f; i++)\n#define ENDL '\\n'\n\n\
-    int main() {\n\n\tll N, K;\n\tcin >> N >> K;\n\tMatrix<mint> A(N, N, 0);\n\trep(i,0,N-1)\
-    \ rep(j,0,N-1) cin >> A[i][j];\n\tA = A.pow(K);\n\trep(i,0,N-1) {\n\t\trep(j,0,N-1)\
-    \ cout << A[i][j] << \" \";\n\t\tcout << '\\n';\n\t}\n\n    \n}\n\n\n\n\n\n"
+    int main() {\n\n\tint N, K;\n\tcin >> N >> K;\n\tMatrix<mint> A(N, N, 0);\n\t\
+    rep(i,0,N-1) rep(j,0,N-1) cin >> A[i][j];\n\tA = A.pow(K);\n\trep(i,0,N-1) {\n\
+    \t\trep(j,0,N-1) cout << A[i][j] << \" \";\n\t\tcout << '\\n';\n\t}\n\n    \n\
+    }\n\n\n\n\n\n"
   dependsOn:
   - Utilities/modint998.hpp
   - Math/matrix.hpp
   isVerificationFile: true
   path: verify/Matrix.test.cpp
   requiredBy: []
-  timestamp: '2024-05-11 01:42:25+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2024-05-11 01:32:02+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: verify/Matrix.test.cpp
 layout: document
