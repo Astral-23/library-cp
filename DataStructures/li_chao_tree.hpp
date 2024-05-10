@@ -17,8 +17,8 @@ struct li_chao_tree {
     li_chao_tree (vector<T> &xs) { 
         while(siz < xs.size()) siz <<= 1;
         dat.resize(siz<<1, line(0, M));
-        X.resize(siz+1, int_max);
-        X[0] = -int_max;
+        X.resize(siz+1, M);
+        X[0] = -M;
         for(int i = 1; i <= int(xs.size()); i++) X[i] = xs[i-1];
     }
   
