@@ -1,13 +1,19 @@
 {
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  
   "version": "0.2.0",
   "configurations": [
-    {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "lldb",
-      "request": "launch",
-      "args": [],
-      "cwd": "/Users/library-cp/library-cp",
-      "program": "/Users/library-cp/library-cp/build/Debug/outDebug"
-    }
+      {
+          "name": "LLDB debug",
+          "type": "lldb",
+          "request": "launch",
+          "program": "${fileDirname}/${fileBasenameNoExtension}",
+          "args": [],
+          "cwd": "${fileDirname}/",
+          "preLaunchTask": "g++ debug build",
+     
+      }
   ]
 }
