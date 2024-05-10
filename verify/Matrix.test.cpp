@@ -1,8 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/pow_of_matrix"
 #include<bits/stdc++.h>
 using namespace std;
-#include "/Users/library-cp/library-cp/Math/matrix.hpp"
-#include "/Users/library-cp/library-cp/Utilities/modint998.hpp"
+#include "../Math/matrix.hpp"
+#include "../library-cp/Utilities/modint998.hpp"
 using ll = long long;
 using vvl = vector<vector<ll>>;
 using vl = vector<ll>;
