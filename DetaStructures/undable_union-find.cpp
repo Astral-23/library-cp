@@ -79,7 +79,7 @@ struct Union {
 
 		/*  0-indexed
 		    Union(N) O(N)
-			@brief: undo可能union_find
+			@brief : undo可能union_find
 			root(u), same(a, b), unit(a, b) ... O(logN)
 			undo() ... O(1)
 			getsize(u) ... uを含む連結成分のサイズ O(1)

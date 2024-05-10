@@ -58,7 +58,7 @@ struct sum2D {
         /*
             sum2D<T> (H, W)   O(HW)
 			sum2D<T> (vector<vector<T>> A)   O(HW)    空配列を渡してはいけない。
-            @brief : 静的なグリッドの矩形和。
+            @brief : 2次元累積和
 
             add(y, x, val) ... (y, x) に valを足す。 O(1)
             init() ... 累積和を計算する。  O(HW)		

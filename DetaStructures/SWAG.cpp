@@ -109,3 +109,8 @@ struct Monoid {
 		return 0LL;
 	}
 };
+
+/*
+@brief : SWAG
+
+*/

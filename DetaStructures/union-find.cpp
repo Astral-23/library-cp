@@ -41,6 +41,10 @@ int getsize(int u) {//uが含まれる連結成分のサイズを返す
 };
 
 /*
+@brief : Union-find
+*/
+
+/*
  struct Union {   
 	using vi = vector<int>;
 	using vvi = vector<vector<int>>;

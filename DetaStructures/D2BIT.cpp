@@ -56,3 +56,8 @@ struct D2BIT {
             return res;
         }
 };
+
+/*
+Brief : 2DBIT
+
+*/
