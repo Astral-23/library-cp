@@ -2,16 +2,19 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: verify/static2dsum.test.cpp
+    title: verify/static2dsum.test.cpp
   _isVerificationFailed: false
-  _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _pathExtension: hpp
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u9759\u7684\u3067\u5DE8\u5927\u306A\u30B0\u30EA\u30C3\u30C9\u306E\
       \u77E9\u5F62\u548C"
     links:
     - https://onedrive.live.com/view.aspx?resid=CD510BE428DBA1E7%21106&authkey=!AFD6EO1-AReoPBk
-  bundledCode: "#line 1 \"DataStructures/static2Drectanglesum.cpp\"\ntemplate<typename\
+  bundledCode: "#line 1 \"DataStructures/static2Drectanglesum.hpp\"\ntemplate<typename\
     \ T>\nstruct CC {\n  bool initialized;\n  vector<T> xs;\n  CC () : initialized(false)\
     \ {}\n  void add(T x) {xs.push_back(x);}\n  void init() {\n    sort(xs.begin(),\
     \ xs.end());\n    xs.erase(unique(xs.begin(), xs.end()), xs.end());\n    initialized\
@@ -73,34 +76,35 @@ data:
     \ i = 1 + N - 1; i < int(dat.size()); i++) {\n                sort(dat[i].begin(),\
     \ dat[i].end());\n            }\n\n            //\u30DC\u30C8\u30E0\u30A2\u30C3\
     \u30D7\u306B\u30DE\u30FC\u30B8\u3057\u3066\u3044\u304F\u3002\n            for(int\
-    \ i = N - 1; i >= 1; i--) {\n                dat[i].resize(dat[i*2].size() + dat[i*2+1].size());\n\
-    \                merge(begin(dat[i*2]), end(dat[i*2]), begin(dat[i*2+1]), end(dat[i*2+1]),\
-    \ begin(dat[i]));\n            }\n        \n            //\u3053\u3053\u307E\u3067\
-    \u304C\u666E\u901A\u306Erange tree\n  \n\n            //\u8449\u4EE5\u5916\u306E\
-    \u9802\u70B9\u306B\u3064\u3044\u3066\u3001L\u3068R\u3092\u57CB\u3081\u3066\u3044\
-    \u304F\u3002\n            for(int i = 1; i <= N-1; i++) {\n                L[i].resize(dat[i].size()\
-    \ + 1);//\u5F8C\u3005\u534A\u958B\u533A\u9593\u3068\u3057\u3066\u6271\u3046\u306E\
-    \u3067\u3001\u4E00\u3064\u591A\u304F\u53D6\u3063\u3066\u304A\u304F\u3068\u4FBF\
-    \u5229\n                R[i].resize(dat[i].size() + 1);\n\n                int\
-    \ li = 0, ri = 0;\n                //\u30A4\u30E1\u30FC\u30B8 : [1]li, ri\u5171\
-    \u306B\u6B63\u3057\u3044( =0, =0\u306E\u521D\u671F\u5316\uFF09\u3002 [2]\u91CD\
-    \u8907\u306A\u3057\u306E\u5024\u304C\u3042\u308B\u306A\u3089\u3001\u5B58\u5728\
-    \u3059\u308B\u65B9\u3092\u4E00\u3064\u9032\u3081\u308C\u3070\u6B63\u3057\u3044\
-    \u3002  [3]\u91CD\u8907\u3042\u308A\u306E\u5024\u304C\u3042\u308B\u306A\u3089\u3001\
-    \u305D\u306E\u5024\u304C\u5B58\u5728\u3059\u308B\u500B\u6570\u5206li, ri\u3092\
-    \u305D\u308C\u305E\u308C\u9032\u3081\u308C\u3070\u6B63\u3057\u3044\u3002\u3053\
-    \u306E\u6642\u3001\u6700\u521D\u306E\u4EE3\u5165\u3067\u6B63\u3057\u3044index\u304C\
-    \u633F\u5165\u3055\u308C\u3066\u304A\u308A\u3001\u305D\u306E\u5F8C\u308D\u306E\
-    \u540C\u3058\u5024\u306Eindex\u306F\u4F7F\u308F\u308C\u306A\u3044\u306E\u3067\u3069\
-    \u3046\u3067\u3082\u826F\u3044\u3002\uFF08\u3064\u307E\u308A\u6B63\u3057\u3044\
-    \uFF09\n                for(int j = 0; j < int(dat[i].size()); j++) {\n      \
-    \              L[i][j] = li, R[i][j] = ri;\n                    if(li < int(dat[2*i].size())\
-    \ && dat[2*i][li].first == dat[i][j].first) {\n                      li++;\n \
-    \                   }\n                    else {\n                      //\u5DE6\
+    \ i = N - 1; i >= 1; i--) {\n                dat[i].resize(dat[i<<1].size() +\
+    \ dat[i<<1|1].size());\n                merge(begin(dat[i<<1]), end(dat[i<<1]),\
+    \ begin(dat[i<<1|1]), end(dat[i<<1|1]), begin(dat[i]));\n            }\n     \
+    \   \n            //\u3053\u3053\u307E\u3067\u304C\u666E\u901A\u306Erange tree\n\
+    \  \n\n            //\u8449\u4EE5\u5916\u306E\u9802\u70B9\u306B\u3064\u3044\u3066\
+    \u3001L\u3068R\u3092\u57CB\u3081\u3066\u3044\u304F\u3002\n            for(int\
+    \ i = 1; i <= N-1; i++) {\n                L[i].resize(dat[i].size() + 1);//\u5F8C\
+    \u3005\u534A\u958B\u533A\u9593\u3068\u3057\u3066\u6271\u3046\u306E\u3067\u3001\
+    \u4E00\u3064\u591A\u304F\u53D6\u3063\u3066\u304A\u304F\u3068\u4FBF\u5229\n   \
+    \             R[i].resize(dat[i].size() + 1);\n\n                int li = 0, ri\
+    \ = 0;\n                //\u30A4\u30E1\u30FC\u30B8 : [1]li, ri\u5171\u306B\u6B63\
+    \u3057\u3044( =0, =0\u306E\u521D\u671F\u5316\uFF09\u3002 [2]\u91CD\u8907\u306A\
+    \u3057\u306E\u5024\u304C\u3042\u308B\u306A\u3089\u3001\u5B58\u5728\u3059\u308B\
+    \u65B9\u3092\u4E00\u3064\u9032\u3081\u308C\u3070\u6B63\u3057\u3044\u3002  [3]\u91CD\
+    \u8907\u3042\u308A\u306E\u5024\u304C\u3042\u308B\u306A\u3089\u3001\u305D\u306E\
+    \u5024\u304C\u5B58\u5728\u3059\u308B\u500B\u6570\u5206li, ri\u3092\u305D\u308C\
+    \u305E\u308C\u9032\u3081\u308C\u3070\u6B63\u3057\u3044\u3002\u3053\u306E\u6642\
+    \u3001\u6700\u521D\u306E\u4EE3\u5165\u3067\u6B63\u3057\u3044index\u304C\u633F\u5165\
+    \u3055\u308C\u3066\u304A\u308A\u3001\u305D\u306E\u5F8C\u308D\u306E\u540C\u3058\
+    \u5024\u306Eindex\u306F\u4F7F\u308F\u308C\u306A\u3044\u306E\u3067\u3069\u3046\u3067\
+    \u3082\u826F\u3044\u3002\uFF08\u3064\u307E\u308A\u6B63\u3057\u3044\uFF09\n   \
+    \             for(int j = 0; j < int(dat[i].size()); j++) {\n                \
+    \    L[i][j] = li, R[i][j] = ri;\n                    if(li < int(dat[i<<1].size())\
+    \ && dat[i<<1][li].first == dat[i][j].first) {\n                      li++;\n\
+    \                    }\n                    else {\n                      //\u5DE6\
     \u306B\u5B58\u5728\u3057\u306A\u3044\u306A\u3089\u53F3\u306B\u5B58\u5728\u3059\
     \u308B\n                      ri++;\n                    }\n                }\n\
-    \                L[i][dat[i].size()] = dat[2*i].size();\n                R[i][dat[i].size()]\
-    \ = dat[2*i+1].size();\n            }\n\n            //\u5168\u3066\u306E\u9802\
+    \                L[i][dat[i].size()] = dat[i<<1].size();\n                R[i][dat[i].size()]\
+    \ = dat[i<<1|1].size();\n            }\n\n            //\u5168\u3066\u306E\u9802\
     \u70B9\u306B\u3064\u3044\u3066\u3001\u7D2F\u7A4D\u548C\u3092\u6C42\u3081\u308B\
     \u3002\n            for(int i = 1; i < int(dat.size()); i++) {\n             \
     \   if(int(dat[i].size()) == 0) continue;//\u9802\u70B9\u304C\u7A7A\u306A\u3089\
@@ -121,17 +125,17 @@ data:
     \u3055\u308C\u308B\u306E\u3067, ty-1\n                if(sy != 0) res -= sum[now][sy-1];\n\
     \                return res;\n            }\n            else {\n            \
     \    return query(sx, tx, L[now][sy], L[now][ty], now << 1, a, (a+b) >> 1) + query(sx,\
-    \ tx, R[now][sy], R[now][ty], (now << 1)+1, (a+b)>>1, b);\n            }\n   \
-    \     }\n  \n  \n    public:\n        void add(long long y, long long x, long\
-    \ long w) {\n            xs.push_back(x);\n            ys.push_back(y);\n    \
-    \        ws.push_back(w);\n            nxs.add(x);\n        }\n\n        void\
-    \ init() {//before query\n            init__();\n        }\n\n        long long\
-    \ get(long long sy, long long ty, long long sx, long long tx) {//[sx, tx] \u2716\
-    \uFE0F [tx, ty] \n            tx++, ty++;//\u534A\u958B\u533A\u9593\u306B\u5909\
-    \u66F4\u3002\n            //lower_bound\u3067\u533A\u9593\u3092\u6DFB\u5B57\u306B\
-    \u5909\u3048\u308B\u969B\u3001\u534A\u958B\u533A\u9593\u3067\u306Fl, r\u5171\u306B\
-    \u5927\u304D\u3044\u65B9\u306B\u4E38\u3081\u308C\u3070\u826F\u3044\u3002\n   \
-    \         sy = lower_bound(dat[1].begin(), dat[1].end(), make_pair(sy, -LLONG_MAX))\
+    \ tx, R[now][sy], R[now][ty], now << 1|1, (a+b)>>1, b);\n            }\n     \
+    \   }\n  \n  \n    public:\n        void add(long long y, long long x, long long\
+    \ w) {\n            xs.push_back(x);\n            ys.push_back(y);\n         \
+    \   ws.push_back(w);\n            nxs.add(x);\n        }\n\n        void init()\
+    \ {//before query\n            init__();\n        }\n\n        long long get(long\
+    \ long sy, long long ty, long long sx, long long tx) {//[sx, tx] \u2716\uFE0F\
+    \ [tx, ty] \n            tx++, ty++;//\u534A\u958B\u533A\u9593\u306B\u5909\u66F4\
+    \u3002\n            //lower_bound\u3067\u533A\u9593\u3092\u6DFB\u5B57\u306B\u5909\
+    \u3048\u308B\u969B\u3001\u534A\u958B\u533A\u9593\u3067\u306Fl, r\u5171\u306B\u5927\
+    \u304D\u3044\u65B9\u306B\u4E38\u3081\u308C\u3070\u826F\u3044\u3002\n         \
+    \   sy = lower_bound(dat[1].begin(), dat[1].end(), make_pair(sy, -LLONG_MAX))\
     \ - dat[1].begin();//y\u5EA7\u6A19\u3092dat[1]\u306B\u304A\u3051\u308B\u6DFB\u5B57\
     \u306B\u5909\u63DB\u3002\u3053\u306E\u6642\u3001\u540C\u3058y\u5EA7\u6A19\u304C\
     \u305F\u304F\u3055\u3093\u3042\u308B\u306A\u3089\u3070\u3001\u305D\u306E\u4E2D\
@@ -205,34 +209,35 @@ data:
     \ i = 1 + N - 1; i < int(dat.size()); i++) {\n                sort(dat[i].begin(),\
     \ dat[i].end());\n            }\n\n            //\u30DC\u30C8\u30E0\u30A2\u30C3\
     \u30D7\u306B\u30DE\u30FC\u30B8\u3057\u3066\u3044\u304F\u3002\n            for(int\
-    \ i = N - 1; i >= 1; i--) {\n                dat[i].resize(dat[i*2].size() + dat[i*2+1].size());\n\
-    \                merge(begin(dat[i*2]), end(dat[i*2]), begin(dat[i*2+1]), end(dat[i*2+1]),\
-    \ begin(dat[i]));\n            }\n        \n            //\u3053\u3053\u307E\u3067\
-    \u304C\u666E\u901A\u306Erange tree\n  \n\n            //\u8449\u4EE5\u5916\u306E\
-    \u9802\u70B9\u306B\u3064\u3044\u3066\u3001L\u3068R\u3092\u57CB\u3081\u3066\u3044\
-    \u304F\u3002\n            for(int i = 1; i <= N-1; i++) {\n                L[i].resize(dat[i].size()\
-    \ + 1);//\u5F8C\u3005\u534A\u958B\u533A\u9593\u3068\u3057\u3066\u6271\u3046\u306E\
-    \u3067\u3001\u4E00\u3064\u591A\u304F\u53D6\u3063\u3066\u304A\u304F\u3068\u4FBF\
-    \u5229\n                R[i].resize(dat[i].size() + 1);\n\n                int\
-    \ li = 0, ri = 0;\n                //\u30A4\u30E1\u30FC\u30B8 : [1]li, ri\u5171\
-    \u306B\u6B63\u3057\u3044( =0, =0\u306E\u521D\u671F\u5316\uFF09\u3002 [2]\u91CD\
-    \u8907\u306A\u3057\u306E\u5024\u304C\u3042\u308B\u306A\u3089\u3001\u5B58\u5728\
-    \u3059\u308B\u65B9\u3092\u4E00\u3064\u9032\u3081\u308C\u3070\u6B63\u3057\u3044\
-    \u3002  [3]\u91CD\u8907\u3042\u308A\u306E\u5024\u304C\u3042\u308B\u306A\u3089\u3001\
-    \u305D\u306E\u5024\u304C\u5B58\u5728\u3059\u308B\u500B\u6570\u5206li, ri\u3092\
-    \u305D\u308C\u305E\u308C\u9032\u3081\u308C\u3070\u6B63\u3057\u3044\u3002\u3053\
-    \u306E\u6642\u3001\u6700\u521D\u306E\u4EE3\u5165\u3067\u6B63\u3057\u3044index\u304C\
-    \u633F\u5165\u3055\u308C\u3066\u304A\u308A\u3001\u305D\u306E\u5F8C\u308D\u306E\
-    \u540C\u3058\u5024\u306Eindex\u306F\u4F7F\u308F\u308C\u306A\u3044\u306E\u3067\u3069\
-    \u3046\u3067\u3082\u826F\u3044\u3002\uFF08\u3064\u307E\u308A\u6B63\u3057\u3044\
-    \uFF09\n                for(int j = 0; j < int(dat[i].size()); j++) {\n      \
-    \              L[i][j] = li, R[i][j] = ri;\n                    if(li < int(dat[2*i].size())\
-    \ && dat[2*i][li].first == dat[i][j].first) {\n                      li++;\n \
-    \                   }\n                    else {\n                      //\u5DE6\
+    \ i = N - 1; i >= 1; i--) {\n                dat[i].resize(dat[i<<1].size() +\
+    \ dat[i<<1|1].size());\n                merge(begin(dat[i<<1]), end(dat[i<<1]),\
+    \ begin(dat[i<<1|1]), end(dat[i<<1|1]), begin(dat[i]));\n            }\n     \
+    \   \n            //\u3053\u3053\u307E\u3067\u304C\u666E\u901A\u306Erange tree\n\
+    \  \n\n            //\u8449\u4EE5\u5916\u306E\u9802\u70B9\u306B\u3064\u3044\u3066\
+    \u3001L\u3068R\u3092\u57CB\u3081\u3066\u3044\u304F\u3002\n            for(int\
+    \ i = 1; i <= N-1; i++) {\n                L[i].resize(dat[i].size() + 1);//\u5F8C\
+    \u3005\u534A\u958B\u533A\u9593\u3068\u3057\u3066\u6271\u3046\u306E\u3067\u3001\
+    \u4E00\u3064\u591A\u304F\u53D6\u3063\u3066\u304A\u304F\u3068\u4FBF\u5229\n   \
+    \             R[i].resize(dat[i].size() + 1);\n\n                int li = 0, ri\
+    \ = 0;\n                //\u30A4\u30E1\u30FC\u30B8 : [1]li, ri\u5171\u306B\u6B63\
+    \u3057\u3044( =0, =0\u306E\u521D\u671F\u5316\uFF09\u3002 [2]\u91CD\u8907\u306A\
+    \u3057\u306E\u5024\u304C\u3042\u308B\u306A\u3089\u3001\u5B58\u5728\u3059\u308B\
+    \u65B9\u3092\u4E00\u3064\u9032\u3081\u308C\u3070\u6B63\u3057\u3044\u3002  [3]\u91CD\
+    \u8907\u3042\u308A\u306E\u5024\u304C\u3042\u308B\u306A\u3089\u3001\u305D\u306E\
+    \u5024\u304C\u5B58\u5728\u3059\u308B\u500B\u6570\u5206li, ri\u3092\u305D\u308C\
+    \u305E\u308C\u9032\u3081\u308C\u3070\u6B63\u3057\u3044\u3002\u3053\u306E\u6642\
+    \u3001\u6700\u521D\u306E\u4EE3\u5165\u3067\u6B63\u3057\u3044index\u304C\u633F\u5165\
+    \u3055\u308C\u3066\u304A\u308A\u3001\u305D\u306E\u5F8C\u308D\u306E\u540C\u3058\
+    \u5024\u306Eindex\u306F\u4F7F\u308F\u308C\u306A\u3044\u306E\u3067\u3069\u3046\u3067\
+    \u3082\u826F\u3044\u3002\uFF08\u3064\u307E\u308A\u6B63\u3057\u3044\uFF09\n   \
+    \             for(int j = 0; j < int(dat[i].size()); j++) {\n                \
+    \    L[i][j] = li, R[i][j] = ri;\n                    if(li < int(dat[i<<1].size())\
+    \ && dat[i<<1][li].first == dat[i][j].first) {\n                      li++;\n\
+    \                    }\n                    else {\n                      //\u5DE6\
     \u306B\u5B58\u5728\u3057\u306A\u3044\u306A\u3089\u53F3\u306B\u5B58\u5728\u3059\
     \u308B\n                      ri++;\n                    }\n                }\n\
-    \                L[i][dat[i].size()] = dat[2*i].size();\n                R[i][dat[i].size()]\
-    \ = dat[2*i+1].size();\n            }\n\n            //\u5168\u3066\u306E\u9802\
+    \                L[i][dat[i].size()] = dat[i<<1].size();\n                R[i][dat[i].size()]\
+    \ = dat[i<<1|1].size();\n            }\n\n            //\u5168\u3066\u306E\u9802\
     \u70B9\u306B\u3064\u3044\u3066\u3001\u7D2F\u7A4D\u548C\u3092\u6C42\u3081\u308B\
     \u3002\n            for(int i = 1; i < int(dat.size()); i++) {\n             \
     \   if(int(dat[i].size()) == 0) continue;//\u9802\u70B9\u304C\u7A7A\u306A\u3089\
@@ -253,17 +258,17 @@ data:
     \u3055\u308C\u308B\u306E\u3067, ty-1\n                if(sy != 0) res -= sum[now][sy-1];\n\
     \                return res;\n            }\n            else {\n            \
     \    return query(sx, tx, L[now][sy], L[now][ty], now << 1, a, (a+b) >> 1) + query(sx,\
-    \ tx, R[now][sy], R[now][ty], (now << 1)+1, (a+b)>>1, b);\n            }\n   \
-    \     }\n  \n  \n    public:\n        void add(long long y, long long x, long\
-    \ long w) {\n            xs.push_back(x);\n            ys.push_back(y);\n    \
-    \        ws.push_back(w);\n            nxs.add(x);\n        }\n\n        void\
-    \ init() {//before query\n            init__();\n        }\n\n        long long\
-    \ get(long long sy, long long ty, long long sx, long long tx) {//[sx, tx] \u2716\
-    \uFE0F [tx, ty] \n            tx++, ty++;//\u534A\u958B\u533A\u9593\u306B\u5909\
-    \u66F4\u3002\n            //lower_bound\u3067\u533A\u9593\u3092\u6DFB\u5B57\u306B\
-    \u5909\u3048\u308B\u969B\u3001\u534A\u958B\u533A\u9593\u3067\u306Fl, r\u5171\u306B\
-    \u5927\u304D\u3044\u65B9\u306B\u4E38\u3081\u308C\u3070\u826F\u3044\u3002\n   \
-    \         sy = lower_bound(dat[1].begin(), dat[1].end(), make_pair(sy, -LLONG_MAX))\
+    \ tx, R[now][sy], R[now][ty], now << 1|1, (a+b)>>1, b);\n            }\n     \
+    \   }\n  \n  \n    public:\n        void add(long long y, long long x, long long\
+    \ w) {\n            xs.push_back(x);\n            ys.push_back(y);\n         \
+    \   ws.push_back(w);\n            nxs.add(x);\n        }\n\n        void init()\
+    \ {//before query\n            init__();\n        }\n\n        long long get(long\
+    \ long sy, long long ty, long long sx, long long tx) {//[sx, tx] \u2716\uFE0F\
+    \ [tx, ty] \n            tx++, ty++;//\u534A\u958B\u533A\u9593\u306B\u5909\u66F4\
+    \u3002\n            //lower_bound\u3067\u533A\u9593\u3092\u6DFB\u5B57\u306B\u5909\
+    \u3048\u308B\u969B\u3001\u534A\u958B\u533A\u9593\u3067\u306Fl, r\u5171\u306B\u5927\
+    \u304D\u3044\u65B9\u306B\u4E38\u3081\u308C\u3070\u826F\u3044\u3002\n         \
+    \   sy = lower_bound(dat[1].begin(), dat[1].end(), make_pair(sy, -LLONG_MAX))\
     \ - dat[1].begin();//y\u5EA7\u6A19\u3092dat[1]\u306B\u304A\u3051\u308B\u6DFB\u5B57\
     \u306B\u5909\u63DB\u3002\u3053\u306E\u6642\u3001\u540C\u3058y\u5EA7\u6A19\u304C\
     \u305F\u304F\u3055\u3093\u3042\u308B\u306A\u3089\u3070\u3001\u305D\u306E\u4E2D\
@@ -277,16 +282,17 @@ data:
     \u77E9\u5F62\u548C\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DataStructures/static2Drectanglesum.cpp
+  path: DataStructures/static2Drectanglesum.hpp
   requiredBy: []
-  timestamp: '2024-05-11 03:22:03+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
-documentation_of: DataStructures/static2Drectanglesum.cpp
+  timestamp: '2024-05-11 03:35:55+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - verify/static2dsum.test.cpp
+documentation_of: DataStructures/static2Drectanglesum.hpp
 layout: document
 redirect_from:
-- /library/DataStructures/static2Drectanglesum.cpp
-- /library/DataStructures/static2Drectanglesum.cpp.html
+- /library/DataStructures/static2Drectanglesum.hpp
+- /library/DataStructures/static2Drectanglesum.hpp.html
 title: "\u9759\u7684\u3067\u5DE8\u5927\u306A\u30B0\u30EA\u30C3\u30C9\u306E\u77E9\u5F62\
   \u548C"
 ---

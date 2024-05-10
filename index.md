@@ -44,8 +44,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: DataStructures/SegTree_with_binary-search.hpp
       title: "\u30BB\u30B0\u6728 + \u4E8C\u5206\u63A2\u7D22"
-    - icon: ':warning:'
-      path: DataStructures/Treap.cpp
+    - icon: ':heavy_check_mark:'
+      path: DataStructures/Treap.hpp
       title: Treap
     - icon: ':warning:'
       path: DataStructures/Treap2.cpp
@@ -84,8 +84,8 @@ data:
     - icon: ':warning:'
       path: DataStructures/splayset.cpp
       title: "splay_tree(set) \u30C8\u30C3\u30D7\u30C0\u30A6\u30F3\u306Bsplay"
-    - icon: ':warning:'
-      path: DataStructures/static2Drectanglesum.cpp
+    - icon: ':heavy_check_mark:'
+      path: DataStructures/static2Drectanglesum.hpp
       title: "\u9759\u7684\u3067\u5DE8\u5927\u306A\u30B0\u30EA\u30C3\u30C9\u306E\u77E9\
         \u5F62\u548C"
     - icon: ':warning:'
@@ -199,6 +199,9 @@ data:
       path: verify/SegTree.test.cpp
       title: verify/SegTree.test.cpp
     - icon: ':heavy_check_mark:'
+      path: verify/Treap.test.cpp
+      title: verify/Treap.test.cpp
+    - icon: ':heavy_check_mark:'
       path: verify/dynamicsegtree.test.cpp
       title: verify/dynamicsegtree.test.cpp
     - icon: ':heavy_check_mark:'
@@ -210,5 +213,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: verify/segwithbsearch.test.cpp
       title: verify/segwithbsearch.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: verify/static2dsum.test.cpp
+      title: verify/static2dsum.test.cpp
 layout: toppage
 ---

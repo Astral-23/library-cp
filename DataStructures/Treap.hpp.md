@@ -2,14 +2,17 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: verify/Treap.test.cpp
+    title: verify/Treap.test.cpp
   _isVerificationFailed: false
-  _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _pathExtension: hpp
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: Treap
     links: []
-  bundledCode: "#line 1 \"DataStructures/Treap.cpp\"\nclass xorshift {\n    uint64_t\
+  bundledCode: "#line 1 \"DataStructures/Treap.hpp\"\nclass xorshift {\n    uint64_t\
     \ x;\n    public:\n        xorshift() {\n            mt19937 rnd(chrono::steady_clock::now().time_since_epoch().count());\n\
     \            x = rnd();\n            for (int i = 0; i < 100; i++) {\n       \
     \         random();\n            }\n        }\n        uint64_t random() {\n \
@@ -86,18 +89,7 @@ data:
     \ get(int l, int r) {return query(l, r + 1);}\n\n        \n\n        void change(int\
     \ l,int r, T2 val) {\n            change__(root, l, r+1, val);\n        }\n\n\
     \        void dump() {\n            dump__(root);\n            cout << endl;\n\
-    \        }\n \n        \n  \n};\n\n\n\n struct Monoid {\n\n    ll a;\n   \n  \
-    \   Monoid(){}\n       \n     Monoid(ll _a) : a(_a) {}\n   \n     friend Monoid\
-    \ op(const Monoid& l, const Monoid& r) {\n       return l.a + r.a;\n     }\n\n\
-    \     static Monoid ide() {\n        return 0LL;\n    }\n   \n    bool operator==(const\
-    \ Monoid& x) const {return a == x.a;}\n    bool operator!=(const Monoid& x) const\
-    \ {return a != x.a;}\n\n};\n\nstruct E {\n    ll a;\n   \n     E(){}\n       \n\
-    \     E(ll _a) : a(_a) {\n       \n     }\n   \n     friend E op(const E& l, const\
-    \ E& r) {\n       return l.a + r.a;\n     }\n   \n    static E ide() {\n     \
-    \   return 0LL;\n    }\n\n    bool operator==(const E& x) const {return a == x.a;}\n\
-    \    bool operator!=(const E& x) const {return a != x.a;}\n};\n\n\nMonoid fx(const\
-    \ Monoid& l, const E& r, long long len) {\n     return l.a + r.a;\n} \n\n/*\n\
-    @brief Treap\n*/\n"
+    \        }\n \n        \n  \n};\n\n\n\n/*\n@brief Treap\n*/\n"
   code: "class xorshift {\n    uint64_t x;\n    public:\n        xorshift() {\n  \
     \          mt19937 rnd(chrono::steady_clock::now().time_since_epoch().count());\n\
     \            x = rnd();\n            for (int i = 0; i < 100; i++) {\n       \
@@ -175,29 +167,19 @@ data:
     \ get(int l, int r) {return query(l, r + 1);}\n\n        \n\n        void change(int\
     \ l,int r, T2 val) {\n            change__(root, l, r+1, val);\n        }\n\n\
     \        void dump() {\n            dump__(root);\n            cout << endl;\n\
-    \        }\n \n        \n  \n};\n\n\n\n struct Monoid {\n\n    ll a;\n   \n  \
-    \   Monoid(){}\n       \n     Monoid(ll _a) : a(_a) {}\n   \n     friend Monoid\
-    \ op(const Monoid& l, const Monoid& r) {\n       return l.a + r.a;\n     }\n\n\
-    \     static Monoid ide() {\n        return 0LL;\n    }\n   \n    bool operator==(const\
-    \ Monoid& x) const {return a == x.a;}\n    bool operator!=(const Monoid& x) const\
-    \ {return a != x.a;}\n\n};\n\nstruct E {\n    ll a;\n   \n     E(){}\n       \n\
-    \     E(ll _a) : a(_a) {\n       \n     }\n   \n     friend E op(const E& l, const\
-    \ E& r) {\n       return l.a + r.a;\n     }\n   \n    static E ide() {\n     \
-    \   return 0LL;\n    }\n\n    bool operator==(const E& x) const {return a == x.a;}\n\
-    \    bool operator!=(const E& x) const {return a != x.a;}\n};\n\n\nMonoid fx(const\
-    \ Monoid& l, const E& r, long long len) {\n     return l.a + r.a;\n} \n\n/*\n\
-    @brief Treap\n*/"
+    \        }\n \n        \n  \n};\n\n\n\n/*\n@brief Treap\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DataStructures/Treap.cpp
+  path: DataStructures/Treap.hpp
   requiredBy: []
-  timestamp: '2024-05-11 03:22:03+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
-documentation_of: DataStructures/Treap.cpp
+  timestamp: '2024-05-11 03:35:55+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - verify/Treap.test.cpp
+documentation_of: DataStructures/Treap.hpp
 layout: document
 redirect_from:
-- /library/DataStructures/Treap.cpp
-- /library/DataStructures/Treap.cpp.html
+- /library/DataStructures/Treap.hpp
+- /library/DataStructures/Treap.hpp.html
 title: Treap
 ---
