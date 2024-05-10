@@ -11,7 +11,7 @@ using vl = vector<ll>;
 
 int main() {
 
-	int N, K;
+	ll N, K;
 	cin >> N >> K;
 	Matrix<mint> A(N, N, 0);
 	rep(i,0,N-1) rep(j,0,N-1) cin >> A[i][j];
