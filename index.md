@@ -107,7 +107,7 @@ data:
       title: "HLD(\u53EF\u63DB)"
     - icon: ':warning:'
       path: Graph/hld_utiliry.cpp
-      title: tree_utility(lca,jump,ances)
+      title: "\u6728\u306B\u95A2\u3059\u308Butility by HLD(lca,jump,ances)"
     - icon: ':warning:'
       path: Graph/rerootdp.cpp
       title: "\u5168\u65B9\u4F4D\u6728DP"
@@ -117,6 +117,23 @@ data:
     - icon: ':warning:'
       path: Graph/treefuncs.cpp
       title: "\u6728\u306B\u95A2\u3059\u308Butility"
+  - name: String
+    pages:
+    - icon: ':warning:'
+      path: String/MP.cpp
+      title: "MP\u65B9"
+    - icon: ':warning:'
+      path: String/Manacher.cpp
+      title: Manacher
+    - icon: ':warning:'
+      path: String/Zalgo.cpp
+      title: Z_algorithm
+    - icon: ':warning:'
+      path: String/hash.cpp
+      title: "\u30ED\u30FC\u30EA\u30F3\u30B0\u30CF\u30C3\u30B7\u30E5\u306E\u578B"
+    - icon: ':warning:'
+      path: String/suf_array.cpp
+      title: suffix_array
   verificationCategories:
   - name: DetaStructures/verify
     pages:
