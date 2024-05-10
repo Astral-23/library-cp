@@ -135,7 +135,7 @@ data:
       path: Math/factorize.cpp
       title: "\u7D20\u56E0\u6570\u5206\u89E3\uFF08Pollard_rho) N^(1/4)logN"
     - icon: ':warning:'
-      path: Math/matrix.cpp
+      path: Math/matrix.hpp
       title: "\u884C\u5217\u306E\u578B"
     - icon: ':warning:'
       path: Math/millerrobin.cpp
@@ -152,8 +152,8 @@ data:
   - name: String
     pages:
     - icon: ':warning:'
-      path: String/MP.cpp
-      title: "MP\u65B9"
+      path: String/MP.hpp
+      title: "MP\u65B9\u6CD5"
     - icon: ':warning:'
       path: String/Manacher.cpp
       title: Manacher
@@ -192,6 +192,9 @@ data:
   verificationCategories:
   - name: verify
     pages:
+    - icon: ':x:'
+      path: verify/Matrix.test.cpp
+      title: verify/Matrix.test.cpp
     - icon: ':heavy_check_mark:'
       path: verify/SegTree.test.cpp
       title: verify/SegTree.test.cpp
