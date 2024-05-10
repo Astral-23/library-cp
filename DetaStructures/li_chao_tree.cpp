@@ -67,3 +67,7 @@ struct li_chao_tree {
     }
 
 };
+
+/*
+@brief : Li chao tree
+*/

@@ -32,3 +32,6 @@ struct BIT {
 
 };
 
+/*
+@brief : BIT
+*/
