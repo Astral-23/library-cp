@@ -169,6 +169,18 @@ data:
   - name: Utilities
     pages:
     - icon: ':warning:'
+      path: Utilities/dynamic_modint.cpp
+      title: "\u4EFB\u610Fmod\u306Emodint(mod < 2 ^ 32)"
+    - icon: ':warning:'
+      path: Utilities/dynamic_modint2.cpp
+      title: "\u4EFB\u610Fmod\u306Emodint(mod < 2 ^ 64)"
+    - icon: ':warning:'
+      path: Utilities/modint107.cpp
+      title: modint1000000007
+    - icon: ':warning:'
+      path: Utilities/modint998.cpp
+      title: modint998244353
+    - icon: ':warning:'
       path: Utilities/timer.cpp
       title: Timer
     - icon: ':warning:'
