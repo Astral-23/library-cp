@@ -89,24 +89,3 @@ struct DynamicSegTree {// max_pos < LLONG_MAX(開区間の弊害)
 
 };
 
-struct Monoid {
-    mint a, b;
-    
-    Monoid(){}
-    Monoid(mint _a, mint _b) : a(_a), b(_b){};
-
-    friend Monoid op(const Monoid& l, const Monoid& r) {
-        Monoid res;
-        res.a = l.a * r.a;
-        res.b = r.a * l.b + r.b;
-        return res;
-    } 
-    friend Monoid update(const Monoid& l, const Monoid& x) {
-        return x;
-    }
-
-
-	static Monoid ide() {
-		return Monoid(1, 0);
-	}
-};
