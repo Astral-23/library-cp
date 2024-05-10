@@ -1,12 +1,13 @@
 template<typename T>
 struct Matrix  {
+  using ll = long long;
   int h, w;
   vector<vector<T>> d;
   Matrix() {}
   Matrix(int h, int w, T val = 0): h(h), w(w), d(h, vector<T>(w, val)){}
   Matrix& unit() {
     assert(h == w);
-    rep(i, 0, h-1) {
+    for(int i = 0; i < h; i++) {
       d[i][i] = 1;
     }
    return *this;
@@ -16,9 +17,9 @@ struct Matrix  {
   Matrix operator*(const Matrix&a) const{
     assert(w == a.h);
     Matrix r(h, a.w);
-    rep(i, 0, h-1) {
-      rep(k, 0, w-1) {
-        rep(j, 0, a.w-1) {
+    for(int i = 0; i < h; i++) {
+      for(int k = 0; k < w; k++) {
+        for(int j = 0; j < a.w; j++) {
           r[i][j] += d[i][k] * a[k][j];
         }
       }
