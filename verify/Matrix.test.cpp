@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 #include "../Math/matrix.hpp"
-#include "../library-cp/Utilities/modint998.hpp"
+#include "../Utilities/modint998.hpp"
 using ll = long long;
 using vvl = vector<vector<ll>>;
 using vl = vector<ll>;

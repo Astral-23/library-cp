@@ -33,7 +33,7 @@ struct Monoid {
 
 int main() {
 	ios::sync_with_stdio(false);
-  std::cin.tie(nullptr);
+    std::cin.tie(nullptr);
     int N, Q;
     cin >> N >> Q;
     int test = 100;

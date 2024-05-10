@@ -3,7 +3,7 @@ triple:          'arm64-apple-darwin'
 binary-path:     '/Users/library-cp/library-cp/verify/Matrix.test'
 relocations:
   - { offsetInCU: 0xCE, offset: 0xCE, size: 0x8, addend: 0x0, symName: __ZSt23__is_constant_evaluatedv, symObjAddr: 0x0, symBinAddr: 0x1000073F8, symSize: 0x8 }
-  - { offsetInCU: 0x2F481, offset: 0x2F481, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0xE05E0, symBinAddr: 0x100010590, symSize: 0x0 }
+  - { offsetInCU: 0x2F481, offset: 0x2F481, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0xE05F8, symBinAddr: 0x100010590, symSize: 0x0 }
   - { offsetInCU: 0x30752, offset: 0x30752, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_Matrix.test.cpp, symObjAddr: 0x2854, symBinAddr: 0x100009C4C, symSize: 0x14 }
   - { offsetInCU: 0x30776, offset: 0x30776, size: 0x8, addend: 0x0, symName: __Z41__static_initialization_and_destruction_0v, symObjAddr: 0x2818, symBinAddr: 0x100009C10, symSize: 0x3C }
   - { offsetInCU: 0x3077E, offset: 0x3077E, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_Matrix.test.cpp, symObjAddr: 0x2854, symBinAddr: 0x100009C4C, symSize: 0x14 }
