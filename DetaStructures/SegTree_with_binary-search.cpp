@@ -152,3 +152,7 @@ int kth_element (const Monoid& now) {
 int get_order(const Monoid& now, SegTree<Monoid>& seg) {
 	return seg.get(1, now.a).a;
 }
+
+/*
+@brief : セグ木 + 二分探索
+*/

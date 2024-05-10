@@ -129,3 +129,7 @@ struct E {
 Monoid fx(const Monoid& l, const E& r, long long len) {
      return l.a * r.a + r.b * len;
 }
+
+/*
+@brief : 遅延セグ木
+*/

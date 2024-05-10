@@ -79,3 +79,6 @@ struct Monoid {
     
 };
 
+/*
+@brief : セグ木
+*/

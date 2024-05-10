@@ -169,3 +169,7 @@ struct Monoid {
 		return 0;
 	}
 };
+
+/*
+@brief : 動的2次元セグ木
+*/
