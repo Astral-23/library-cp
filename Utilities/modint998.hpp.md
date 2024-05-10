@@ -9,6 +9,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: verify/SegTree.test.cpp
     title: verify/SegTree.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: verify/lazyseg.test.cpp
+    title: verify/lazyseg.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -71,6 +74,7 @@ data:
   verifiedWith:
   - verify/Matrix.test.cpp
   - verify/SegTree.test.cpp
+  - verify/lazyseg.test.cpp
 documentation_of: Utilities/modint998.hpp
 layout: document
 redirect_from:

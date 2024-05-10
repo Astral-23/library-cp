@@ -2,14 +2,17 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: verify/lazyseg.test.cpp
+    title: verify/lazyseg.test.cpp
   _isVerificationFailed: false
-  _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _pathExtension: hpp
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/LazySegTree.cpp\"\n\ntemplate<typename X,\
+  bundledCode: "#line 1 \"DetaStructures/LazySegTree.hpp\"\n\ntemplate<typename X,\
     \ typename E>\nstruct LazySegTree {\n    using FX = function<X(X, E, long long)>;//X\u306B\
     \u4F5C\u7528\u7D20M\u3092\u4F5C\u7528\u3055\u305B\u308B\n    \n    int n;\n  \
     \  int siz;\n    FX fx; \n    vector<X> dat;\n    vector<E> lazy;\n    LazySegTree(int\
@@ -39,20 +42,8 @@ data:
     \        X get(int l, int r) {\n          return query(l, r + 1, 1, n + 1, 1);\n\
     \        }\n\n        void dump() {\n            for(int i = 1; i <= siz; i++)\
     \ {\n                cout << get(i, i) << \" \";//\u9069\u5B9C\u76F4\u3059\u3002\
-    \n            }\n            cout << endl;\n        }\n};    \n\nusing ll = long\
-    \ long;\n\nstruct Monoid {\n    mint a;\n   \n    Monoid(){}\n      \n    Monoid(mint\
-    \ _a) : a(_a) {\n      \n    }\n\n    friend Monoid op(const Monoid& l, const\
-    \ Monoid& r) {\n      return l.a + r.a;\n    }\n\n    static Monoid ide() {\n\
-    \       return mint(0);\n    }\n    \n};\n\n\nstruct E {    \n    mint a, b;\n\
-    \   \n    E(){}\n      \n    E(mint _a, mint _b) : a(_a), b(_b) {}\n\n    friend\
-    \ E op(const E& l, const E& r) {//r\u306E\u304C\u65B0\u3057\u3044\u3002(affine)\n\
-    \        E res;\n        res.a = l.a * r.a;\n        res.b = r.a * l.b + r.b;\n\
-    \        return res;\n      \n    }\n    static E ide() {\n       return E(1,\
-    \ 0);\n    }\n   \n    bool operator==(const E& x) const {return (a == x.a &&\
-    \ b == x.b);}\n    bool operator!=(const E& x) const {return !(*this == x);}\n\
-    \n};\n\n\n\nMonoid fx(const Monoid& l, const E& r, long long len) {\n     return\
-    \ l.a * r.a + r.b * len;\n}\n\n/*\n@brief \u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\
-    \u30C8\u6728\n*/\n"
+    \n            }\n            cout << endl;\n        }\n};    \n/*\n@brief \u9045\
+    \u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u6728\n*/\n"
   code: "\ntemplate<typename X, typename E>\nstruct LazySegTree {\n    using FX =\
     \ function<X(X, E, long long)>;//X\u306B\u4F5C\u7528\u7D20M\u3092\u4F5C\u7528\u3055\
     \u305B\u308B\n    \n    int n;\n    int siz;\n    FX fx; \n    vector<X> dat;\n\
@@ -83,31 +74,20 @@ data:
     \        X get(int l, int r) {\n          return query(l, r + 1, 1, n + 1, 1);\n\
     \        }\n\n        void dump() {\n            for(int i = 1; i <= siz; i++)\
     \ {\n                cout << get(i, i) << \" \";//\u9069\u5B9C\u76F4\u3059\u3002\
-    \n            }\n            cout << endl;\n        }\n};    \n\nusing ll = long\
-    \ long;\n\nstruct Monoid {\n    mint a;\n   \n    Monoid(){}\n      \n    Monoid(mint\
-    \ _a) : a(_a) {\n      \n    }\n\n    friend Monoid op(const Monoid& l, const\
-    \ Monoid& r) {\n      return l.a + r.a;\n    }\n\n    static Monoid ide() {\n\
-    \       return mint(0);\n    }\n    \n};\n\n\nstruct E {    \n    mint a, b;\n\
-    \   \n    E(){}\n      \n    E(mint _a, mint _b) : a(_a), b(_b) {}\n\n    friend\
-    \ E op(const E& l, const E& r) {//r\u306E\u304C\u65B0\u3057\u3044\u3002(affine)\n\
-    \        E res;\n        res.a = l.a * r.a;\n        res.b = r.a * l.b + r.b;\n\
-    \        return res;\n      \n    }\n    static E ide() {\n       return E(1,\
-    \ 0);\n    }\n   \n    bool operator==(const E& x) const {return (a == x.a &&\
-    \ b == x.b);}\n    bool operator!=(const E& x) const {return !(*this == x);}\n\
-    \n};\n\n\n\nMonoid fx(const Monoid& l, const E& r, long long len) {\n     return\
-    \ l.a * r.a + r.b * len;\n}\n\n/*\n@brief \u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\
-    \u30C8\u6728\n*/"
+    \n            }\n            cout << endl;\n        }\n};    \n/*\n@brief \u9045\
+    \u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u6728\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/LazySegTree.cpp
+  path: DetaStructures/LazySegTree.hpp
   requiredBy: []
-  timestamp: '2024-05-10 22:41:34+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
-documentation_of: DetaStructures/LazySegTree.cpp
+  timestamp: '2024-05-11 01:56:04+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - verify/lazyseg.test.cpp
+documentation_of: DetaStructures/LazySegTree.hpp
 layout: document
 redirect_from:
-- /library/DetaStructures/LazySegTree.cpp
-- /library/DetaStructures/LazySegTree.cpp.html
+- /library/DetaStructures/LazySegTree.hpp
+- /library/DetaStructures/LazySegTree.hpp.html
 title: "\u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
 ---

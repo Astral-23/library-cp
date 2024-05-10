@@ -32,8 +32,8 @@ data:
     - icon: ':warning:'
       path: DetaStructures/DynamicSegTree.cpp
       title: "\u52D5\u7684\u30BB\u30B0\u6728"
-    - icon: ':warning:'
-      path: DetaStructures/LazySegTree.cpp
+    - icon: ':heavy_check_mark:'
+      path: DetaStructures/LazySegTree.hpp
       title: "\u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     - icon: ':warning:'
       path: DetaStructures/SWAG.cpp
@@ -198,5 +198,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: verify/SegTree.test.cpp
       title: verify/SegTree.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: verify/lazyseg.test.cpp
+      title: verify/lazyseg.test.cpp
 layout: toppage
 ---
