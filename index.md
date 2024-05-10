@@ -38,8 +38,8 @@ data:
     - icon: ':warning:'
       path: DetaStructures/SWAG.cpp
       title: SWAG
-    - icon: ':warning:'
-      path: DetaStructures/SegTree.cpp
+    - icon: ':heavy_check_mark:'
+      path: DetaStructures/SegTree.hpp
       title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     - icon: ':warning:'
       path: DetaStructures/SegTree_with_binary-search.cpp
@@ -187,10 +187,10 @@ data:
       path: Utilities/xorshift.cpp
       title: xorshift
   verificationCategories:
-  - name: DetaStructures/verify
+  - name: .
     pages:
     - icon: ':heavy_check_mark:'
-      path: DetaStructures/verify/SegTree.test.cpp
-      title: DetaStructures/verify/SegTree.test.cpp
+      path: SegTree.test.cpp
+      title: SegTree.test.cpp
 layout: toppage
 ---

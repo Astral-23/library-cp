@@ -2,15 +2,18 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: SegTree.test.cpp
+    title: SegTree.test.cpp
   _isVerificationFailed: false
-  _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _pathExtension: hpp
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     _deprecated_at_docs: docs/segtree.md
     document_title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     links: []
-  bundledCode: "#line 1 \"DetaStructures/SegTree.cpp\"\ntemplate<typename T>\nstruct\
+  bundledCode: "#line 1 \"DetaStructures/SegTree.hpp\"\ntemplate<typename T>\nstruct\
     \ SegTree {\n    int n;\n    vector<T> dat;\n\n         \n    SegTree(int siz)\
     \ {\n        n = 1;\n        while(n < siz) n <<= 1;\n        dat.resize(n * 2,\
     \ T::ide());\n    }\n\n    private:\n         \n        T query(int l, int r)\
@@ -27,12 +30,8 @@ data:
     \            }\n        }\n         \n        T get(int l, int r) {// [l, r]\u306E\
     \u6F14\u7B97\u7D50\u679C\u3002\n            return query(l, r+1);\n        }\n\
     \n        T operator[](int pos) {\n            return dat[pos + n - 1];\n    \
-    \    }\n         \n};\n\n\n\nstruct Monoid {\n    long long a;\n   \n    Monoid(){}\n\
-    \      \n    Monoid(long long _a) : a(_a) {\n      \n    }\n\n    friend Monoid\
-    \ op(const Monoid& l, const Monoid& r) {\n      return l.a + r.a;\n    }\n\n \
-    \   friend Monoid update(const Monoid& l, const Monoid& r) {\n   \n    }\n\n \
-    \   static Monoid ide() {\n       return 0LL;\n    }\n    \n};\n\n/*\n@brief \u30BB\
-    \u30B0\u30E1\u30F3\u30C8\u6728\n@docs docs/segtree.md\n*/\n"
+    \    }\n         \n};\n\n\n/*\n@brief \u30BB\u30B0\u30E1\u30F3\u30C8\u6728\n@docs\
+    \ docs/segtree.md\n*/\n"
   code: "template<typename T>\nstruct SegTree {\n    int n;\n    vector<T> dat;\n\n\
     \         \n    SegTree(int siz) {\n        n = 1;\n        while(n < siz) n <<=\
     \ 1;\n        dat.resize(n * 2, T::ide());\n    }\n\n    private:\n         \n\
@@ -50,24 +49,20 @@ data:
     \        \n        T get(int l, int r) {// [l, r]\u306E\u6F14\u7B97\u7D50\u679C\
     \u3002\n            return query(l, r+1);\n        }\n\n        T operator[](int\
     \ pos) {\n            return dat[pos + n - 1];\n        }\n         \n};\n\n\n\
-    \nstruct Monoid {\n    long long a;\n   \n    Monoid(){}\n      \n    Monoid(long\
-    \ long _a) : a(_a) {\n      \n    }\n\n    friend Monoid op(const Monoid& l, const\
-    \ Monoid& r) {\n      return l.a + r.a;\n    }\n\n    friend Monoid update(const\
-    \ Monoid& l, const Monoid& r) {\n   \n    }\n\n    static Monoid ide() {\n   \
-    \    return 0LL;\n    }\n    \n};\n\n/*\n@brief \u30BB\u30B0\u30E1\u30F3\u30C8\
-    \u6728\n@docs docs/segtree.md\n*/"
+    /*\n@brief \u30BB\u30B0\u30E1\u30F3\u30C8\u6728\n@docs docs/segtree.md\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: DetaStructures/SegTree.cpp
+  path: DetaStructures/SegTree.hpp
   requiredBy: []
-  timestamp: '2024-05-10 23:47:16+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
-documentation_of: DetaStructures/SegTree.cpp
+  timestamp: '2024-05-10 23:50:54+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - SegTree.test.cpp
+documentation_of: DetaStructures/SegTree.hpp
 layout: document
 redirect_from:
-- /library/DetaStructures/SegTree.cpp
-- /library/DetaStructures/SegTree.cpp.html
+- /library/DetaStructures/SegTree.hpp
+- /library/DetaStructures/SegTree.hpp.html
 title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
 ---
 ## テスト
