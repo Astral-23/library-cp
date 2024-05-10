@@ -83,7 +83,7 @@ struct DynamicSegTree {// max_pos < LLONG_MAX(開区間の弊害)
 
 		/*
 		    DynamicSegTree<X, W> seg(minpos, maxpos)  X...データ W...添字の型  O(1)
-			@brief: 動的セグ木
+			@brief : 動的セグ木
 		
 		*/
 
