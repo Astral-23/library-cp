@@ -1,6 +1,7 @@
 {
 "verify/Matrix.test.cpp": "2024-05-11 01:49:34 +0900",
 "verify/SegTree.test.cpp": "2024-05-11 03:22:03 +0900",
+"verify/dynamicsegtree.test.cpp": "2024-05-11 03:28:18 +0900",
 "verify/fastset.test.cpp": "2024-05-11 03:22:03 +0900",
 "verify/lazyseg.test.cpp": "2024-05-11 03:22:03 +0900",
 "verify/segwithbsearch.test.cpp": "2024-05-11 03:22:03 +0900"
