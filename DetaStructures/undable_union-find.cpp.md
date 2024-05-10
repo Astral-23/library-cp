@@ -7,6 +7,7 @@ data:
   _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
+    document_title: ": undo\u53EF\u80FDunion_find"
     links: []
   bundledCode: "#line 1 \"DetaStructures/undable_union-find.cpp\"\nstruct Union {\
     \   \n\tprivate:\n\t    struct data {\n            int a, b;\n\t\t\tint par_b;\n\
@@ -30,7 +31,7 @@ data:
     \t\t\tsize[pre.a] = pre.siz_a;\n\t\t\tedge[pre.a] = pre.edge_a;\n\t\t\tif(pre.a\
     \ != pre.b) cc++;\n        }\n\n\n        int getsize(int u) {\n            return\
     \ size[root(u)];\n        }\n\n\t\tint component_count() {\n\t\t\treturn cc;\n\
-    \t\t}\n\n\t\t/*  0-indexed\n\t\t    Union(N) O(N)\n\t\t\t@brief: undo\u53EF\u80FD\
+    \t\t}\n\n\t\t/*  0-indexed\n\t\t    Union(N) O(N)\n\t\t\t@brief : undo\u53EF\u80FD\
     union_find\n\t\t\troot(u), same(a, b), unit(a, b) ... O(logN)\n\t\t\tundo() ...\
     \ O(1)\n\t\t\tgetsize(u) ... u\u3092\u542B\u3080\u9023\u7D50\u6210\u5206\u306E\
     \u30B5\u30A4\u30BA O(1)\n\t\t\tcomponent_count() ... \u9023\u7D50\u6210\u5206\u306E\
@@ -63,7 +64,7 @@ data:
     \ = pre.edge_a;\n\t\t\tif(pre.a != pre.b) cc++;\n        }\n\n\n        int getsize(int\
     \ u) {\n            return size[root(u)];\n        }\n\n\t\tint component_count()\
     \ {\n\t\t\treturn cc;\n\t\t}\n\n\t\t/*  0-indexed\n\t\t    Union(N) O(N)\n\t\t\
-    \t@brief: undo\u53EF\u80FDunion_find\n\t\t\troot(u), same(a, b), unit(a, b) ...\
+    \t@brief : undo\u53EF\u80FDunion_find\n\t\t\troot(u), same(a, b), unit(a, b) ...\
     \ O(logN)\n\t\t\tundo() ... O(1)\n\t\t\tgetsize(u) ... u\u3092\u542B\u3080\u9023\
     \u7D50\u6210\u5206\u306E\u30B5\u30A4\u30BA O(1)\n\t\t\tcomponent_count() ... \u9023\
     \u7D50\u6210\u5206\u306E\u500B\u6570\u3092\u623B\u3059\u3002\u30CE\u30FC\u3092\
@@ -77,7 +78,7 @@ data:
   isVerificationFile: false
   path: DetaStructures/undable_union-find.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:23:09+09:00'
+  timestamp: '2024-05-10 22:34:07+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/undable_union-find.cpp
@@ -85,5 +86,5 @@ layout: document
 redirect_from:
 - /library/DetaStructures/undable_union-find.cpp
 - /library/DetaStructures/undable_union-find.cpp.html
-title: DetaStructures/undable_union-find.cpp
+title: ": undo\u53EF\u80FDunion_find"
 ---
