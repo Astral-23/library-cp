@@ -85,8 +85,8 @@ struct static2Drectunglesum {
 
             //ボトムアップにマージしていく。
             for(int i = N - 1; i >= 1; i--) {
-                dat[i].resize(dat[i*2].size() + dat[i*2+1].size());
-                merge(begin(dat[i*2]), end(dat[i*2]), begin(dat[i*2+1]), end(dat[i*2+1]), begin(dat[i]));
+                dat[i].resize(dat[i<<1].size() + dat[i<<1|1].size());
+                merge(begin(dat[i<<1]), end(dat[i<<1]), begin(dat[i<<1|1]), end(dat[i<<1|1]), begin(dat[i]));
             }
         
             //ここまでが普通のrange tree
@@ -101,7 +101,7 @@ struct static2Drectunglesum {
                 //イメージ : [1]li, ri共に正しい( =0, =0の初期化）。 [2]重複なしの値があるなら、存在する方を一つ進めれば正しい。  [3]重複ありの値があるなら、その値が存在する個数分li, riをそれぞれ進めれば正しい。この時、最初の代入で正しいindexが挿入されており、その後ろの同じ値のindexは使われないのでどうでも良い。（つまり正しい）
                 for(int j = 0; j < int(dat[i].size()); j++) {
                     L[i][j] = li, R[i][j] = ri;
-                    if(li < int(dat[2*i].size()) && dat[2*i][li].first == dat[i][j].first) {
+                    if(li < int(dat[i<<1].size()) && dat[i<<1][li].first == dat[i][j].first) {
                       li++;
                     }
                     else {
@@ -109,8 +109,8 @@ struct static2Drectunglesum {
                       ri++;
                     }
                 }
-                L[i][dat[i].size()] = dat[2*i].size();
-                R[i][dat[i].size()] = dat[2*i+1].size();
+                L[i][dat[i].size()] = dat[i<<1].size();
+                R[i][dat[i].size()] = dat[i<<1|1].size();
             }
 
             //全ての頂点について、累積和を求める。
@@ -136,7 +136,7 @@ struct static2Drectunglesum {
                 return res;
             }
             else {
-                return query(sx, tx, L[now][sy], L[now][ty], now << 1, a, (a+b) >> 1) + query(sx, tx, R[now][sy], R[now][ty], (now << 1)+1, (a+b)>>1, b);
+                return query(sx, tx, L[now][sy], L[now][ty], now << 1, a, (a+b) >> 1) + query(sx, tx, R[now][sy], R[now][ty], now << 1|1, (a+b)>>1, b);
             }
         }
   

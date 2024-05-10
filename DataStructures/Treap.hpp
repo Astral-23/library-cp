@@ -228,53 +228,6 @@ struct Treap {
 
 
 
- struct Monoid {
-
-    ll a;
-   
-     Monoid(){}
-       
-     Monoid(ll _a) : a(_a) {}
-   
-     friend Monoid op(const Monoid& l, const Monoid& r) {
-       return l.a + r.a;
-     }
-
-     static Monoid ide() {
-        return 0LL;
-    }
-   
-    bool operator==(const Monoid& x) const {return a == x.a;}
-    bool operator!=(const Monoid& x) const {return a != x.a;}
-
-};
-
-struct E {
-    ll a;
-   
-     E(){}
-       
-     E(ll _a) : a(_a) {
-       
-     }
-   
-     friend E op(const E& l, const E& r) {
-       return l.a + r.a;
-     }
-   
-    static E ide() {
-        return 0LL;
-    }
-
-    bool operator==(const E& x) const {return a == x.a;}
-    bool operator!=(const E& x) const {return a != x.a;}
-};
-
-
-Monoid fx(const Monoid& l, const E& r, long long len) {
-     return l.a + r.a;
-} 
-
 /*
 @brief Treap
 */
