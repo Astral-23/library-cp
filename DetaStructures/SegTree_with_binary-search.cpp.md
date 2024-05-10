@@ -7,6 +7,7 @@ data:
   _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
+    document_title: ": \u30BB\u30B0\u6728 + \u4E8C\u5206\u63A2\u7D22"
     links: []
   bundledCode: "#line 1 \"DetaStructures/SegTree_with_binary-search.cpp\"\ntemplate<typename\
     \ T>\nstruct SegTree {\n    int n;\n    vector<T> dat;\n\n         \n    SegTree(int\
@@ -55,7 +56,8 @@ data:
     \ r) {\n\n    }\n\n    static Monoid ide() {\n       return 0LL;\n    }\n    \n\
     };\n\nint kth_pos;\nint kth_element (const Monoid& now) {\n\treturn now.a >= kth_pos;\n\
     };\n\n\nint get_order(const Monoid& now, SegTree<Monoid>& seg) {\n\treturn seg.get(1,\
-    \ now.a).a;\n}\n"
+    \ now.a).a;\n}\n\n/*\n@brief : \u30BB\u30B0\u6728 + \u4E8C\u5206\u63A2\u7D22\n\
+    */\n"
   code: "template<typename T>\nstruct SegTree {\n    int n;\n    vector<T> dat;\n\n\
     \         \n    SegTree(int siz) {\n        n = 1;\n        while(n < siz) n <<=\
     \ 1;\n        dat.resize(n * 2, T::ide());\n    }\n\n    private:\n         \n\
@@ -103,12 +105,12 @@ data:
     \ }\n\n    static Monoid ide() {\n       return 0LL;\n    }\n    \n};\n\nint kth_pos;\n\
     int kth_element (const Monoid& now) {\n\treturn now.a >= kth_pos;\n};\n\n\nint\
     \ get_order(const Monoid& now, SegTree<Monoid>& seg) {\n\treturn seg.get(1, now.a).a;\n\
-    }\n"
+    }\n\n/*\n@brief : \u30BB\u30B0\u6728 + \u4E8C\u5206\u63A2\u7D22\n*/"
   dependsOn: []
   isVerificationFile: false
   path: DetaStructures/SegTree_with_binary-search.cpp
   requiredBy: []
-  timestamp: '2024-05-10 21:57:07+09:00'
+  timestamp: '2024-05-10 22:30:14+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/SegTree_with_binary-search.cpp
@@ -116,5 +118,5 @@ layout: document
 redirect_from:
 - /library/DetaStructures/SegTree_with_binary-search.cpp
 - /library/DetaStructures/SegTree_with_binary-search.cpp.html
-title: DetaStructures/SegTree_with_binary-search.cpp
+title: ": \u30BB\u30B0\u6728 + \u4E8C\u5206\u63A2\u7D22"
 ---

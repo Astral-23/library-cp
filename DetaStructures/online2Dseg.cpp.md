@@ -7,6 +7,7 @@ data:
   _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
+    document_title: ": \u52D5\u76842\u6B21\u5143\u30BB\u30B0\u6728"
     links: []
   bundledCode: "#line 1 \"DetaStructures/online2Dseg.cpp\"\ntemplate<typename X, typename\
     \ W>\nstruct DynamicSegTree {// max_pos < LLONG_MAX(\u958B\u533A\u9593\u306E\u5F0A\
@@ -104,7 +105,8 @@ data:
     \   Monoid res;\n        res.a = l.a + r.a;\n        return res;\n    } \n   \
     \ friend Monoid update(const Monoid& l, const Monoid& x) {\n        Monoid res\
     \ = l;\n        res.a += x.a;\n        return res;\n    }\n\n\tstatic Monoid ide()\
-    \ {\n\t\treturn 0;\n\t}\n};\n"
+    \ {\n\t\treturn 0;\n\t}\n};\n\n/*\n@brief : \u52D5\u76842\u6B21\u5143\u30BB\u30B0\
+    \u6728\n*/\n"
   code: "template<typename X, typename W>\nstruct DynamicSegTree {// max_pos < LLONG_MAX(\u958B\
     \u533A\u9593\u306E\u5F0A\u5BB3)\n    \n\n    W  min_pos;\n    W  max_pos;//\u6E21\
     \u3059\u6642\u306F\u9589\u533A\u9593\u3060\u304C\u3001\u958B\u533A\u9593\u3067\
@@ -201,12 +203,13 @@ data:
     \   Monoid res;\n        res.a = l.a + r.a;\n        return res;\n    } \n   \
     \ friend Monoid update(const Monoid& l, const Monoid& x) {\n        Monoid res\
     \ = l;\n        res.a += x.a;\n        return res;\n    }\n\n\tstatic Monoid ide()\
-    \ {\n\t\treturn 0;\n\t}\n};"
+    \ {\n\t\treturn 0;\n\t}\n};\n\n/*\n@brief : \u52D5\u76842\u6B21\u5143\u30BB\u30B0\
+    \u6728\n*/"
   dependsOn: []
   isVerificationFile: false
   path: DetaStructures/online2Dseg.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:23:09+09:00'
+  timestamp: '2024-05-10 22:30:14+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/online2Dseg.cpp
@@ -214,5 +217,5 @@ layout: document
 redirect_from:
 - /library/DetaStructures/online2Dseg.cpp
 - /library/DetaStructures/online2Dseg.cpp.html
-title: DetaStructures/online2Dseg.cpp
+title: ": \u52D5\u76842\u6B21\u5143\u30BB\u30B0\u6728"
 ---

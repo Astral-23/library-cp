@@ -7,6 +7,7 @@ data:
   _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
+    document_title: ": \u52D5\u7684\u30BB\u30B0\u6728"
     links: []
   bundledCode: "#line 1 \"DetaStructures/DynamicSegTree.cpp\"\ntemplate<typename X,\
     \ typename W>\nstruct DynamicSegTree {// max_pos < LLONG_MAX(\u958B\u533A\u9593\
@@ -60,7 +61,7 @@ data:
     \ {\n           root = change__(root, min_pos, max_pos, pos, x);\n        }\n\n\
     \        X  get(W l, W r) {\n            return get__(root, min_pos, max_pos,\
     \ l, r+1);\n        }\n\n\t\t/*\n\t\t    DynamicSegTree<X, W> seg(minpos, maxpos)\
-    \  X...\u30C7\u30FC\u30BF W...\u6DFB\u5B57\u306E\u578B  O(1)\n\t\t\t@brief: \u52D5\
+    \  X...\u30C7\u30FC\u30BF W...\u6DFB\u5B57\u306E\u578B  O(1)\n\t\t\t@brief : \u52D5\
     \u7684\u30BB\u30B0\u6728\n\t\t\n\t\t*/\n\n};\n\nstruct Monoid {\n    mint a, b;\n\
     \    \n    Monoid(){}\n    Monoid(mint _a, mint _b) : a(_a), b(_b){};\n\n    friend\
     \ Monoid op(const Monoid& l, const Monoid& r) {\n        Monoid res;\n       \
@@ -120,7 +121,7 @@ data:
     \ pos, x);\n        }\n\n        X  get(W l, W r) {\n            return get__(root,\
     \ min_pos, max_pos, l, r+1);\n        }\n\n\t\t/*\n\t\t    DynamicSegTree<X, W>\
     \ seg(minpos, maxpos)  X...\u30C7\u30FC\u30BF W...\u6DFB\u5B57\u306E\u578B  O(1)\n\
-    \t\t\t@brief: \u52D5\u7684\u30BB\u30B0\u6728\n\t\t\n\t\t*/\n\n};\n\nstruct Monoid\
+    \t\t\t@brief : \u52D5\u7684\u30BB\u30B0\u6728\n\t\t\n\t\t*/\n\n};\n\nstruct Monoid\
     \ {\n    mint a, b;\n    \n    Monoid(){}\n    Monoid(mint _a, mint _b) : a(_a),\
     \ b(_b){};\n\n    friend Monoid op(const Monoid& l, const Monoid& r) {\n     \
     \   Monoid res;\n        res.a = l.a * r.a;\n        res.b = r.a * l.b + r.b;\n\
@@ -131,7 +132,7 @@ data:
   isVerificationFile: false
   path: DetaStructures/DynamicSegTree.cpp
   requiredBy: []
-  timestamp: '2024-05-10 22:23:09+09:00'
+  timestamp: '2024-05-10 22:30:21+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: DetaStructures/DynamicSegTree.cpp
@@ -139,5 +140,5 @@ layout: document
 redirect_from:
 - /library/DetaStructures/DynamicSegTree.cpp
 - /library/DetaStructures/DynamicSegTree.cpp.html
-title: DetaStructures/DynamicSegTree.cpp
+title: ": \u52D5\u7684\u30BB\u30B0\u6728"
 ---
