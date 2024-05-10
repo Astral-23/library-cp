@@ -4,12 +4,12 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     document_title: modint1000000007
     links: []
-  bundledCode: "#line 1 \"Utilities/modint107.cpp\"\n\ntemplate<int mod>\nstruct modint{\n\
+  bundledCode: "#line 1 \"Utilities/modint107.hpp\"\n\ntemplate<int mod>\nstruct modint{\n\
     \    long long x;\n    modint(long long _x=0) noexcept : x((_x%mod+mod)%mod){}\n\
     \    long long val() const noexcept {return x;}\n    modint& operator+=(const\
     \ modint& a) noexcept {if((x += a.x) >= mod) x -= mod;return *this;}\n    modint&\
@@ -58,15 +58,15 @@ data:
     \nusing mint = modint<1000000007>;\n\n/*\n@brief modint1000000007\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: Utilities/modint107.cpp
+  path: Utilities/modint107.hpp
   requiredBy: []
-  timestamp: '2024-05-10 23:39:05+09:00'
+  timestamp: '2024-05-11 00:52:36+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: Utilities/modint107.cpp
+documentation_of: Utilities/modint107.hpp
 layout: document
 redirect_from:
-- /library/Utilities/modint107.cpp
-- /library/Utilities/modint107.cpp.html
+- /library/Utilities/modint107.hpp
+- /library/Utilities/modint107.hpp.html
 title: modint1000000007
 ---

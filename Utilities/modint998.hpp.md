@@ -2,14 +2,17 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
-  _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: verify/SegTree.test.cpp
+    title: verify/SegTree.test.cpp
+  _isVerificationFailed: true
+  _pathExtension: hpp
+  _verificationStatusIcon: ':x:'
   attributes:
     document_title: modint998244353
     links: []
-  bundledCode: "#line 1 \"Utilities/modint998.cpp\"\n\ntemplate<int mod>\nstruct modint{\n\
+  bundledCode: "#line 1 \"Utilities/modint998.hpp\"\n\ntemplate<int mod>\nstruct modint{\n\
     \    long long x;\n    modint(long long _x=0) noexcept : x((_x%mod+mod)%mod){}\n\
     \    long long val() const noexcept {return x;}\n    modint& operator+=(const\
     \ modint& a) noexcept {if((x += a.x) >= mod) x -= mod;return *this;}\n    modint&\
@@ -58,15 +61,16 @@ data:
     using mint = modint<998244353>;\n/*\n@brief modint998244353\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: Utilities/modint998.cpp
+  path: Utilities/modint998.hpp
   requiredBy: []
-  timestamp: '2024-05-10 23:39:05+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
-documentation_of: Utilities/modint998.cpp
+  timestamp: '2024-05-11 00:52:36+09:00'
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - verify/SegTree.test.cpp
+documentation_of: Utilities/modint998.hpp
 layout: document
 redirect_from:
-- /library/Utilities/modint998.cpp
-- /library/Utilities/modint998.cpp.html
+- /library/Utilities/modint998.hpp
+- /library/Utilities/modint998.hpp.html
 title: modint998244353
 ---

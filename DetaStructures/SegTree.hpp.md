@@ -3,12 +3,12 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: SegTree.test.cpp
-    title: SegTree.test.cpp
-  _isVerificationFailed: false
+  - icon: ':x:'
+    path: verify/SegTree.test.cpp
+    title: verify/SegTree.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     _deprecated_at_docs: docs/segtree.md
     document_title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
@@ -55,9 +55,9 @@ data:
   path: DetaStructures/SegTree.hpp
   requiredBy: []
   timestamp: '2024-05-10 23:50:54+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
-  - SegTree.test.cpp
+  - verify/SegTree.test.cpp
 documentation_of: DetaStructures/SegTree.hpp
 layout: document
 redirect_from:

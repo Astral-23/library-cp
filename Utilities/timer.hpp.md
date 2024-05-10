@@ -4,12 +4,12 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     document_title: Timer
     links: []
-  bundledCode: "#line 1 \"Utilities/timer.cpp\"\nstruct Timer {\n\tchrono::system_clock::time_point\
+  bundledCode: "#line 1 \"Utilities/timer.hpp\"\nstruct Timer {\n\tchrono::system_clock::time_point\
     \ s;\n\tchrono::system_clock::time_point pre;\n\tbool active = false;\n\n\tTimer(){active\
     \ = false;}\n\n\tvoid start() {\n\t\tassert(!active);\n\t\tactive = true;\n\t\t\
     s = chrono::system_clock::now();\n\t}\n\n\tvoid stop() {\n\t\tpre = chrono::system_clock::now();\n\
@@ -35,15 +35,15 @@ data:
     */"
   dependsOn: []
   isVerificationFile: false
-  path: Utilities/timer.cpp
+  path: Utilities/timer.hpp
   requiredBy: []
-  timestamp: '2024-05-10 23:25:33+09:00'
+  timestamp: '2024-05-11 00:52:36+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: Utilities/timer.cpp
+documentation_of: Utilities/timer.hpp
 layout: document
 redirect_from:
-- /library/Utilities/timer.cpp
-- /library/Utilities/timer.cpp.html
+- /library/Utilities/timer.hpp
+- /library/Utilities/timer.hpp.html
 title: Timer
 ---

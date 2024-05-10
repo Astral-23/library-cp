@@ -4,12 +4,12 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     document_title: "\u4EFB\u610Fmod\u306Emodint(mod < 2 ^ 32)"
     links: []
-  bundledCode: "#line 1 \"Utilities/dynamic_modint.cpp\"\nstruct mint{\n    long long\
+  bundledCode: "#line 1 \"Utilities/dynamic_modint.hpp\"\nstruct mint{\n    long long\
     \ x;\n    mint(long long _x=0) : x((_x%mod+mod)%mod){}\n    long long val()  {return\
     \ x;}\n    mint& operator+=(const mint& a)  {if((x += a.x) >= mod) x -= mod;return\
     \ *this;}\n    mint& operator-=(const mint& a)  {if((x += mod - a.x) >= mod) x\
@@ -55,15 +55,15 @@ data:
     \ \u4EFB\u610Fmod\u306Emodint(mod < 2 ^ 32)\n*/"
   dependsOn: []
   isVerificationFile: false
-  path: Utilities/dynamic_modint.cpp
+  path: Utilities/dynamic_modint.hpp
   requiredBy: []
-  timestamp: '2024-05-10 23:39:05+09:00'
+  timestamp: '2024-05-11 00:52:36+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: Utilities/dynamic_modint.cpp
+documentation_of: Utilities/dynamic_modint.hpp
 layout: document
 redirect_from:
-- /library/Utilities/dynamic_modint.cpp
-- /library/Utilities/dynamic_modint.cpp.html
+- /library/Utilities/dynamic_modint.hpp
+- /library/Utilities/dynamic_modint.hpp.html
 title: "\u4EFB\u610Fmod\u306Emodint(mod < 2 ^ 32)"
 ---

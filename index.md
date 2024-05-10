@@ -38,7 +38,7 @@ data:
     - icon: ':warning:'
       path: DetaStructures/SWAG.cpp
       title: SWAG
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: DetaStructures/SegTree.hpp
       title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     - icon: ':warning:'
@@ -169,28 +169,31 @@ data:
   - name: Utilities
     pages:
     - icon: ':warning:'
-      path: Utilities/dynamic_modint.cpp
+      path: Utilities/Monoid.hpp
+      title: "Monoid\u3068\u4F5C\u7528\u7D20\u306E\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8"
+    - icon: ':warning:'
+      path: Utilities/dynamic_modint.hpp
       title: "\u4EFB\u610Fmod\u306Emodint(mod < 2 ^ 32)"
     - icon: ':warning:'
-      path: Utilities/dynamic_modint2.cpp
+      path: Utilities/dynamic_modint2.hpp
       title: "\u4EFB\u610Fmod\u306Emodint(mod < 2 ^ 64)"
     - icon: ':warning:'
-      path: Utilities/modint107.cpp
+      path: Utilities/modint107.hpp
       title: modint1000000007
-    - icon: ':warning:'
-      path: Utilities/modint998.cpp
+    - icon: ':x:'
+      path: Utilities/modint998.hpp
       title: modint998244353
     - icon: ':warning:'
-      path: Utilities/timer.cpp
+      path: Utilities/timer.hpp
       title: Timer
     - icon: ':warning:'
-      path: Utilities/xorshift.cpp
+      path: Utilities/xorshift.hpp
       title: xorshift
   verificationCategories:
-  - name: .
+  - name: verify
     pages:
-    - icon: ':heavy_check_mark:'
-      path: SegTree.test.cpp
-      title: SegTree.test.cpp
+    - icon: ':x:'
+      path: verify/SegTree.test.cpp
+      title: verify/SegTree.test.cpp
 layout: toppage
 ---
