@@ -10,7 +10,6 @@ using vl = vector<ll>;
 #define ENDL '\n'
 
 int main() {
-
 	ll N, K;
 	cin >> N >> K;
 	Matrix<mint> A(N, N, 0);
