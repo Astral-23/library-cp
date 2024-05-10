@@ -41,8 +41,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: DetaStructures/SegTree.hpp
       title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
-    - icon: ':warning:'
-      path: DetaStructures/SegTree_with_binary-search.cpp
+    - icon: ':heavy_check_mark:'
+      path: DetaStructures/SegTree_with_binary-search.hpp
       title: "\u30BB\u30B0\u6728 + \u4E8C\u5206\u63A2\u7D22"
     - icon: ':warning:'
       path: DetaStructures/Treap.cpp
@@ -201,5 +201,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: verify/lazyseg.test.cpp
       title: verify/lazyseg.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: verify/segwithbsearch.test.cpp
+      title: verify/segwithbsearch.test.cpp
 layout: toppage
 ---

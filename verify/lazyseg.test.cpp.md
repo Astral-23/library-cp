@@ -85,7 +85,7 @@ data:
     \     res.a = l.a * r.a;\n        res.b = r.a * l.b + r.b;\n        return res;\n\
     \      \n    }\n    static E ide() {\n       return E(1, 0);\n    }\n   \n   \
     \ bool operator==(const E& x) const {return (a == x.a && b == x.b);}\n    bool\
-    \ operator!=(const E& x) const {return !(*this == x);}\n\n};\n\n\n\n\nMonoid fx(const\
+    \ operator!=(const E& x) const {return !(*this == x);}\n\n};\n\n\nMonoid fx(const\
     \ Monoid& l, const E& r, long long len) {\n     return l.a * r.a + r.b * len;\n\
     }\n\nint main() {\n    ios::sync_with_stdio(false);\n    std::cin.tie(nullptr);\n\
     \    int N, Q;\n    cin >> N >> Q;\n    vector<ll> A(N+1);\n    LazySegTree<Monoid,\
@@ -111,7 +111,7 @@ data:
     \     res.a = l.a * r.a;\n        res.b = r.a * l.b + r.b;\n        return res;\n\
     \      \n    }\n    static E ide() {\n       return E(1, 0);\n    }\n   \n   \
     \ bool operator==(const E& x) const {return (a == x.a && b == x.b);}\n    bool\
-    \ operator!=(const E& x) const {return !(*this == x);}\n\n};\n\n\n\n\nMonoid fx(const\
+    \ operator!=(const E& x) const {return !(*this == x);}\n\n};\n\n\nMonoid fx(const\
     \ Monoid& l, const E& r, long long len) {\n     return l.a * r.a + r.b * len;\n\
     }\n\nint main() {\n    ios::sync_with_stdio(false);\n    std::cin.tie(nullptr);\n\
     \    int N, Q;\n    cin >> N >> Q;\n    vector<ll> A(N+1);\n    LazySegTree<Monoid,\
@@ -128,7 +128,7 @@ data:
   isVerificationFile: true
   path: verify/lazyseg.test.cpp
   requiredBy: []
-  timestamp: '2024-05-11 01:56:04+09:00'
+  timestamp: '2024-05-11 02:53:27+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: verify/lazyseg.test.cpp
