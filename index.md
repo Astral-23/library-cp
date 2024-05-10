@@ -59,8 +59,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: DataStructures/fastset.hpp
       title: DataStructures/fastset.hpp
-    - icon: ':warning:'
-      path: DataStructures/li_chao_tree.cpp
+    - icon: ':x:'
+      path: DataStructures/li_chao_tree.hpp
       title: Li chao tree
     - icon: ':warning:'
       path: DataStructures/monotone_CHT.cpp
@@ -216,6 +216,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: verify/lazyseg.test.cpp
       title: verify/lazyseg.test.cpp
+    - icon: ':x:'
+      path: verify/lichao.test.cpp
+      title: verify/lichao.test.cpp
     - icon: ':heavy_check_mark:'
       path: verify/segwithbsearch.test.cpp
       title: verify/segwithbsearch.test.cpp
