@@ -19,7 +19,7 @@ data:
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
     )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: /Users/library-cp/library-cp/Math/matrix.hpp:\
     \ line -1: no such header\n"
-  code: "\n#define PROBLEM \"https://judge.yosupo.jp/problem/pow_of_matrix\"\n#include<bits/stdc++.h>\n\
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/pow_of_matrix\"\n#include<bits/stdc++.h>\n\
     using namespace std;\n#include \"/Users/library-cp/library-cp/Math/matrix.hpp\"\
     \n#include \"/Users/library-cp/library-cp/Utilities/modint998.hpp\"\nusing ll\
     \ = long long;\nusing vvl = vector<vector<ll>>;\nusing vl = vector<ll>;\n#define\
