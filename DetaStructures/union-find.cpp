@@ -41,7 +41,7 @@ int getsize(int u) {//uが含まれる連結成分のサイズを返す
 };
 
 /*
-@brief : Union-find
+@brief Union-find
 */
 
 /*
