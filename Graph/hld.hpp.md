@@ -2,14 +2,20 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: verify/hld_path.test.cpp
+    title: verify/hld_path.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: verify/hld_subtree.test.cpp
+    title: verify/hld_subtree.test.cpp
   _isVerificationFailed: false
-  _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _pathExtension: hpp
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "HLD(\u975E\u53EF\u63DB)"
     links: []
-  bundledCode: "#line 1 \"Graph/hld.cpp\"\ntemplate<typename T>\nstruct SegTree {\n\
+  bundledCode: "#line 1 \"Graph/hld.hpp\"\ntemplate<typename T>\nstruct SegTree {\n\
     \    int n;\n    vector<T> dat;\n   \n    SegTree(){}\n         \n    SegTree(int\
     \ siz) {\n        n = 1;\n        while(n < siz) n <<= 1;\n        dat.resize(n\
     \ * 2, T::ide());\n    }\n\n    private:\n         \n        T query(int l, int\
@@ -80,12 +86,7 @@ data:
     \u306E\u30E2\u30CE\u30A4\u30C9\u7A4D  O(log^2)\n\t\tchange(v) ... v\u3092\u5909\
     \u66F4 O(log)\n\t\tsubtree(v) ... v\u3092\u542B\u3080\u3001v\u306E\u90E8\u5206\
     \u6728\u306E\u30E2\u30CE\u30A4\u30C9\u7A4D O(log)\n        \n        \n      \
-    \  out\u306F\u534A\u958B\u533A\u9593\u3002\n        \n        */\n};  \n\n\nstruct\
-    \ Monoid {\n    long long a;\n   \n    Monoid(){}\n      \n    Monoid(long long\
-    \ _a) : a(_a) {\n      \n    }\n\n    friend Monoid op(const Monoid& l, const\
-    \ Monoid& r) {\n      return l.a + r.a;\n    }\n\n    friend Monoid update(const\
-    \ Monoid& l, const Monoid& r) {\n        return l.a + r.a;\n    }\n\n    static\
-    \ Monoid ide() {\n       return 0LL;\n    }\n    \n};\n"
+    \  out\u306F\u534A\u958B\u533A\u9593\u3002\n        \n        */\n};  \n\n"
   code: "template<typename T>\nstruct SegTree {\n    int n;\n    vector<T> dat;\n\
     \   \n    SegTree(){}\n         \n    SegTree(int siz) {\n        n = 1;\n   \
     \     while(n < siz) n <<= 1;\n        dat.resize(n * 2, T::ide());\n    }\n\n\
@@ -157,23 +158,20 @@ data:
     \u306E\u30E2\u30CE\u30A4\u30C9\u7A4D  O(log^2)\n\t\tchange(v) ... v\u3092\u5909\
     \u66F4 O(log)\n\t\tsubtree(v) ... v\u3092\u542B\u3080\u3001v\u306E\u90E8\u5206\
     \u6728\u306E\u30E2\u30CE\u30A4\u30C9\u7A4D O(log)\n        \n        \n      \
-    \  out\u306F\u534A\u958B\u533A\u9593\u3002\n        \n        */\n};  \n\n\nstruct\
-    \ Monoid {\n    long long a;\n   \n    Monoid(){}\n      \n    Monoid(long long\
-    \ _a) : a(_a) {\n      \n    }\n\n    friend Monoid op(const Monoid& l, const\
-    \ Monoid& r) {\n      return l.a + r.a;\n    }\n\n    friend Monoid update(const\
-    \ Monoid& l, const Monoid& r) {\n        return l.a + r.a;\n    }\n\n    static\
-    \ Monoid ide() {\n       return 0LL;\n    }\n    \n};\n"
+    \  out\u306F\u534A\u958B\u533A\u9593\u3002\n        \n        */\n};  \n\n"
   dependsOn: []
   isVerificationFile: false
-  path: Graph/hld.cpp
+  path: Graph/hld.hpp
   requiredBy: []
-  timestamp: '2024-05-10 23:04:54+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
-documentation_of: Graph/hld.cpp
+  timestamp: '2024-05-11 03:42:20+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - verify/hld_path.test.cpp
+  - verify/hld_subtree.test.cpp
+documentation_of: Graph/hld.hpp
 layout: document
 redirect_from:
-- /library/Graph/hld.cpp
-- /library/Graph/hld.cpp.html
+- /library/Graph/hld.hpp
+- /library/Graph/hld.hpp.html
 title: "HLD(\u975E\u53EF\u63DB)"
 ---

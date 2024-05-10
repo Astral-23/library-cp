@@ -105,8 +105,8 @@ data:
     - icon: ':warning:'
       path: Graph/aux_tree.cpp
       title: "\u5727\u7E2E\u6728"
-    - icon: ':warning:'
-      path: Graph/hld.cpp
+    - icon: ':heavy_check_mark:'
+      path: Graph/hld.hpp
       title: "HLD(\u975E\u53EF\u63DB)"
     - icon: ':warning:'
       path: Graph/hld2.cpp
@@ -153,7 +153,7 @@ data:
     pages:
     - icon: ':warning:'
       path: String/MP.hpp
-      title: "MP\u65B9"
+      title: "MP\u6CD5"
     - icon: ':warning:'
       path: String/Manacher.cpp
       title: Manacher
@@ -207,6 +207,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: verify/fastset.test.cpp
       title: verify/fastset.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: verify/hld_path.test.cpp
+      title: verify/hld_path.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: verify/hld_subtree.test.cpp
+      title: verify/hld_subtree.test.cpp
     - icon: ':heavy_check_mark:'
       path: verify/lazyseg.test.cpp
       title: verify/lazyseg.test.cpp
