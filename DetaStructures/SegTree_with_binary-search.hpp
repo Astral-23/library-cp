@@ -59,20 +59,20 @@ struct SegTree {
 			T res = T::ide();
 
 			while(true) {
-				if(r&1) {
-					if(f(op(dat[r-1], res))) break;
-			        else res = op(dat[--r], res);
+				if(!(r&1) || r==1) {
+					if(f(op(dat[r], res))) break;
+			        else res = op(dat[r--], res);
 				}
 				r >>= 1;
 			}
 
-			while(r > 1) {
+			while(r < n) {
 				if(f(op(dat[r<<1|1], res))) {
 					r = r<<1|1;
 				}
 				else {
 					res = op(dat[r<<1|1], res);
-					r <<= 1;
+					r = r<<1;
 				}
 			}
 
@@ -118,40 +118,6 @@ struct SegTree {
 		}
          
 };
-
-
-
-struct Monoid {
-    long long a;
-   
-    Monoid(){}
-      
-    Monoid(long long _a) : a(_a) {
-      
-    }
-
-    friend Monoid op(const Monoid& l, const Monoid& r) {
-      }
-
-    friend Monoid update(const Monoid& l, const Monoid& r) {
-
-    }
-
-    static Monoid ide() {
-       return 0LL;
-    }
-    
-};
-
-int kth_pos;
-int kth_element (const Monoid& now) {
-	return now.a >= kth_pos;
-};
-
-
-int get_order(const Monoid& now, SegTree<Monoid>& seg) {
-	return seg.get(1, now.a).a;
-}
 
 /*
 @brief セグ木 + 二分探索
