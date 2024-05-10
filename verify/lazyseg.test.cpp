@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 #include "../Utilities/modint998.hpp"
-#include "../DetaStructures/LazySegTree.hpp"
+#include "../DataStructures/LazySegTree.hpp"
 using ll = long long;
 using vvl = vector<vector<ll>>;
 using vl = vector<ll>;

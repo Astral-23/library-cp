@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 #include "../Utilities/modint998.hpp"
-#include "../DetaStructures/SegTree.hpp"
+#include "../DataStructures/SegTree.hpp"
 
 struct Monoid {
     mint a, b;

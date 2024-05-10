@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/predecessor_problem"
 #include<bits/stdc++.h>
 using namespace std;
-#include "../DetaStructures/SegTree_with_binary-search.hpp"
+#include "../DataStructures/SegTree_with_binary-search.hpp"
 using ll = long long;
 using vvl = vector<vector<ll>>;
 using vl = vector<ll>;
