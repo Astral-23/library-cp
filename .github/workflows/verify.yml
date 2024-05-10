@@ -2,6 +2,10 @@ name: verify
 
 on: push
 
+permissions: read-all
+permissions: write-all
+
+  
 jobs:
   build:
     runs-on: ubuntu-latest
