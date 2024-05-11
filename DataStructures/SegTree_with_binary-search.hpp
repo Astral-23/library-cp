@@ -72,7 +72,7 @@ struct SegTree {
 				}
 				else {
 					res = op(dat[r<<1|1], res);
-					r = r<<1;
+					r <<= 1;
 				}
 			}
 
