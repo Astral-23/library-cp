@@ -40,7 +40,7 @@ data:
     \t\tif(f(op(dat[r], res))) break;\n\t\t\t        else res = op(dat[r--], res);\n\
     \t\t\t\t}\n\t\t\t\tr >>= 1;\n\t\t\t}\n\n\t\t\twhile(r < n) {\n\t\t\t\tif(f(op(dat[r<<1|1],\
     \ res))) {\n\t\t\t\t\tr = r<<1|1;\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\tres =\
-    \ op(dat[r<<1|1], res);\n\t\t\t\t\tr = r<<1;\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn\
+    \ op(dat[r<<1|1], res);\n\t\t\t\t\tr <<= 1;\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn\
     \ r - (n-1);\n\t\t}\n\n    public:\n\n        void set(int pos, T x) {\n     \
     \       pos += n-1;\n            dat[pos] = x;\n        }\n          \n      \
     \  void init() {\n            for(int i = n-1; i >= 1; i--)  dat[i] = op(dat[i<<1],\
@@ -82,7 +82,7 @@ data:
     \    else res = op(dat[r--], res);\n\t\t\t\t}\n\t\t\t\tr >>= 1;\n\t\t\t}\n\n\t\
     \t\twhile(r < n) {\n\t\t\t\tif(f(op(dat[r<<1|1], res))) {\n\t\t\t\t\tr = r<<1|1;\n\
     \t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\tres = op(dat[r<<1|1], res);\n\t\t\t\t\tr\
-    \ = r<<1;\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn r - (n-1);\n\t\t}\n\n    public:\n\
+    \ <<= 1;\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn r - (n-1);\n\t\t}\n\n    public:\n\
     \n        void set(int pos, T x) {\n            pos += n-1;\n            dat[pos]\
     \ = x;\n        }\n          \n        void init() {\n            for(int i =\
     \ n-1; i >= 1; i--)  dat[i] = op(dat[i<<1], dat[i<<1|1]);\n        }\n       \
@@ -100,7 +100,7 @@ data:
   isVerificationFile: false
   path: DataStructures/SegTree_with_binary-search.hpp
   requiredBy: []
-  timestamp: '2024-05-11 03:22:03+09:00'
+  timestamp: '2024-05-11 18:05:36+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - verify/segwithbsearch.test.cpp
