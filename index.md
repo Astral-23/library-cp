@@ -172,6 +172,9 @@ data:
       path: Utilities/Monoid.hpp
       title: "Monoid\u3068\u4F5C\u7528\u7D20\u306E\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8"
     - icon: ':warning:'
+      path: Utilities/Point.hpp
+      title: Utilities/Point.hpp
+    - icon: ':warning:'
       path: Utilities/dynamic_modint.hpp
       title: "\u4EFB\u610Fmod\u306Emodint(mod < 2 ^ 32)"
     - icon: ':warning:'
