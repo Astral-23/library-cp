@@ -187,6 +187,9 @@ data:
       path: Utilities/modint998.hpp
       title: modint998244353
     - icon: ':warning:'
+      path: Utilities/mypair.hpp
+      title: "\u81EA\u4F5C\u306Epair"
+    - icon: ':warning:'
       path: Utilities/timer.hpp
       title: Timer
     - icon: ':warning:'
