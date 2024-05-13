@@ -27,7 +27,8 @@ data:
     return stoll(pref.substr(1));\n\n}\n\n/*\n@brief [0, r]\u3067\u8F9E\u66F8\u9806\
     K\u756A\u76EE\u306E\u6574\u6570\np10\u3092\u3069\u3053\u304B\u3067\u8A08\u7B97\
     \u3057\u3066\u304A\u304F\u3002\nverified with https://atcoder.jp/contests/arc078/submissions/53435109\n\
-    */\n"
+    \u3042\u308B\u3044\u306F r = 1000000\u3067\u306E\u30B9\u30C8\u30EC\u30B9\u30C6\
+    \u30B9\u30C8\n*/\n"
   code: "vl p10(19, 1);\n\nll count(ll pref, ll r) {//[0, r]\u306B\u304A\u3044\u3066\
     \u3001prefix\u304Cpref\u3068\u4E00\u81F4\u3059\u308B\u6570\u5B57\u306F\u4F55\u500B\
     \u3042\u308B\u304B\uFF08\u30EA\u30FC\u30C7\u30A3\u30F3\u30B00\u306F\u7701\u304F\
@@ -44,12 +45,13 @@ data:
     }\n\t}\n\treturn stoll(pref.substr(1));\n\n}\n\n/*\n@brief [0, r]\u3067\u8F9E\u66F8\
     \u9806K\u756A\u76EE\u306E\u6574\u6570\np10\u3092\u3069\u3053\u304B\u3067\u8A08\
     \u7B97\u3057\u3066\u304A\u304F\u3002\nverified with https://atcoder.jp/contests/arc078/submissions/53435109\n\
-    */"
+    \u3042\u308B\u3044\u306F r = 1000000\u3067\u306E\u30B9\u30C8\u30EC\u30B9\u30C6\
+    \u30B9\u30C8\n*/"
   dependsOn: []
   isVerificationFile: false
   path: Utilities/int_to_lexico.hpp
   requiredBy: []
-  timestamp: '2024-05-13 09:54:54+09:00'
+  timestamp: '2024-05-13 09:55:50+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Utilities/int_to_lexico.hpp
