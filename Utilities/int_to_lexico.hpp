@@ -41,4 +41,5 @@ ll kth(ll k, ll r) {//[0, r]で辞書順k番目の数字を返す。 0-indexed(k
 @brief [0, r]で辞書順K番目の整数
 p10をどこかで計算しておく。
 verified with https://atcoder.jp/contests/arc078/submissions/53435109
+あるいは r = 1000000でのストレステスト
 */
