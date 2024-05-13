@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':x:'
-    path: verify/int_to_lexico.test.cpp
-    title: verify/int_to_lexico.test.cpp
-  _isVerificationFailed: true
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: verify/test_of_int_to_lexico.cpp
+    title: verify/test_of_int_to_lexico.cpp
+  _extendedVerifiedWith: []
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     document_title: "[0, r]\u3067\u8F9E\u66F8\u9806K\u756A\u76EE\u306E\u6574\u6570"
     links:
@@ -58,11 +58,11 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: Math/int_to_lexico.hpp
-  requiredBy: []
+  requiredBy:
+  - verify/test_of_int_to_lexico.cpp
   timestamp: '2024-05-13 17:40:20+09:00'
-  verificationStatus: LIBRARY_ALL_WA
-  verifiedWith:
-  - verify/int_to_lexico.test.cpp
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: Math/int_to_lexico.hpp
 layout: document
 redirect_from:

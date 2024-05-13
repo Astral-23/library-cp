@@ -1,21 +1,20 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':warning:'
     path: Math/int_to_lexico.hpp
     title: "[0, r]\u3067\u8F9E\u66F8\u9806K\u756A\u76EE\u306E\u6574\u6570"
-  - icon: ':x:'
+  - icon: ':warning:'
     path: Utilities/timer.hpp
     title: Timer
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':warning:'
   attributes:
-    '*NOT_SPECIAL_COMMENTS*': ''
     links: []
-  bundledCode: "#line 1 \"verify/int_to_lexico.test.cpp\"\n\n#include<bits/stdc++.h>\n\
+  bundledCode: "#line 1 \"verify/test_of_int_to_lexico.cpp\"\n\n#include<bits/stdc++.h>\n\
     using namespace std;\nusing ll = long long;\nusing vvl = vector<vector<ll>>;\n\
     using vl = vector<ll>;\n#define rep(i, s, f) for(long long i = s; i <= f; i++)\n\
     #line 1 \"Math/int_to_lexico.hpp\"\nvector<long long> p10(19, 1);\n\nll count(ll\
@@ -50,11 +49,11 @@ data:
     \t\t    return chrono::duration<double>(t - s).count();\n\t\t}\n\t\telse {\n\t\
     \t\treturn chrono::duration<double>(pre - s).count();\n\t\t}\n\t}\n\n\tvoid out()\
     \ {\n\t\tcout << now() << \" sec\" << endl;\n\t}\n};\nTimer tim;\n/*\n@brief Timer\n\
-    */\n#line 10 \"verify/int_to_lexico.test.cpp\"\n#define ENDL '\\n'\n\n\nint main()\
-    \ {\n\trep(i,1,18) p10[i] = p10[i-1] * 10;\n\n\n\tll B = 10000000;\n\tvector<string>\
-    \ vs(B+1);\n\trep(i, 0, B) vs[i] = to_string(i);\n\tsort(vs.begin(), vs.end());\n\
-    \n\ttim.start();\n\n\trep(i, 0, B) {\n\t\tassert(stoll(vs[i]) == kth(i, B));\n\
-    \t}\n\n\ttim.out();\n\t\n\n\n}\n"
+    */\n#line 10 \"verify/test_of_int_to_lexico.cpp\"\n#define ENDL '\\n'\n\n\nint\
+    \ main() {\n\trep(i,1,18) p10[i] = p10[i-1] * 10;\n\n\n\tll B = 10000000;\n\t\
+    vector<string> vs(B+1);\n\trep(i, 0, B) vs[i] = to_string(i);\n\tsort(vs.begin(),\
+    \ vs.end());\n\n\ttim.start();\n\n\trep(i, 0, B) {\n\t\tassert(stoll(vs[i]) ==\
+    \ kth(i, B));\n\t}\n\n\ttim.out();\n\t\n\n\n}\n"
   code: "\n#include<bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\
     using vvl = vector<vector<ll>>;\nusing vl = vector<ll>;\n#define rep(i, s, f)\
     \ for(long long i = s; i <= f; i++)\n#include \"../Math/int_to_lexico.hpp\"\n\
@@ -66,16 +65,16 @@ data:
   dependsOn:
   - Math/int_to_lexico.hpp
   - Utilities/timer.hpp
-  isVerificationFile: true
-  path: verify/int_to_lexico.test.cpp
+  isVerificationFile: false
+  path: verify/test_of_int_to_lexico.cpp
   requiredBy: []
-  timestamp: '2024-05-13 17:47:39+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2024-05-13 17:48:51+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: verify/int_to_lexico.test.cpp
+documentation_of: verify/test_of_int_to_lexico.cpp
 layout: document
 redirect_from:
-- /verify/verify/int_to_lexico.test.cpp
-- /verify/verify/int_to_lexico.test.cpp.html
-title: verify/int_to_lexico.test.cpp
+- /library/verify/test_of_int_to_lexico.cpp
+- /library/verify/test_of_int_to_lexico.cpp.html
+title: verify/test_of_int_to_lexico.cpp
 ---
