@@ -134,6 +134,9 @@ data:
     - icon: ':warning:'
       path: Math/factorize.cpp
       title: "\u7D20\u56E0\u6570\u5206\u89E3\uFF08Pollard_rho) N^(1/4)logN"
+    - icon: ':warning:'
+      path: Math/int_to_lexico.hpp
+      title: "[0, r]\u3067\u8F9E\u66F8\u9806K\u756A\u76EE\u306E\u6574\u6570"
     - icon: ':heavy_check_mark:'
       path: Math/matrix.hpp
       title: "\u884C\u5217\u306E\u578B"
@@ -172,17 +175,11 @@ data:
       path: Utilities/Monoid.hpp
       title: "Monoid\u3068\u4F5C\u7528\u7D20\u306E\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8"
     - icon: ':warning:'
-      path: Utilities/Point.hpp
-      title: Utilities/Point.hpp
-    - icon: ':warning:'
       path: Utilities/dynamic_modint.hpp
       title: "\u4EFB\u610Fmod\u306Emodint(mod < 2 ^ 32)"
     - icon: ':warning:'
       path: Utilities/dynamic_modint2.hpp
       title: "\u4EFB\u610Fmod\u306Emodint(mod < 2 ^ 64)"
-    - icon: ':warning:'
-      path: Utilities/int_to_lexico.hpp
-      title: "[0, r]\u3067\u8F9E\u66F8\u9806K\u756A\u76EE\u306E\u6574\u6570"
     - icon: ':warning:'
       path: Utilities/modint107.hpp
       title: modint1000000007
