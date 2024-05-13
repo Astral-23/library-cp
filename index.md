@@ -181,6 +181,9 @@ data:
       path: Utilities/dynamic_modint2.hpp
       title: "\u4EFB\u610Fmod\u306Emodint(mod < 2 ^ 64)"
     - icon: ':warning:'
+      path: Utilities/int_to_lexico.hpp
+      title: "[0, r]\u3067\u8F9E\u66F8\u9806K\u756A\u76EE\u306E\u6574\u6570"
+    - icon: ':warning:'
       path: Utilities/modint107.hpp
       title: modint1000000007
     - icon: ':heavy_check_mark:'
