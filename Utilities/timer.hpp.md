@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: verify/int_to_lexico.test.cpp
+    title: verify/int_to_lexico.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     document_title: Timer
     links: []
@@ -38,8 +41,9 @@ data:
   path: Utilities/timer.hpp
   requiredBy: []
   timestamp: '2024-05-11 00:52:36+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - verify/int_to_lexico.test.cpp
 documentation_of: Utilities/timer.hpp
 layout: document
 redirect_from:

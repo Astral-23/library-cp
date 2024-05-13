@@ -134,7 +134,7 @@ data:
     - icon: ':warning:'
       path: Math/factorize.cpp
       title: "\u7D20\u56E0\u6570\u5206\u89E3\uFF08Pollard_rho) N^(1/4)logN"
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Math/int_to_lexico.hpp
       title: "[0, r]\u3067\u8F9E\u66F8\u9806K\u756A\u76EE\u306E\u6574\u6570"
     - icon: ':heavy_check_mark:'
@@ -189,7 +189,7 @@ data:
     - icon: ':warning:'
       path: Utilities/mypair.hpp
       title: "\u81EA\u4F5C\u306Epair"
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Utilities/timer.hpp
       title: Timer
     - icon: ':warning:'
@@ -219,6 +219,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: verify/hld_subtree.test.cpp
       title: verify/hld_subtree.test.cpp
+    - icon: ':x:'
+      path: verify/int_to_lexico.test.cpp
+      title: verify/int_to_lexico.test.cpp
     - icon: ':heavy_check_mark:'
       path: verify/lazyseg.test.cpp
       title: verify/lazyseg.test.cpp
