@@ -15,7 +15,7 @@ data:
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     links: []
-  bundledCode: "#line 1 \"verify/int_to_lexico.test.cpp\"\n#include<bits/stdc++.h>\n\
+  bundledCode: "#line 1 \"verify/int_to_lexico.test.cpp\"\n\n#include<bits/stdc++.h>\n\
     using namespace std;\nusing ll = long long;\nusing vvl = vector<vector<ll>>;\n\
     using vl = vector<ll>;\n#define rep(i, s, f) for(long long i = s; i <= f; i++)\n\
     #line 1 \"Math/int_to_lexico.hpp\"\nvector<long long> p10(19, 1);\n\nll count(ll\
@@ -50,26 +50,26 @@ data:
     \t\t    return chrono::duration<double>(t - s).count();\n\t\t}\n\t\telse {\n\t\
     \t\treturn chrono::duration<double>(pre - s).count();\n\t\t}\n\t}\n\n\tvoid out()\
     \ {\n\t\tcout << now() << \" sec\" << endl;\n\t}\n};\nTimer tim;\n/*\n@brief Timer\n\
-    */\n#line 9 \"verify/int_to_lexico.test.cpp\"\n#define ENDL '\\n'\n\n\nint main()\
+    */\n#line 10 \"verify/int_to_lexico.test.cpp\"\n#define ENDL '\\n'\n\n\nint main()\
     \ {\n\trep(i,1,18) p10[i] = p10[i-1] * 10;\n\n\n\tll B = 10000000;\n\tvector<string>\
     \ vs(B+1);\n\trep(i, 0, B) vs[i] = to_string(i);\n\tsort(vs.begin(), vs.end());\n\
     \n\ttim.start();\n\n\trep(i, 0, B) {\n\t\tassert(stoll(vs[i]) == kth(i, B));\n\
     \t}\n\n\ttim.out();\n\t\n\n\n}\n"
-  code: "#include<bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\nusing\
-    \ vvl = vector<vector<ll>>;\nusing vl = vector<ll>;\n#define rep(i, s, f) for(long\
-    \ long i = s; i <= f; i++)\n#include \"../Math/int_to_lexico.hpp\"\n#include \"\
-    ../Utilities/timer.hpp\"\n#define ENDL '\\n'\n\n\nint main() {\n\trep(i,1,18)\
-    \ p10[i] = p10[i-1] * 10;\n\n\n\tll B = 10000000;\n\tvector<string> vs(B+1);\n\
-    \trep(i, 0, B) vs[i] = to_string(i);\n\tsort(vs.begin(), vs.end());\n\n\ttim.start();\n\
-    \n\trep(i, 0, B) {\n\t\tassert(stoll(vs[i]) == kth(i, B));\n\t}\n\n\ttim.out();\n\
-    \t\n\n\n}"
+  code: "\n#include<bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\
+    using vvl = vector<vector<ll>>;\nusing vl = vector<ll>;\n#define rep(i, s, f)\
+    \ for(long long i = s; i <= f; i++)\n#include \"../Math/int_to_lexico.hpp\"\n\
+    #include \"../Utilities/timer.hpp\"\n#define ENDL '\\n'\n\n\nint main() {\n\t\
+    rep(i,1,18) p10[i] = p10[i-1] * 10;\n\n\n\tll B = 10000000;\n\tvector<string>\
+    \ vs(B+1);\n\trep(i, 0, B) vs[i] = to_string(i);\n\tsort(vs.begin(), vs.end());\n\
+    \n\ttim.start();\n\n\trep(i, 0, B) {\n\t\tassert(stoll(vs[i]) == kth(i, B));\n\
+    \t}\n\n\ttim.out();\n\t\n\n\n}"
   dependsOn:
   - Math/int_to_lexico.hpp
   - Utilities/timer.hpp
   isVerificationFile: true
   path: verify/int_to_lexico.test.cpp
   requiredBy: []
-  timestamp: '2024-05-13 17:40:20+09:00'
+  timestamp: '2024-05-13 17:47:39+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: verify/int_to_lexico.test.cpp
