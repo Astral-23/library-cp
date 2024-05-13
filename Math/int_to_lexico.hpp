@@ -38,8 +38,9 @@ ll kth(ll k, ll r) {//[0, r]で辞書順k番目の数字を返す。 0-indexed(k
 }
 
 /*
-@brief [0, r]で辞書順K番目の整数
+@brief [0, r]で辞書順K番目の整数   
 p10をどこかで計算しておく。
 verified with https://atcoder.jp/contests/arc078/submissions/53435109
 あるいは r = 1000000でのストレステスト
+補足：整数の辞書順比較について、（リーディング0を除いた)桁数が等しいならば、大小関係と辞書順が一致
 */
