@@ -1,4 +1,4 @@
-vl p10(19, 1);
+vector<long long> p10(19, 1);
 
 ll count(ll pref, ll r, int k, int M) {//[0, r]において、prefixがprefと一致する数字は何個あるか（リーディング0は省く。  O(1)
     r++;
